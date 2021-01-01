@@ -252,7 +252,7 @@ const Stub = props => {
                 href="https://join.slack.com/t/xaip2020/shared_invite/zt-i8uy3uw0-hRqomirHfO__c5Bu47Uunw"
                 target="_blank">
                 <Button
-                  kind="primary"
+                  kind="danger"
                   size="field"
                   style={{ minWidth: '175px' }}>
                   Talk to Authors

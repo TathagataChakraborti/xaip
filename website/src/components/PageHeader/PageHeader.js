@@ -29,11 +29,11 @@ const PageHeader = (isSideNavExpanded, onClickSideNavExpand) => (
             XAIP
           </HeaderName>
           <HeaderNavigation aria-label="">
-            <HeaderMenuItem element={Link} to="/2020">
-              2020
-            </HeaderMenuItem>
             <HeaderMenuItem element={Link} to="/team">
               Team
+            </HeaderMenuItem>
+            <HeaderMenuItem element={Link} to="/2020">
+              2020
             </HeaderMenuItem>
             <HeaderMenuItem element={Link} to="/explore">
               Explore
@@ -51,11 +51,11 @@ const PageHeader = (isSideNavExpanded, onClickSideNavExpand) => (
                 <HeaderMenuItem element={Link} to="/">
                   Home
                 </HeaderMenuItem>
-                <HeaderMenuItem element={Link} to="/2020">
-                  2020
-                </HeaderMenuItem>
                 <HeaderMenuItem element={Link} to="/team">
                   Team
+                </HeaderMenuItem>
+                <HeaderMenuItem element={Link} to="/2020">
+                  2020
                 </HeaderMenuItem>
                 <HeaderMenuItem element={Link} to="/explore">
                   Explore
