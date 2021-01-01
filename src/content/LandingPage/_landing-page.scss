@@ -1,0 +1,152 @@
+@import './mixins.scss';
+@import './overrides.scss';
+
+.landing-page__illo {
+  max-width: 100%;
+}
+
+.disclaimer-kill {
+  padding-bottom: 0;
+  font-weight: normal;
+}
+
+.landing-page__banner {
+  padding-top: $spacing-05;
+  padding-bottom: $spacing-07 * 2;
+  @include landing-page-background;
+}
+
+.social-distancing {
+  margin-bottom: $spacing-07;
+  border-bottom-style: hidden;
+}
+
+.company {
+  font-weight: lighter;
+}
+
+.landing-page__heading {
+  @include carbon--type-style('productive-heading-05');
+}
+
+.landing-page__r2 {
+  margin-top: rem(-40px);
+}
+
+.landing-page__tab-content {
+  padding-top: $layout-05;
+}
+
+.landing-page__subheading {
+  @include carbon--type-style('productive-heading-03');
+  @include carbon--font-weight('semibold');
+}
+
+.landing-page__p {
+  @include carbon--type-style('productive-heading-03');
+  margin-top: $spacing-06;
+  margin-bottom: $spacing-08;
+
+  @include carbon--breakpoint-between((320px + 1), md) {
+    max-width: 75%;
+  }
+}
+
+.landing-page__r3 {
+  padding-top: $spacing-09;
+  padding-bottom: $spacing-09;
+  @include landing-page-background;
+}
+
+.landing-page__label {
+  @include carbon--type-style('heading-01');
+}
+
+.image-frame {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.image-circle {
+  border-radius: 50%;
+}
+
+.info-links {
+  padding-top: $spacing-03;
+}
+
+.black-link {
+  color: black !important;
+}
+
+.tellina-area {
+  margin-top: $spacing-07;
+}
+
+.no-fill .bx--loading__svg {
+  fill: none !important;
+}
+
+.landing-page__banner ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #0f62fe !important;
+  opacity: 1; /* Firefox */
+}
+
+.landing-page__banner :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #0f62fe;
+}
+
+.landing-page__banner ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #0f62fe;
+}
+
+.no-decoration-link {
+  text-decoration: none !important;
+}
+
+.no-decoration-link:hover {
+  text-decoration: none !important;
+}
+
+.scroll-offset {
+  margin-top: -80px;
+  padding-top: 80px;
+}
+
+.bx--modal {
+}
+
+.bx--modal-container {
+  position: sticky;
+  top: 3rem;
+}
+
+.bx--body--with-modal-open header {
+  display: none;
+}
+
+@media (max-width: 1020px) {
+  .landing-page__illo {
+    display: none;
+  }
+
+  .xaip-tags {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+
+.bx--accordion--start .bx--accordion__content {
+  margin-right: 1.5rem;
+}
+
+.bx--accordion__item:last-child {
+  border-bottom: none;
+}
+
+.accordiong-crush .bx--accordion__heading {
+  width: auto;
+}

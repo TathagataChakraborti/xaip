@@ -1,0 +1,7 @@
+.bx--header__global li {
+  display: block;
+}
+
+.disabled-hover > a:hover {
+  cursor: not-allowed !important;
+}
