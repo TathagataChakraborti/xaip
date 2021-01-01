@@ -1,6 +1,4 @@
-## XAIP Workshop Series @ ICAPS
-
-:house: [ibm.biz/xaip2021](http://ibm.biz/xaip2020)
+# :house: [ibm.biz/xaip2021](http://ibm.biz/xaip2020)
 
 ## How to run
 
