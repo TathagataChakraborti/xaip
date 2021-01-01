@@ -5,6 +5,14 @@ import {
   UnorderedList,
   Tag,
   Button,
+  StructuredListWrapper,
+  StructuredListHead,
+  StructuredListBody,
+  StructuredListRow,
+  StructuredListCell,
+  ProgressIndicator,
+  ProgressStep,
+  Modal,
 } from 'carbon-components-react';
 
 class LandingPage extends React.Component {
@@ -32,7 +40,9 @@ class LandingPage extends React.Component {
   render() {
     return (
       <div>
-        <div className="bx--grid bx--grid--full-width landing-page">
+        <div
+          className="bx--grid bx--grid--full-width landing-page"
+          style={{ height: '100vh' }}>
           <div
             className="bx--row"
             style={{ padding: '50px', marginTop: '100px' }}>
@@ -97,6 +107,103 @@ class LandingPage extends React.Component {
             </div>
           </div>
         </div>
+
+        <div className="bx--row landing-page__tab-content" id="program">
+          <div className="bx--col-lg-8 bx--offset-lg-2">
+            <StructuredListWrapper style={{ marginBottom: '20px' }}>
+              <StructuredListHead>
+                <StructuredListRow>
+                  <StructuredListCell>
+                    <h2 className="landing-page__subheading">
+                      Call for Contributions.
+                    </h2>
+                    <br />
+                    This year, in addition to the core XAIP topics, we welcome
+                    submissions on user interfaces in XAIP, acknowledging the
+                    inseparable role of interfacing in explanations. We invite
+                    submissions of the following types relevant to the topics
+                    listed below.
+                  </StructuredListCell>
+                </StructuredListRow>
+              </StructuredListHead>
+              <StructuredListBody>
+                <StructuredListRow>
+                  <StructuredListCell>
+                    <strong>Full technical papers </strong>
+                    making an original contribution; up to 9 pages including
+                    references.
+                  </StructuredListCell>
+                </StructuredListRow>
+                <StructuredListRow>
+                  <StructuredListCell>
+                    <strong>Short technical papers </strong>
+                    making an original contribution; up to 5 pages including
+                    references.
+                  </StructuredListCell>
+                </StructuredListRow>
+                <StructuredListRow>
+                  <StructuredListCell>
+                    <strong>Position papers </strong>
+                    proposing XAIP challenges, outlining XAIP ideas, debating
+                    issues relevant to XAIP; up to 5 pages including references.
+                  </StructuredListCell>
+                </StructuredListRow>
+              </StructuredListBody>
+            </StructuredListWrapper>
+
+            <Button size="small" kind="ghost" style={{ cursor: 'not-allowed' }}>
+              Submit
+            </Button>
+
+            <Link
+              href="https://www.aaai.org/Publications/Templates/AuthorKit20.zip"
+              target="_blank">
+              <Button size="small" kind="ghost">
+                Template
+              </Button>
+            </Link>
+
+            <Button
+              size="small"
+              kind="ghost"
+              onClick={this.onClickREADME.bind(this)}>
+              README
+            </Button>
+          </div>
+
+          <div className="bx--col-lg-4 xaip-tags">
+            <div className="some-container" style={{ marginTop: '70px' }}>
+              <ProgressIndicator vertical currentIndex={1}>
+                <ProgressStep label="The submission portal will open soon" />
+                <ProgressStep
+                  invalid
+                  label={
+                    <span style={{ color: 'red' }}>Submission Deadline</span>
+                  }
+                  secondaryLabel="??? ?? UTC-12"
+                />
+                <ProgressStep
+                  label="Author Notification"
+                  secondaryLabel="??? ?? UTC-12"
+                />
+                <ProgressStep
+                  disabled
+                  label="Camera Ready Deadline"
+                  secondaryLabel="??? ?? UTC-12"
+                />
+                <ProgressStep
+                  disabled
+                  label="ICAPS 2020 Workshops"
+                  secondaryLabel="June 7 - 12"
+                />
+              </ProgressIndicator>
+            </div>
+          </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
 
         <div className="bx--grid bx--grid--full-width landing-page landing-page__banner">
           <div className="bx--row landing-page__tab-content">
@@ -191,6 +298,67 @@ class LandingPage extends React.Component {
             </div>
           </div>
         </div>
+
+        <Modal
+          iconDescription="Close"
+          modalHeading="Additional Instructions"
+          modalLabel="XAIP @ ICAPS 2021"
+          passiveModal
+          hasScrollingContent
+          open={this.state.readme}
+          onRequestClose={this.onClickModalClose.bind(this)}
+          size="lg"
+          aria-label=""
+          style={{ height: '100%' }}>
+          <StructuredListWrapper style={{ marginBottom: '20px' }}>
+            <StructuredListHead>
+              <StructuredListRow />
+            </StructuredListHead>
+            <StructuredListBody>
+              <StructuredListRow>
+                <StructuredListCell>
+                  Authors who are considering submitting to the workshop papers
+                  rejected from the main conference, please ensure you do your
+                  utmost to address the comments given by ICAPS reviewers.
+                  Please do not submit papers that are already accepted for the
+                  main conference to the workshop.
+                </StructuredListCell>
+              </StructuredListRow>
+              <StructuredListRow>
+                <StructuredListCell>
+                  Every submission will be reviewed by members of the program
+                  committee according to the usual criteria such as relevance to
+                  the workshop, the significance of the contribution, and
+                  technical quality. Authors can choose for themselves if they
+                  want their submissions to be single-blind or double-blind
+                  (recommended for NeurIPS and AAAI dual submissions) at the
+                  time of submission.
+                </StructuredListCell>
+              </StructuredListRow>
+              <StructuredListRow>
+                <StructuredListCell>
+                  The workshop is meant to be an open and inclusive forum, and
+                  we encourage papers that report on work in progress or that do
+                  not fit the mold of a typical conference paper.
+                </StructuredListCell>
+              </StructuredListRow>
+              <StructuredListRow>
+                <StructuredListCell>
+                  At least one author of each accepted paper must attend the
+                  workshop in order to present the paper. There will be no
+                  registration required.
+                </StructuredListCell>
+              </StructuredListRow>
+              <StructuredListRow>
+                <StructuredListCell>
+                  Accepted papers will be compiled into post-workshop
+                  proceedings and posted on this page. Workshop proceedings are
+                  not archival and do not require the transfer of copyright.
+                </StructuredListCell>
+              </StructuredListRow>
+            </StructuredListBody>
+          </StructuredListWrapper>
+        </Modal>
       </div>
     );
   }

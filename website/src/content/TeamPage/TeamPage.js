@@ -1,19 +1,10 @@
 import React from 'react';
-import { Member, PC, shuffleArray } from '../../components/Info';
-import {
-  MemberListCache,
-  PCListCache,
-} from '../../components/Data/XAIP2021Data';
-import {
-  Accordion,
-  AccordionItem,
-  Button,
-  Tile,
-  Link,
-} from 'carbon-components-react';
+import { Member, shuffleArray } from '../../components/Info';
+import { MemberListCache } from '../../components/Data/XAIP2021Data';
+import { Button, Tile, Link } from 'carbon-components-react';
 
 var MemberList = shuffleArray(MemberListCache);
-var PCList = shuffleArray(PCListCache);
+// var PCList = shuffleArray(PCListCache);
 
 const TeamPage = () => {
   return (

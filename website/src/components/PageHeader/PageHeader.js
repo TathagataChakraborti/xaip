@@ -25,7 +25,7 @@ const PageHeader = (isSideNavExpanded, onClickSideNavExpand) => (
             isActive={isSideNavExpanded}
             aria-label=""
           />
-          <HeaderName element={Link} to="/" prefix="ICAPS 2020">
+          <HeaderName element={Link} to="/" prefix="ICAPS 2021">
             XAIP
           </HeaderName>
           <HeaderNavigation aria-label="">
