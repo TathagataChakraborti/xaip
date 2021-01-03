@@ -82,6 +82,55 @@ const Member = props => {
   );
 };
 
+const Software = props => {
+  return (
+    <Tile className="bx--col-lg-4">
+      <div
+        className="bx--col-16"
+        style={{ padding: '15px', backgroundColor: 'white' }}>
+        <div className="vertical-container" style={{ minHeight: '150px' }}>
+          <h4>{props.props.name}</h4>
+
+          <h6
+            style={{
+              fontWeight: 'normal',
+              marginTop: '10px',
+              marginBottom: '20px',
+            }}>
+            {props.props.tldr}
+          </h6>
+
+          <div className="bottom-center">
+            <Link
+              href={props.props.code}
+              target="_blank"
+              style={{ fontSize: '0.75rem', marginRight: '10px' }}>
+              <Button
+                kind="ghost"
+                size="small"
+                style={{ backgroundColor: 'aliceblue' }}>
+                Code
+              </Button>
+            </Link>
+
+            <Link
+              href={props.props.paper}
+              target="_blank"
+              style={{ fontSize: '0.75rem' }}>
+              <Button
+                kind="ghost"
+                size="small"
+                style={{ backgroundColor: 'aliceblue' }}>
+                Paper
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </div>
+    </Tile>
+  );
+};
+
 const PC = props => {
   return (
     <Tile className="bx--col-lg-5">
@@ -275,19 +324,36 @@ const Talk = props => {
     <AccordionItem
       title={
         <span>
-          <strong>{props.props.title}</strong> | <em>{props.props.authors}</em> {props.props.link && <Link href={props.props.link} target="_blank"><FaDownload16 /></Link>}
+          <strong>{props.props.title}</strong> | <em>{props.props.authors}</em>{' '}
+          {props.props.link && (
+            <Link href={props.props.link} target="_blank">
+              <FaDownload16 />
+            </Link>
+          )}
         </span>
       }>
       {props.props.abstract}
-      <br/>
-      <br/>
-      {props.props.link && <Link href={props.props.link} target="_blank">
-      <Button kind="ghost" size="small">
-        Download
-      </Button>
-      </Link>}
+      <br />
+      <br />
+      {props.props.link && (
+        <Link href={props.props.link} target="_blank">
+          <Button kind="ghost" size="small">
+            Download
+          </Button>
+        </Link>
+      )}
     </AccordionItem>
   );
 };
 
-export { LinkList, Member, PC, Talk, Speaker, Stub, Paper, shuffleArray };
+export {
+  LinkList,
+  Member,
+  PC,
+  Talk,
+  Speaker,
+  Stub,
+  Paper,
+  Software,
+  shuffleArray,
+};

@@ -41,6 +41,9 @@ const PageHeader = (isSideNavExpanded, onClickSideNavExpand) => (
             <HeaderMenuItem element={Link} to="/landscape">
               Landscape
             </HeaderMenuItem>
+            <HeaderMenuItem element={Link} to="/software">
+              Software
+            </HeaderMenuItem>
           </HeaderNavigation>
           <SideNav
             aria-label=""
@@ -62,6 +65,9 @@ const PageHeader = (isSideNavExpanded, onClickSideNavExpand) => (
                 </HeaderMenuItem>
                 <HeaderMenuItem element={Link} to="/landscape">
                   Landscape
+                </HeaderMenuItem>
+                <HeaderMenuItem element={Link} to="/software">
+                  Software
                 </HeaderMenuItem>
               </HeaderSideNavItems>
             </SideNavItems>

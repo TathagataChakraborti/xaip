@@ -438,7 +438,7 @@ class Page2020 extends React.Component {
                 </StructuredListCell>
               </StructuredListRow>
               <StructuredListRow className="no-border">
-                <StructuredListCell></StructuredListCell>
+                <StructuredListCell />
                 <StructuredListCell>
                   XAI @ IJCAI 2020 Highlights
                 </StructuredListCell>

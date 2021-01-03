@@ -150,3 +150,26 @@
 .accordiong-crush .bx--accordion__heading {
   width: auto;
 }
+
+.vertical-container {
+  position: relative;
+}
+
+.fill-height {
+  min-height: 100vh;
+}
+
+.vertical-center {
+  padding: 50px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.bottom-center {
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+}

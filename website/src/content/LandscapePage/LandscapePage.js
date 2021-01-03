@@ -22,9 +22,21 @@ const LandscapePage = () => {
               <StructuredListRow className="no-border">
                 <StructuredListCell head>
                   The Landscape of XAIP
-                  <br/>
+                  <br />
                   <p className="disclaimer">
-                  Want to contribute to this list? Open an issue <Link href="https://github.com/TathagataChakraborti/xaip" target="_blank">here</Link> or get in touch with us on our <Link href="https://join.slack.com/t/xaip2020/shared_invite/zt-i8uy3uw0-hRqomirHfO__c5Bu47Uunw" target="_blank">Slack</Link>.
+                    Want to contribute to this list? Open an issue{' '}
+                    <Link
+                      href="https://github.com/TathagataChakraborti/xaip"
+                      target="_blank">
+                      here
+                    </Link>{' '}
+                    or get in touch with us on our{' '}
+                    <Link
+                      href="https://join.slack.com/t/xaip2020/shared_invite/zt-i8uy3uw0-hRqomirHfO__c5Bu47Uunw"
+                      target="_blank">
+                      Slack
+                    </Link>
+                    .
                   </p>
                 </StructuredListCell>
               </StructuredListRow>

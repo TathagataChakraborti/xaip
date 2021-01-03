@@ -40,12 +40,8 @@ class LandingPage extends React.Component {
   render() {
     return (
       <div>
-        <div
-          className="bx--grid bx--grid--full-width landing-page"
-          style={{ height: '100vh' }}>
-          <div
-            className="bx--row"
-            style={{ padding: '50px', marginTop: '100px' }}>
+        <div className="bx--grid bx--grid--full-width landing-page vertical-container fill-height">
+          <div className="bx--row vertical-center">
             <div className="bx--col-lg-8">
               <h1 className="landing-page__heading">
                 XAIP @{' '}
