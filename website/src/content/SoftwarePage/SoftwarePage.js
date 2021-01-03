@@ -4,12 +4,9 @@ import { Software, shuffleArray } from '../../components/Info';
 import {
   StructuredListWrapper,
   StructuredListHead,
-  StructuredListBody,
   StructuredListRow,
   StructuredListCell,
   Link,
-  Tag,
-  Tile,
 } from 'carbon-components-react';
 
 var shuffledDATA = shuffleArray(DATA);
