@@ -37,13 +37,6 @@ const generateImageUrl = imageUrl => {
   return `${process.env.PUBLIC_URL}/images/team/${imageUrl}.png`;
 };
 
-const makePaperLink = e => {
-  return `${process.env.PUBLIC_URL}/papers/XAIP-2020_paper_[ID].pdf`.replace(
-    '[ID]',
-    e
-  );
-};
-
 const makePosterLink = e => {
   return `${process.env.PUBLIC_URL}/posters/[ID].png`.replace('[ID]', e);
 };
@@ -223,7 +216,7 @@ const Stub = props => {
 
             {!props.props.invited && props.props.xaip && !props.props.hold && (
               <Link
-                href={makePaperLink(props.props.xaipid)}
+                href={props.props.link}
                 target="_blank"
                 style={{ marginRight: '10px' }}>
                 <Button
@@ -282,10 +275,17 @@ const Talk = props => {
     <AccordionItem
       title={
         <span>
-          <strong>{props.props.title}</strong> | <em>{props.props.authors}</em>
+          <strong>{props.props.title}</strong> | <em>{props.props.authors}</em> {props.props.link && <Link href={props.props.link} target="_blank"><FaDownload16 /></Link>}
         </span>
       }>
       {props.props.abstract}
+      <br/>
+      <br/>
+      {props.props.link && <Link href={props.props.link} target="_blank">
+      <Button kind="ghost" size="small">
+        Download
+      </Button>
+      </Link>}
     </AccordionItem>
   );
 };

@@ -437,6 +437,24 @@ class Page2020 extends React.Component {
                   </Link>
                 </StructuredListCell>
               </StructuredListRow>
+              <StructuredListRow className="no-border">
+                <StructuredListCell></StructuredListCell>
+                <StructuredListCell>
+                  XAI @ IJCAI 2020 Highlights
+                </StructuredListCell>
+              </StructuredListRow>
+              <StructuredListRow>
+                <StructuredListCell />
+                <StructuredListCell style={{ padding: '0' }}>
+                  <Accordion align="start">
+                    {DATA.map((item, key) => (
+                      <React.Fragment key={key}>
+                        {item.xai && <Talk props={item} />}
+                      </React.Fragment>
+                    ))}
+                  </Accordion>
+                </StructuredListCell>
+              </StructuredListRow>
               <StructuredListRow>
                 <StructuredListCell>GMT 23:00 - 24:00</StructuredListCell>
                 <StructuredListCell>Poster Session - 2</StructuredListCell>
