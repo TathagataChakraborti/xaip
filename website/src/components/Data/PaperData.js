@@ -25,8 +25,7 @@ const DATA = [
     xaip: true,
     invited: false,
     year: '2019',
-    link:
-      '/papers/XAIP_2019_17.pdf',
+    link: '/papers/XAIP_2019_17.pdf',
     render: true,
   },
   {
@@ -41,8 +40,7 @@ const DATA = [
     xaip: true,
     invited: false,
     year: '2019',
-    link:
-      '/papers/XAIP_2019_20.pdf',
+    link: '/papers/XAIP_2019_20.pdf',
     render: true,
   },
   {
@@ -55,8 +53,7 @@ const DATA = [
     xaip: true,
     invited: false,
     year: '2019',
-    link:
-      '/papers/XAIP_2019_13.pdf',
+    link: '/papers/XAIP_2019_13.pdf',
     render: true,
   },
   {
@@ -70,8 +67,7 @@ const DATA = [
     xaip: true,
     invited: false,
     year: '2019',
-    link:
-      '/papers/XAIP_2019_9.pdf',
+    link: '/papers/XAIP_2019_9.pdf',
     render: true,
   },
   {
@@ -86,8 +82,7 @@ const DATA = [
     xaip: true,
     invited: false,
     year: '2019',
-    link:
-      '/papers/XAIP_2019_16.pdf',
+    link: '/papers/XAIP_2019_16.pdf',
     render: true,
   },
   {
@@ -101,8 +96,7 @@ const DATA = [
     xaip: true,
     invited: false,
     year: '2019',
-    link:
-      '/papers/XAIP_2019_7.pdf',
+    link: '/papers/XAIP_2019_7.pdf',
     render: true,
   },
   {
@@ -116,8 +110,7 @@ const DATA = [
     xaip: true,
     invited: false,
     year: '2019',
-    link:
-      '/papers/XAIP_2019_14.pdf',
+    link: '/papers/XAIP_2019_14.pdf',
     render: true,
   },
   {
@@ -131,8 +124,7 @@ const DATA = [
     xaip: true,
     invited: false,
     year: '2019',
-    link:
-      '/papers/XAIP_2019_12.pdf',
+    link: '/papers/XAIP_2019_12.pdf',
     render: true,
   },
   {
@@ -146,8 +138,7 @@ const DATA = [
     xaip: true,
     invited: false,
     year: '2019',
-    link:
-      '/papers/XAIP_2019_3.pdf,
+    link: '/papers/XAIP_2019_3.pdf',
     render: true,
   },
   {
@@ -161,8 +152,7 @@ const DATA = [
     xaip: true,
     invited: false,
     year: '2019',
-    link:
-      '/papers/XAIP_2019_6.pdf',
+    link: '/papers/XAIP_2019_6.pdf',
     render: true,
   },
   {
@@ -175,8 +165,7 @@ const DATA = [
     xaip: true,
     invited: false,
     year: '2019',
-    link:
-      '/papers/XAIP_2019_5.pdf',
+    link: '/papers/XAIP_2019_5.pdf',
     render: true,
   },
   {
@@ -190,8 +179,7 @@ const DATA = [
     xaip: true,
     invited: false,
     year: '2019',
-    link:
-      '/papers/XAIP_2019_4.pdf',
+    link: '/papers/XAIP_2019_4.pdf',
     render: true,
   },
   {
@@ -205,8 +193,7 @@ const DATA = [
     xaip: true,
     invited: false,
     year: '2019',
-    link:
-      '/papers/XAIP_2019_8.pdf',
+    link: '/papers/XAIP_2019_8.pdf',
     render: true,
   },
   {
@@ -219,8 +206,7 @@ const DATA = [
     xaip: true,
     invited: false,
     year: '2019',
-    link:
-      '/papers/XAIP_2019_11.pdf',
+    link: '/papers/XAIP_2019_11.pdf',
     render: true,
   },
   {
@@ -233,8 +219,7 @@ const DATA = [
     xaip: true,
     invited: false,
     year: '2019',
-    link:
-      '/papers/XAIP_2019_18.pdf',
+    link: '/papers/XAIP_2019_18.pdf',
     render: true,
   },
   {
@@ -247,8 +232,7 @@ const DATA = [
     xaip: true,
     invited: false,
     year: '2019',
-    link:
-      '/papers/XAIP_2019_1.pdf',
+    link: '/papers/XAIP_2019_1.pdf',
     render: true,
   },
   {
@@ -261,8 +245,7 @@ const DATA = [
     xaip: true,
     invited: false,
     year: '2019',
-    link:
-      '/papers/XAIP_2019_10.pdf',
+    link: '/papers/XAIP_2019_10.pdf',
     render: true,
   },
   {
@@ -275,8 +258,7 @@ const DATA = [
     xaip: true,
     invited: false,
     year: '2019',
-    link:
-      '/papers/XAIP_2019_2.pdf',
+    link: '/papers/XAIP_2019_2.pdf',
     render: true,
   },
   {
@@ -290,8 +272,7 @@ const DATA = [
     xaip: true,
     invited: false,
     year: '2019',
-    link:
-      '/papers/XAIP_2019_19.pdf',
+    link: '/papers/XAIP_2019_19.pdf',
     render: true,
   },
   {
@@ -304,8 +285,7 @@ const DATA = [
     xaip: true,
     invited: false,
     year: '2019',
-    link:
-      '/papers/XAIP_2019_15.pdf',
+    link: '/papers/XAIP_2019_15.pdf',
     render: true,
   },
   {
@@ -347,8 +327,7 @@ const DATA = [
     xaip: true,
     invited: false,
     year: '2018',
-    link:
-      '/papers/XAIP_2018_1.pdf',
+    link: '/papers/XAIP_2018_1.pdf',
     render: true,
   },
   {
@@ -362,8 +341,7 @@ const DATA = [
     xaip: true,
     invited: false,
     year: '2018',
-    link:
-      '/papers/XAIP_2018_2.pdf',
+    link: '/papers/XAIP_2018_2.pdf',
     render: true,
   },
   {
@@ -376,8 +354,7 @@ const DATA = [
     xaip: true,
     invited: false,
     year: '2018',
-    link:
-      '/papers/XAIP_2018_3.pdf',
+    link: '/papers/XAIP_2018_3.pdf',
     render: true,
   },
   {
@@ -390,8 +367,7 @@ const DATA = [
     xaip: true,
     invited: false,
     year: '2018',
-    link:
-      '/papers/XAIP_2018_4.pdf',
+    link: '/papers/XAIP_2018_4.pdf',
     render: true,
   },
   {
@@ -404,8 +380,7 @@ const DATA = [
     xaip: true,
     invited: false,
     year: '2018',
-    link:
-      '/papers/XAIP_2018_5.pdf',
+    link: '/papers/XAIP_2018_5.pdf',
     render: true,
   },
   {
@@ -419,8 +394,7 @@ const DATA = [
     xaip: true,
     invited: false,
     year: '2018',
-    link:
-      '/papers/XAIP_2018_6.pdf',
+    link: '/papers/XAIP_2018_6.pdf',
     render: true,
   },
   {
@@ -434,8 +408,7 @@ const DATA = [
     xaip: true,
     invited: false,
     year: '2018',
-    link:
-      '/papers/XAIP_2018_7.pdf',
+    link: '/papers/XAIP_2018_7.pdf',
     render: true,
   },
   {
@@ -449,8 +422,7 @@ const DATA = [
     xaip: true,
     invited: false,
     year: '2018',
-    link:
-      '/papers/XAIP_2018_8.pdf',
+    link: '/papers/XAIP_2018_8.pdf',
     render: true,
   },
   {
@@ -465,8 +437,7 @@ const DATA = [
     xaip: true,
     invited: false,
     year: '2018',
-    link:
-      '/papers/XAIP_2018_9.pdf',
+    link: '/papers/XAIP_2018_9.pdf',
     render: true,
   },
   {
@@ -479,8 +450,7 @@ const DATA = [
     xaip: true,
     invited: false,
     year: '2018',
-    link:
-      '/papers/XAIP_2018_10.pdf',
+    link: '/papers/XAIP_2018_10.pdf',
     render: true,
   },
   {
@@ -495,8 +465,7 @@ const DATA = [
     xaip: true,
     invited: false,
     year: '2018',
-    link:
-      '/papers/XAIP_2018_11.pdf',
+    link: '/papers/XAIP_2018_11.pdf',
     render: true,
   },
   {
@@ -509,8 +478,7 @@ const DATA = [
     xaip: true,
     invited: false,
     year: '2018',
-    link:
-      '/papers/XAIP_2018_13.pdf',
+    link: '/papers/XAIP_2018_13.pdf',
     render: true,
   },
   {
@@ -524,8 +492,7 @@ const DATA = [
     xaip: true,
     invited: false,
     year: '2018',
-    link:
-      '/papers/XAIP_2018_12.pdf',
+    link: '/papers/XAIP_2018_12.pdf',
     render: true,
   },
   {
@@ -562,8 +529,7 @@ const DATA = [
     xaip: false,
     invited: false,
     year: '2018',
-    link:
-      '/papers/XAIP_2018_1.pdf',
+    link: '/papers/XAIP_2018_1.pdf',
     render: true,
   },
   {
@@ -578,8 +544,7 @@ const DATA = [
     xaip: false,
     invited: false,
     year: '2018',
-    link:
-      '/papers/UISP_2018_1.pdf',
+    link: '/papers/UISP_2018_1.pdf',
     render: true,
   },
   {
@@ -593,8 +558,7 @@ const DATA = [
     xaip: false,
     invited: false,
     year: '2018',
-    link:
-      '/papers/UISP_2018_4.pdf',
+    link: '/papers/UISP_2018_4.pdf',
     render: true,
   },
   {
@@ -609,8 +573,7 @@ const DATA = [
     xaip: false,
     invited: false,
     year: '2018',
-    link:
-      '/papers/UISP_2018_3.pdf',
+    link: '/papers/UISP_2018_3.pdf',
     render: true,
   },
   {
@@ -624,8 +587,7 @@ const DATA = [
     xaip: false,
     invited: false,
     year: '2018',
-    link:
-      '/papers/UISP_2018_6.pdf',
+    link: '/papers/UISP_2018_6.pdf',
     render: true,
   },
   {
@@ -665,8 +627,7 @@ const DATA = [
     xaip: false,
     invited: false,
     year: '2017',
-    link:
-      '/papers/UISP_2017_1.pdf',
+    link: '/papers/UISP_2017_1.pdf',
     render: true,
   },
   {
@@ -679,8 +640,7 @@ const DATA = [
     xaip: false,
     invited: false,
     year: '2017',
-    link:
-      '/papers/UISP_2017_2.pdf',
+    link: '/papers/UISP_2017_2.pdf',
     render: true,
   },
   {
@@ -694,8 +654,7 @@ const DATA = [
     xaip: false,
     invited: false,
     year: '2017',
-    link:
-      '/papers/UISP_2017_3.pdf',
+    link: '/papers/UISP_2017_3.pdf',
     render: true,
   },
   {
@@ -709,8 +668,7 @@ const DATA = [
     xaip: false,
     invited: false,
     year: '2017',
-    link:
-      '/papers/UISP_2017_4.pdf',
+    link: '/papers/UISP_2017_4.pdf',
     render: true,
   },
   {
@@ -725,8 +683,7 @@ const DATA = [
     xaip: false,
     invited: false,
     year: '2017',
-    link:
-      '/papers/UISP_2017_5.pdf',
+    link: '/papers/UISP_2017_5.pdf',
     render: true,
   },
   {
@@ -739,8 +696,7 @@ const DATA = [
     xaip: false,
     invited: false,
     year: '2017',
-    link:
-      '/papers/UISP_2017_6.pdf',
+    link: '/papers/UISP_2017_6.pdf',
     render: true,
   },
   {
@@ -755,8 +711,7 @@ const DATA = [
     xaip: false,
     invited: false,
     year: '2017',
-    link:
-      '/papers/UISP_2017_7.pdf',
+    link: '/papers/UISP_2017_7.pdf',
     render: true,
   },
   {
@@ -770,8 +725,7 @@ const DATA = [
     xaip: false,
     invited: false,
     year: '2017',
-    link:
-      '/papers/UISP_2017_8.pdf',
+    link: '/papers/UISP_2017_8.pdf',
     render: true,
   },
   {
