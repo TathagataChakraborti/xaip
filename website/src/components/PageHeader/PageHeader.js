@@ -25,21 +25,24 @@ const PageHeader = (isSideNavExpanded, onClickSideNavExpand) => (
             isActive={isSideNavExpanded}
             aria-label=""
           />
-          <HeaderName element={Link} to="/" prefix="ICAPS 2020">
+          <HeaderName element={Link} to="/" prefix="ICAPS 2021">
             XAIP
           </HeaderName>
           <HeaderNavigation aria-label="">
-            <HeaderMenuItem element={Link} to="/2020">
-              2020
-            </HeaderMenuItem>
             <HeaderMenuItem element={Link} to="/team">
               Team
+            </HeaderMenuItem>
+            <HeaderMenuItem element={Link} to="/2020">
+              2020
             </HeaderMenuItem>
             <HeaderMenuItem element={Link} to="/explore">
               Explore
             </HeaderMenuItem>
             <HeaderMenuItem element={Link} to="/landscape">
               Landscape
+            </HeaderMenuItem>
+            <HeaderMenuItem element={Link} to="/software">
+              Software
             </HeaderMenuItem>
           </HeaderNavigation>
           <SideNav
@@ -51,17 +54,20 @@ const PageHeader = (isSideNavExpanded, onClickSideNavExpand) => (
                 <HeaderMenuItem element={Link} to="/">
                   Home
                 </HeaderMenuItem>
-                <HeaderMenuItem element={Link} to="/2020">
-                  2020
-                </HeaderMenuItem>
                 <HeaderMenuItem element={Link} to="/team">
                   Team
+                </HeaderMenuItem>
+                <HeaderMenuItem element={Link} to="/2020">
+                  2020
                 </HeaderMenuItem>
                 <HeaderMenuItem element={Link} to="/explore">
                   Explore
                 </HeaderMenuItem>
                 <HeaderMenuItem element={Link} to="/landscape">
                   Landscape
+                </HeaderMenuItem>
+                <HeaderMenuItem element={Link} to="/software">
+                  Software
                 </HeaderMenuItem>
               </HeaderSideNavItems>
             </SideNavItems>

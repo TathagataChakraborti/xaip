@@ -1,19 +1,10 @@
 import React from 'react';
-import { Member, PC, shuffleArray } from '../../components/Info';
-import {
-  MemberListCache,
-  PCListCache,
-} from '../../components/Data/XAIP2020Data';
-import {
-  Accordion,
-  AccordionItem,
-  Button,
-  Tile,
-  Link,
-} from 'carbon-components-react';
+import { Member, shuffleArray } from '../../components/Info';
+import { MemberListCache } from '../../components/Data/XAIP2021Data';
+import { Button, Tile, Link } from 'carbon-components-react';
 
 var MemberList = shuffleArray(MemberListCache);
-var PCList = shuffleArray(PCListCache);
+// var PCList = shuffleArray(PCListCache);
 
 const TeamPage = () => {
   return (
@@ -41,6 +32,8 @@ const TeamPage = () => {
           ))}
         </div>
       </div>
+
+      {/* 
       <div className="bx--col-lg-11 bx--offset-lg-2">
         <Accordion align="start">
           <AccordionItem open title="Extended Program Committee">
@@ -54,6 +47,7 @@ const TeamPage = () => {
           </AccordionItem>
         </Accordion>
       </div>
+*/}
     </div>
   );
 };
