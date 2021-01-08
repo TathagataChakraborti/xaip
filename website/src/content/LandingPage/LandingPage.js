@@ -59,8 +59,8 @@ class LandingPage extends React.Component {
               <br />
               <p className="participation-page__p">
                 The world of Explainable AI is rapidly expanding in scope from
-                classification tasks to more complex decision-making processes
-                where automated algorithms play an outsized role. The
+                mundane classification tasks to more complex decision-making
+                processes where automated algorithms play an outsized role. The
                 International Workshop of Explainable AI Planning (XAIP) brings
                 together the latest and best in the field of explainable
                 planning and sequential decision-making. The workshop is
@@ -152,7 +152,7 @@ class LandingPage extends React.Component {
             </Button>
 
             <Link
-              href="https://www.aaai.org/Publications/Templates/AuthorKit20.zip"
+              href="https://www.aaai.org/Publications/Templates/AuthorKit21.zip"
               target="_blank">
               <Button size="small" kind="ghost">
                 Template
@@ -176,16 +176,16 @@ class LandingPage extends React.Component {
                   label={
                     <span style={{ color: 'red' }}>Submission Deadline</span>
                   }
-                  secondaryLabel="??? ?? UTC-12"
+                  secondaryLabel="March 31 UTC-12"
                 />
                 <ProgressStep
                   label="Author Notification"
-                  secondaryLabel="??? ?? UTC-12"
+                  secondaryLabel="April 30 UTC-12"
                 />
                 <ProgressStep
                   disabled
                   label="Camera Ready Deadline"
-                  secondaryLabel="??? ?? UTC-12"
+                  secondaryLabel="TBD UTC-12"
                 />
                 <ProgressStep
                   disabled
