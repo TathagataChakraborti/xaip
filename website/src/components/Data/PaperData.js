@@ -25,8 +25,7 @@ const DATA = [
     xaip: true,
     invited: false,
     year: '2019',
-    link:
-      'https://kcl-planning.github.io/XAIP-Workshops/xaip-2019-proceedings.pdf#page=127',
+    link: '/papers/XAIP_2019_17.pdf',
     render: true,
   },
   {
@@ -41,8 +40,7 @@ const DATA = [
     xaip: true,
     invited: false,
     year: '2019',
-    link:
-      'https://kcl-planning.github.io/XAIP-Workshops/xaip-2019-proceedings.pdf#page=146',
+    link: '/papers/XAIP_2019_20.pdf',
     render: true,
   },
   {
@@ -55,8 +53,7 @@ const DATA = [
     xaip: true,
     invited: false,
     year: '2019',
-    link:
-      'https://kcl-planning.github.io/XAIP-Workshops/xaip-2019-proceedings.pdf#page=96',
+    link: '/papers/XAIP_2019_13.pdf',
     render: true,
   },
   {
@@ -70,8 +67,7 @@ const DATA = [
     xaip: true,
     invited: false,
     year: '2019',
-    link:
-      'https://kcl-planning.github.io/XAIP-Workshops/xaip-2019-proceedings.pdf#page=69',
+    link: '/papers/XAIP_2019_9.pdf',
     render: true,
   },
   {
@@ -86,8 +82,7 @@ const DATA = [
     xaip: true,
     invited: false,
     year: '2019',
-    link:
-      'https://kcl-planning.github.io/XAIP-Workshops/xaip-2019-proceedings.pdf#page=118',
+    link: '/papers/XAIP_2019_16.pdf',
     render: true,
   },
   {
@@ -101,8 +96,7 @@ const DATA = [
     xaip: true,
     invited: false,
     year: '2019',
-    link:
-      'https://kcl-planning.github.io/XAIP-Workshops/xaip-2019-proceedings.pdf#page=53',
+    link: '/papers/XAIP_2019_7.pdf',
     render: true,
   },
   {
@@ -116,8 +110,7 @@ const DATA = [
     xaip: true,
     invited: false,
     year: '2019',
-    link:
-      'https://kcl-planning.github.io/XAIP-Workshops/xaip-2019-proceedings.pdf#page=104',
+    link: '/papers/XAIP_2019_14.pdf',
     render: true,
   },
   {
@@ -131,8 +124,7 @@ const DATA = [
     xaip: true,
     invited: false,
     year: '2019',
-    link:
-      'https://kcl-planning.github.io/XAIP-Workshops/xaip-2019-proceedings.pdf#page=87',
+    link: '/papers/XAIP_2019_12.pdf',
     render: true,
   },
   {
@@ -146,8 +138,7 @@ const DATA = [
     xaip: true,
     invited: false,
     year: '2019',
-    link:
-      'https://kcl-planning.github.io/XAIP-Workshops/xaip-2019-proceedings.pdf#page=21',
+    link: '/papers/XAIP_2019_3.pdf',
     render: true,
   },
   {
@@ -161,8 +152,7 @@ const DATA = [
     xaip: true,
     invited: false,
     year: '2019',
-    link:
-      'https://kcl-planning.github.io/XAIP-Workshops/xaip-2019-proceedings.pdf#page=44',
+    link: '/papers/XAIP_2019_6.pdf',
     render: true,
   },
   {
@@ -175,8 +165,7 @@ const DATA = [
     xaip: true,
     invited: false,
     year: '2019',
-    link:
-      'https://kcl-planning.github.io/XAIP-Workshops/xaip-2019-proceedings.pdf#page=39',
+    link: '/papers/XAIP_2019_5.pdf',
     render: true,
   },
   {
@@ -190,8 +179,7 @@ const DATA = [
     xaip: true,
     invited: false,
     year: '2019',
-    link:
-      'https://kcl-planning.github.io/XAIP-Workshops/xaip-2019-proceedings.pdf#page=30',
+    link: '/papers/XAIP_2019_4.pdf',
     render: true,
   },
   {
@@ -205,8 +193,7 @@ const DATA = [
     xaip: true,
     invited: false,
     year: '2019',
-    link:
-      'https://kcl-planning.github.io/XAIP-Workshops/xaip-2019-proceedings.pdf#page=61',
+    link: '/papers/XAIP_2019_8.pdf',
     render: true,
   },
   {
@@ -219,8 +206,7 @@ const DATA = [
     xaip: true,
     invited: false,
     year: '2019',
-    link:
-      'https://kcl-planning.github.io/XAIP-Workshops/xaip-2019-proceedings.pdf#page=79',
+    link: '/papers/XAIP_2019_11.pdf',
     render: true,
   },
   {
@@ -233,8 +219,7 @@ const DATA = [
     xaip: true,
     invited: false,
     year: '2019',
-    link:
-      'https://kcl-planning.github.io/XAIP-Workshops/xaip-2019-proceedings.pdf#page=132',
+    link: '/papers/XAIP_2019_18.pdf',
     render: true,
   },
   {
@@ -247,8 +232,7 @@ const DATA = [
     xaip: true,
     invited: false,
     year: '2019',
-    link:
-      'https://kcl-planning.github.io/XAIP-Workshops/xaip-2019-proceedings.pdf#page=5',
+    link: '/papers/XAIP_2019_1.pdf',
     render: true,
   },
   {
@@ -261,8 +245,7 @@ const DATA = [
     xaip: true,
     invited: false,
     year: '2019',
-    link:
-      'https://kcl-planning.github.io/XAIP-Workshops/xaip-2019-proceedings.pdf#page=74',
+    link: '/papers/XAIP_2019_10.pdf',
     render: true,
   },
   {
@@ -275,8 +258,7 @@ const DATA = [
     xaip: true,
     invited: false,
     year: '2019',
-    link:
-      'https://kcl-planning.github.io/XAIP-Workshops/xaip-2019-proceedings.pdf#page=14',
+    link: '/papers/XAIP_2019_2.pdf',
     render: true,
   },
   {
@@ -290,8 +272,7 @@ const DATA = [
     xaip: true,
     invited: false,
     year: '2019',
-    link:
-      'https://kcl-planning.github.io/XAIP-Workshops/xaip-2019-proceedings.pdf#page=141',
+    link: '/papers/XAIP_2019_19.pdf',
     render: true,
   },
   {
@@ -304,8 +285,7 @@ const DATA = [
     xaip: true,
     invited: false,
     year: '2019',
-    link:
-      'https://kcl-planning.github.io/XAIP-Workshops/xaip-2019-proceedings.pdf#page=113',
+    link: '/papers/XAIP_2019_15.pdf',
     render: true,
   },
   {
@@ -347,8 +327,7 @@ const DATA = [
     xaip: true,
     invited: false,
     year: '2018',
-    link:
-      'https://nms.kcl.ac.uk/daniele.magazzeni/XAIP18_proceedings.pdf#page=6',
+    link: '/papers/XAIP_2018_1.pdf',
     render: true,
   },
   {
@@ -362,8 +341,7 @@ const DATA = [
     xaip: true,
     invited: false,
     year: '2018',
-    link:
-      'https://nms.kcl.ac.uk/daniele.magazzeni/XAIP18_proceedings.pdf#page=16',
+    link: '/papers/XAIP_2018_2.pdf',
     render: true,
   },
   {
@@ -376,8 +354,7 @@ const DATA = [
     xaip: true,
     invited: false,
     year: '2018',
-    link:
-      'https://nms.kcl.ac.uk/daniele.magazzeni/XAIP18_proceedings.pdf#page=23',
+    link: '/papers/XAIP_2018_3.pdf',
     render: true,
   },
   {
@@ -390,8 +367,7 @@ const DATA = [
     xaip: true,
     invited: false,
     year: '2018',
-    link:
-      'https://nms.kcl.ac.uk/daniele.magazzeni/XAIP18_proceedings.pdf#page=32',
+    link: '/papers/XAIP_2018_4.pdf',
     render: true,
   },
   {
@@ -404,8 +380,7 @@ const DATA = [
     xaip: true,
     invited: false,
     year: '2018',
-    link:
-      'https://nms.kcl.ac.uk/daniele.magazzeni/XAIP18_proceedings.pdf#page=40',
+    link: '/papers/XAIP_2018_5.pdf',
     render: true,
   },
   {
@@ -419,8 +394,7 @@ const DATA = [
     xaip: true,
     invited: false,
     year: '2018',
-    link:
-      'https://nms.kcl.ac.uk/daniele.magazzeni/XAIP18_proceedings.pdf#page=49',
+    link: '/papers/XAIP_2018_6.pdf',
     render: true,
   },
   {
@@ -434,8 +408,7 @@ const DATA = [
     xaip: true,
     invited: false,
     year: '2018',
-    link:
-      'https://nms.kcl.ac.uk/daniele.magazzeni/XAIP18_proceedings.pdf#page=57',
+    link: '/papers/XAIP_2018_7.pdf',
     render: true,
   },
   {
@@ -449,8 +422,7 @@ const DATA = [
     xaip: true,
     invited: false,
     year: '2018',
-    link:
-      'https://nms.kcl.ac.uk/daniele.magazzeni/XAIP18_proceedings.pdf#page=62',
+    link: '/papers/XAIP_2018_8.pdf',
     render: true,
   },
   {
@@ -465,8 +437,7 @@ const DATA = [
     xaip: true,
     invited: false,
     year: '2018',
-    link:
-      'https://nms.kcl.ac.uk/daniele.magazzeni/XAIP18_proceedings.pdf#page=71',
+    link: '/papers/XAIP_2018_9.pdf',
     render: true,
   },
   {
@@ -479,8 +450,7 @@ const DATA = [
     xaip: true,
     invited: false,
     year: '2018',
-    link:
-      'https://nms.kcl.ac.uk/daniele.magazzeni/XAIP18_proceedings.pdf#page=80',
+    link: '/papers/XAIP_2018_10.pdf',
     render: true,
   },
   {
@@ -495,8 +465,7 @@ const DATA = [
     xaip: true,
     invited: false,
     year: '2018',
-    link:
-      'https://nms.kcl.ac.uk/daniele.magazzeni/XAIP18_proceedings.pdf#page=88',
+    link: '/papers/XAIP_2018_11.pdf',
     render: true,
   },
   {
@@ -509,8 +478,7 @@ const DATA = [
     xaip: true,
     invited: false,
     year: '2018',
-    link:
-      'https://nms.kcl.ac.uk/daniele.magazzeni/XAIP18_proceedings.pdf#page=102',
+    link: '/papers/XAIP_2018_13.pdf',
     render: true,
   },
   {
@@ -524,8 +492,7 @@ const DATA = [
     xaip: true,
     invited: false,
     year: '2018',
-    link:
-      'https://nms.kcl.ac.uk/daniele.magazzeni/XAIP18_proceedings.pdf#page=95',
+    link: '/papers/XAIP_2018_12.pdf',
     render: true,
   },
   {
@@ -562,8 +529,7 @@ const DATA = [
     xaip: false,
     invited: false,
     year: '2018',
-    link:
-      'http://icaps18.icaps-conference.org/fileadmin/alg/conferences/icaps18/workshops/workshop10/proceedings.pdf#page=35',
+    link: '/papers/XAIP_2018_1.pdf',
     render: true,
   },
   {
@@ -578,8 +544,7 @@ const DATA = [
     xaip: false,
     invited: false,
     year: '2018',
-    link:
-      'http://icaps18.icaps-conference.org/fileadmin/alg/conferences/icaps18/workshops/workshop10/proceedings.pdf#page=5',
+    link: '/papers/UISP_2018_1.pdf',
     render: true,
   },
   {
@@ -593,8 +558,7 @@ const DATA = [
     xaip: false,
     invited: false,
     year: '2018',
-    link:
-      'http://icaps18.icaps-conference.org/fileadmin/alg/conferences/icaps18/workshops/workshop10/proceedings.pdf#page=30',
+    link: '/papers/UISP_2018_4.pdf',
     render: true,
   },
   {
@@ -609,8 +573,7 @@ const DATA = [
     xaip: false,
     invited: false,
     year: '2018',
-    link:
-      'http://icaps18.icaps-conference.org/fileadmin/alg/conferences/icaps18/workshops/workshop10/proceedings.pdf#page=21',
+    link: '/papers/UISP_2018_3.pdf',
     render: true,
   },
   {
@@ -624,8 +587,7 @@ const DATA = [
     xaip: false,
     invited: false,
     year: '2018',
-    link:
-      'http://icaps18.icaps-conference.org/fileadmin/alg/conferences/icaps18/workshops/workshop10/proceedings.pdf#page=44',
+    link: '/papers/UISP_2018_6.pdf',
     render: true,
   },
   {
@@ -665,8 +627,7 @@ const DATA = [
     xaip: false,
     invited: false,
     year: '2017',
-    link:
-      'http://icaps17.icaps-conference.org/workshops/UISP/uisp17proceedings.pdf#page=5',
+    link: '/papers/UISP_2017_1.pdf',
     render: true,
   },
   {
@@ -679,8 +640,7 @@ const DATA = [
     xaip: false,
     invited: false,
     year: '2017',
-    link:
-      'http://icaps17.icaps-conference.org/workshops/UISP/uisp17proceedings.pdf#page=12',
+    link: '/papers/UISP_2017_2.pdf',
     render: true,
   },
   {
@@ -694,8 +654,7 @@ const DATA = [
     xaip: false,
     invited: false,
     year: '2017',
-    link:
-      'http://icaps17.icaps-conference.org/workshops/UISP/uisp17proceedings.pdf#page=19',
+    link: '/papers/UISP_2017_3.pdf',
     render: true,
   },
   {
@@ -709,8 +668,7 @@ const DATA = [
     xaip: false,
     invited: false,
     year: '2017',
-    link:
-      'http://icaps17.icaps-conference.org/workshops/UISP/uisp17proceedings.pdf#page=27',
+    link: '/papers/UISP_2017_4.pdf',
     render: true,
   },
   {
@@ -725,8 +683,7 @@ const DATA = [
     xaip: false,
     invited: false,
     year: '2017',
-    link:
-      'http://icaps17.icaps-conference.org/workshops/UISP/uisp17proceedings.pdf#page=36',
+    link: '/papers/UISP_2017_5.pdf',
     render: true,
   },
   {
@@ -739,8 +696,7 @@ const DATA = [
     xaip: false,
     invited: false,
     year: '2017',
-    link:
-      'http://icaps17.icaps-conference.org/workshops/UISP/uisp17proceedings.pdf#page=43',
+    link: '/papers/UISP_2017_6.pdf',
     render: true,
   },
   {
@@ -755,8 +711,7 @@ const DATA = [
     xaip: false,
     invited: false,
     year: '2017',
-    link:
-      'http://icaps17.icaps-conference.org/workshops/UISP/uisp17proceedings.pdf#page=48',
+    link: '/papers/UISP_2017_7.pdf',
     render: true,
   },
   {
@@ -770,8 +725,7 @@ const DATA = [
     xaip: false,
     invited: false,
     year: '2017',
-    link:
-      'http://icaps17.icaps-conference.org/workshops/UISP/uisp17proceedings.pdf#page=57',
+    link: '/papers/UISP_2017_8.pdf',
     render: true,
   },
   {
