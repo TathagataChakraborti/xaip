@@ -147,9 +147,13 @@ class LandingPage extends React.Component {
               </StructuredListBody>
             </StructuredListWrapper>
 
-            <Button size="small" kind="ghost" style={{ cursor: 'not-allowed' }}>
-              Submit
-            </Button>
+            <Link
+              href="https://openreview.net/group?id=icaps-conference.org/ICAPS/2021/Workshop/XAIP"
+              target="_blank">
+              <Button size="small" kind="ghost">
+                Submit
+              </Button>
+            </Link>
 
             <Link
               href="https://www.aaai.org/Publications/Templates/AuthorKit21.zip"
