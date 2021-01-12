@@ -261,6 +261,10 @@ class LandingPage extends React.Component {
                 <ListItem>
                   Use cases and applications of explainable planning
                 </ListItem>
+                <ListItem>
+                  Ethical quandaries in explainable automated planning and
+                  scheduling
+                </ListItem>
               </UnorderedList>
 
               <br />
@@ -349,7 +353,7 @@ class LandingPage extends React.Component {
                   the workshop, the significance of the contribution, and
                   technical quality. Authors can choose for themselves if they
                   want their submissions to be single-blind or double-blind
-                  (recommended for NeurIPS and AAAI dual submissions) at the
+                  (recommended for NeurIPS and IJCAI dual submissions) at the
                   time of submission.
                 </StructuredListCell>
               </StructuredListRow>
@@ -364,7 +368,7 @@ class LandingPage extends React.Component {
                 <StructuredListCell>
                   At least one author of each accepted paper must attend the
                   workshop in order to present the paper. There will be no
-                  registration required.
+                  separate registration required.
                 </StructuredListCell>
               </StructuredListRow>
               <StructuredListRow>
