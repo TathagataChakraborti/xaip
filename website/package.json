@@ -35,7 +35,8 @@
     "react-mathjax-preview": "^1.2.4",
     "react-router-dom": "^5.0.0",
     "react-router-hash-link": "^1.2.2",
-    "react-scripts": "2.1.8"
+    "react-scripts": "2.1.8",
+    "sass": "1.29.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^7.5.2",

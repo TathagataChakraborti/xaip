@@ -1,4 +1,5 @@
 import React from 'react';
+import { Download16 } from '@carbon/icons-react';
 import {
   Link,
   ListItem,
@@ -169,12 +170,29 @@ class LandingPage extends React.Component {
               onClick={this.onClickREADME.bind(this)}>
               README
             </Button>
+
+            <Link href="/files/call-for-papers-xaip-2021.pdf" target="_blank">
+              <Button size="small" kind="ghost">
+                <Download16 />
+              </Button>
+            </Link>
           </div>
 
           <div className="bx--col-lg-4 xaip-tags">
             <div className="some-container" style={{ marginTop: '70px' }}>
               <ProgressIndicator vertical currentIndex={1}>
-                <ProgressStep label="The submission portal will open soon" />
+                <ProgressStep
+                  label={
+                    <>
+                      The submission portal is now open!{' '}
+                      <Link
+                        href="https://openreview.net/group?id=icaps-conference.org/ICAPS/2021/Workshop/XAIP"
+                        target="_blank">
+                        OpenReview
+                      </Link>
+                    </>
+                  }
+                />
                 <ProgressStep
                   invalid
                   label={
