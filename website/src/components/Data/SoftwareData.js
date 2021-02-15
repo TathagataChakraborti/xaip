@@ -11,17 +11,24 @@ const DATA = [
     name: 'Web Planner',
     paper:
       'https://www.springerprofessional.de/en/web-planner-a-tool-to-develop-visualize-and-test-classical-plann/17832462',
-    code: 'https://web-planner.herokuapp.com/',
+    link: 'https://web-planner.herokuapp.com/',
     tldr: 'A visualization tool for the search process of a planner.',
   },
   {
-    id: 2,
+    id: 3,
     name: 'iPass',
     paper:
       'https://www.tandfonline.com/doi/abs/10.1080/07370024.2020.1726751?journalCode=hhci20',
     code: 'https://github.com/yochan-lab/iPass-MasterPlan',
     tldr:
       'A proactive decision support system that helps ASU university graduate students plan an iPOS for their study.',
+  },
+  {
+    id: 4,
+    name: 'HTN Plan Viewer',
+    link: 'https://maumagnaguagno.github.io/HTN_Plan_Viewer/',
+    code: 'https://github.com/maumagnaguagno/HTN_Plan_Viewer',
+    tldr: 'Graph visualization of HTN plans using IPC output format.',
   },
 ];
 

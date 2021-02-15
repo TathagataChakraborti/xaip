@@ -101,29 +101,47 @@ const Software = props => {
           </h6>
 
           <div className="bottom-center">
-            <Link
-              href={props.props.code}
-              target="_blank"
-              style={{ fontSize: '0.75rem', marginRight: '10px' }}>
-              <Button
-                kind="ghost"
-                size="small"
-                style={{ backgroundColor: 'aliceblue' }}>
-                Code
-              </Button>
-            </Link>
+            {props.props.code && (
+              <Link
+                href={props.props.code}
+                target="_blank"
+                style={{ fontSize: '0.75rem', marginRight: '10px' }}>
+                <Button
+                  kind="ghost"
+                  size="small"
+                  style={{ backgroundColor: 'aliceblue' }}>
+                  Code
+                </Button>
+              </Link>
+            )}
 
-            <Link
-              href={props.props.paper}
-              target="_blank"
-              style={{ fontSize: '0.75rem' }}>
-              <Button
-                kind="ghost"
-                size="small"
-                style={{ backgroundColor: 'aliceblue' }}>
-                Paper
-              </Button>
-            </Link>
+            {props.props.link && (
+              <Link
+                href={props.props.link}
+                target="_blank"
+                style={{ fontSize: '0.75rem', marginRight: '10px' }}>
+                <Button
+                  kind="ghost"
+                  size="small"
+                  style={{ backgroundColor: 'aliceblue' }}>
+                  Link
+                </Button>
+              </Link>
+            )}
+
+            {props.props.paper && (
+              <Link
+                href={props.props.paper}
+                target="_blank"
+                style={{ fontSize: '0.75rem' }}>
+                <Button
+                  kind="ghost"
+                  size="small"
+                  style={{ backgroundColor: 'aliceblue' }}>
+                  Paper
+                </Button>
+              </Link>
+            )}
           </div>
         </div>
       </div>

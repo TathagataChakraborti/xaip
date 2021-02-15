@@ -60,8 +60,8 @@ class LandingPage extends React.Component {
               <br />
               <p className="participation-page__p">
                 The world of Explainable AI is rapidly expanding in scope from
-                classification tasks to more complex decision-making
-                processes where automated algorithms play an outsized role. The
+                classification tasks to more complex decision-making processes
+                where automated algorithms play an outsized role. The
                 International Workshop of Explainable AI Planning (XAIP) brings
                 together the latest and best in the field of explainable
                 planning and sequential decision-making. The workshop is
