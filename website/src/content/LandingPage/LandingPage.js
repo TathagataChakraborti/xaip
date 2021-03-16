@@ -198,11 +198,11 @@ class LandingPage extends React.Component {
                   label={
                     <span style={{ color: 'red' }}>Submission Deadline</span>
                   }
-                  secondaryLabel="March 31 UTC-12"
+                  secondaryLabel="May 31 UTC-12"
                 />
                 <ProgressStep
                   label="Author Notification"
-                  secondaryLabel="April 30 UTC-12"
+                  secondaryLabel="June 30 UTC-12"
                 />
                 <ProgressStep
                   disabled
@@ -211,8 +211,8 @@ class LandingPage extends React.Component {
                 />
                 <ProgressStep
                   disabled
-                  label="ICAPS 2020 Workshops"
-                  secondaryLabel="June 7 - 12"
+                  label="ICAPS 2021 Workshops"
+                  secondaryLabel="August 2 - 13"
                 />
               </ProgressIndicator>
             </div>
