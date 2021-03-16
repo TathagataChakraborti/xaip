@@ -15,9 +15,8 @@ There are several ways to join the XAIP community!
 ### Submit to XAIP @ ICAPS 2021
 
 The call for contributions to the 4th edition of XAIP is out! 
-ICAPS 2021 will be held in Guangzhou, at Sun Yat-Sen University during June 7-12, 2021. 
-The XAIP Workshop, as well as ICAPS itself, will either at least have a hybrid presence 
-in the likely scenario that a fully physical event cannot be held in summer. 
+ICAPS 2021, as well as the XAIP Workshop, will be held in a fully virtual format during August 2-13, 2021. 
+
 
 Find out more here :point_right: [ibm.biz/xaip2021](http://ibm.biz/xaip2021).
 
