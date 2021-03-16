@@ -54,7 +54,7 @@ class LandingPage extends React.Component {
                 </Link>
               </h1>
               <p style={{ paddingTop: '5px', color: 'grey' }}>
-                Guangzhou, June 7-12
+                Online, August 2-13
               </p>
               <br />
               <br />
