@@ -1,5 +1,7 @@
 import React from 'react';
 import { Download16 } from '@carbon/icons-react';
+import { Member } from '../../components/Info';
+import { InvitedList } from '../../components/Data/XAIP2021Data';
 import {
   Link,
   ListItem,
@@ -54,7 +56,7 @@ class LandingPage extends React.Component {
                 </Link>
               </h1>
               <p style={{ paddingTop: '5px', color: 'grey' }}>
-                Online, August 2-13
+                Online, August 2-6
               </p>
               <br />
               <br />
@@ -80,9 +82,10 @@ class LandingPage extends React.Component {
                   kind="primary"
                   size="field"
                   style={{ marginBottom: '20px', minWidth: '175px' }}>
-                  Call for Papers
+                  Program
                 </Button>
               </Link>
+              <br />
               <Link
                 href="https://github.com/TathagataChakraborti/xaip"
                 target="_blank"
@@ -105,7 +108,33 @@ class LandingPage extends React.Component {
           </div>
         </div>
 
-        <div className="bx--row landing-page__tab-content" id="program">
+        <div className="bx--grid bx--grid--full-width landing-page landing-page__banner">
+          <div className="bx--row landing-page__tab-content" id="program">
+            <div className="bx--col-lg-12 bx--offset-lg-2">
+              <StructuredListWrapper style={{ marginBottom: '20px' }}>
+                <StructuredListHead>
+                  <StructuredListRow>
+                    <StructuredListCell>
+                      <h2 className="landing-page__subheading">
+                        Invited Speakers
+                      </h2>
+                    </StructuredListCell>
+                  </StructuredListRow>
+                </StructuredListHead>
+              </StructuredListWrapper>
+
+              <div className="bx--row">
+                {InvitedList.map((item, key) => (
+                  <React.Fragment key={key}>
+                    <Member props={item} />
+                  </React.Fragment>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="bx--row landing-page__tab-content" id="call">
           <div className="bx--col-lg-8 bx--offset-lg-2">
             <StructuredListWrapper style={{ marginBottom: '20px' }}>
               <StructuredListHead>
@@ -182,21 +211,13 @@ class LandingPage extends React.Component {
             <div className="some-container" style={{ marginTop: '70px' }}>
               <ProgressIndicator vertical currentIndex={1}>
                 <ProgressStep
-                  label={
-                    <>
-                      The submission portal is now open!{' '}
-                      <Link
-                        href="https://openreview.net/group?id=icaps-conference.org/ICAPS/2021/Workshop/XAIP"
-                        target="_blank">
-                        OpenReview
-                      </Link>
-                    </>
-                  }
-                />
-                <ProgressStep
                   invalid
                   label={
-                    <span style={{ color: 'red' }}>Submission Deadline</span>
+                    <>
+                      <span style={{ color: 'red' }}>
+                        Submission are closed.
+                      </span>
+                    </>
                   }
                   secondaryLabel="May 31 UTC-12"
                 />
@@ -212,7 +233,7 @@ class LandingPage extends React.Component {
                 <ProgressStep
                   disabled
                   label="ICAPS 2021 Workshops"
-                  secondaryLabel="August 2 - 13"
+                  secondaryLabel="August 2 - 6"
                 />
               </ProgressIndicator>
             </div>

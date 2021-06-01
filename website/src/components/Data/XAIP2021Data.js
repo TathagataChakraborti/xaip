@@ -1,4 +1,19 @@
-var InvitedList = [];
+var InvitedList = [
+  {
+    id: 0,
+    name: 'Been Kim',
+    image: 'beenkim',
+    affiliation: 'Google Brain',
+    link: 'https://beenkim.github.io/',
+  },
+  {
+    id: 1,
+    name: 'Steve Chien',
+    image: 'stevechien',
+    affiliation: 'NASA Jet Propulsion Lab',
+    link: 'https://ai.jpl.nasa.gov/public/people/chien/',
+  },
+];
 
 var MemberListCache = [
   {
@@ -47,7 +62,7 @@ var MemberListCache = [
     id: 6,
     name: 'Silvia Tulli',
     image: 'silvia',
-    affiliation: 'Técnico',
+    affiliation: 'Técnico | Sorbonne University',
     link: 'https://silviatulli.com/',
   },
   {
