@@ -4,7 +4,7 @@
   "private": true,
   "repository": "git@github.ibm.com:Tathagata-Chakraborti1/nlc2cmd-at-neurips-2020.git",
   "bugs": "https://github.ibm.com/Tathagata-Chakraborti1/nlc2cmd-at-neurips-2020/issues",
-  "license": "Apache-2.0",
+  "license": "MIT",
   "scripts": {
     "build": "react-scripts build",
     "ci-check": "yarn format:diff",
@@ -35,8 +35,7 @@
     "react-mathjax-preview": "^1.2.4",
     "react-router-dom": "^5.0.0",
     "react-router-hash-link": "^1.2.2",
-    "react-scripts": "2.1.8",
-    "sass": "1.29.0"
+    "react-scripts": "2.1.8"
   },
   "devDependencies": {
     "@commitlint/cli": "^7.5.2",

@@ -13,6 +13,13 @@ var InvitedList = [
     affiliation: 'NASA Jet Propulsion Lab',
     link: 'https://ai.jpl.nasa.gov/public/people/chien/',
   },
+  {
+    id: 2,
+    name: 'Dan Weld',
+    image: 'danweld',
+    affiliation: 'University of Washington',
+    link: 'https://www.cs.washington.edu/people/faculty/weld',
+  },
 ];
 
 var MemberListCache = [

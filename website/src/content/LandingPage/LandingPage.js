@@ -223,12 +223,12 @@ class LandingPage extends React.Component {
                 />
                 <ProgressStep
                   label="Author Notification"
-                  secondaryLabel="June 30 UTC-12"
+                  secondaryLabel="July 7 UTC-12"
                 />
                 <ProgressStep
                   disabled
                   label="Camera Ready Deadline"
-                  secondaryLabel="TBD UTC-12"
+                  secondaryLabel="After the workshop"
                 />
                 <ProgressStep
                   disabled
