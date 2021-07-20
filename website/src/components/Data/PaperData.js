@@ -1156,7 +1156,7 @@ const DATA = [
     link: null,
     render: true,
     session: 2,
-    position: 1,
+    position: 2,
     xaipid: 2,
   },
   {
@@ -1172,7 +1172,7 @@ const DATA = [
     link: null,
     render: true,
     session: 1,
-    position: 1,
+    position: 3,
     xaipid: 3,
   },
   {
@@ -1206,7 +1206,7 @@ const DATA = [
     link: null,
     render: true,
     session: 2,
-    position: 5,
+    position: 1,
     xaipid: 5,
   },
   {
@@ -1222,7 +1222,7 @@ const DATA = [
     link: null,
     render: true,
     session: 1,
-    position: 3,
+    position: 1,
     xaipid: 7,
   },
   {
@@ -1239,7 +1239,7 @@ const DATA = [
     link: null,
     render: true,
     session: 2,
-    position: 6,
+    position: 3,
     xaipid: 8,
   },
   {
@@ -1256,7 +1256,7 @@ const DATA = [
     link: null,
     render: true,
     session: 1,
-    position: 4,
+    position: 5,
     xaipid: 9,
   },
   {
@@ -1274,7 +1274,7 @@ const DATA = [
     link: null,
     render: true,
     session: 2,
-    position: 7,
+    position: 6,
     xaipid: 10,
   },
   {
@@ -1291,7 +1291,7 @@ const DATA = [
     link: null,
     render: true,
     session: 1,
-    position: 5,
+    position: 6,
     xaipid: 11,
   },
   {
@@ -1307,7 +1307,7 @@ const DATA = [
     link: null,
     render: true,
     session: 2,
-    position: 2,
+    position: 5,
     xaipid: 12,
   },
   {
@@ -1323,7 +1323,7 @@ const DATA = [
     link: null,
     render: true,
     session: 1,
-    position: 6,
+    position: 4,
     xaipid: 13,
   },
   {
@@ -1341,7 +1341,7 @@ const DATA = [
     link: null,
     render: true,
     session: 2,
-    position: 3,
+    position: 7,
     xaipid: 14,
   },
   {
