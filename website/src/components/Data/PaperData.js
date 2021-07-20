@@ -1155,7 +1155,7 @@ const DATA = [
     year: '2021',
     link: null,
     render: true,
-    session: 1,
+    session: 2,
     position: 1,
     xaipid: 2,
   },
@@ -1172,7 +1172,7 @@ const DATA = [
     link: null,
     render: true,
     session: 1,
-    position: 3,
+    position: 1,
     xaipid: 3,
   },
   {
@@ -1222,7 +1222,7 @@ const DATA = [
     link: null,
     render: true,
     session: 1,
-    position: 4,
+    position: 3,
     xaipid: 7,
   },
   {
@@ -1255,8 +1255,8 @@ const DATA = [
     year: '2021',
     link: null,
     render: true,
-    session: 2,
-    position: 1,
+    session: 1,
+    position: 4,
     xaipid: 9,
   },
   {
@@ -1291,7 +1291,7 @@ const DATA = [
     link: null,
     render: true,
     session: 1,
-    position: 7,
+    position: 5,
     xaipid: 11,
   },
   {
@@ -1323,7 +1323,7 @@ const DATA = [
     link: null,
     render: true,
     session: 1,
-    position: 5,
+    position: 6,
     xaipid: 13,
   },
   {
@@ -1392,7 +1392,7 @@ const DATA = [
     link: null,
     render: true,
     session: 1,
-    position: 6,
+    position: 7,
     xaipid: 17,
   },
 ];
