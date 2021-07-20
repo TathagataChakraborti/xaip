@@ -90,7 +90,7 @@ class LandingPage extends React.Component {
                 </Link>
               </h1>
               <p style={{ paddingTop: '5px', color: 'grey' }}>
-                Online, August 2-6
+                Online, August 6
               </p>
               <br />
               <br />
@@ -111,7 +111,9 @@ class LandingPage extends React.Component {
               </p>
               <br />
               <br />
-              <Link href="#program" style={{ marginRight: '10px' }}>
+              <Link
+                href="#program"
+                style={{ marginRight: '10px', textDecoration: 'none' }}>
                 <Button
                   kind="primary"
                   size="field"
@@ -123,7 +125,7 @@ class LandingPage extends React.Component {
               <Link
                 href="https://github.com/TathagataChakraborti/xaip"
                 target="_blank"
-                style={{ marginRight: '10px' }}>
+                style={{ marginRight: '10px', textDecoration: 'none' }}>
                 <Button
                   kind="secondary"
                   size="field"
@@ -168,8 +170,37 @@ class LandingPage extends React.Component {
           </div>
         </div> */}
 
-        <div id="program" className="bx--col-lg-16">
+        <div id="program" className="bx--col-lg-12 bx--offset-lg-2">
           <br />
+          <br />
+          <br />
+          <br />
+          <h4>XAIP 2021 Program</h4>
+          <hr />
+
+          <div className="bx--row">
+            <Link
+              href="https://openreview.net/group?id=icaps-conference.org/ICAPS/2021/Workshop/XAIP"
+              style={{ marginLeft: '1rem', textDecoration: 'none' }}
+              target="_blank">
+              <Button small kind="primary" size="field">
+                Papers
+              </Button>
+            </Link>
+
+            <Link
+              href="https://join.slack.com/t/xaip2020/shared_invite/zt-i8uy3uw0-hRqomirHfO__c5Bu47Uunw"
+              target="_blank"
+              style={{ marginLeft: '0.5rem', textDecoration: 'none' }}>
+              <Button kind="danger" size="field">
+                Slack
+              </Button>
+            </Link>
+          </div>
+
+          <br />
+          <br />
+
           <StructuredListWrapper>
             <StructuredListHead>
               <StructuredListRow>
@@ -305,26 +336,53 @@ class LandingPage extends React.Component {
                 <StructuredListCell>GMT 18:40 - 19:50</StructuredListCell>
                 <StructuredListCell>
                   <div className="bx--row">
-                    <div className="bx--row">
-                      {PanelList.map((item, key) => (
-                        <React.Fragment key={key}>
-                          <Member props={item} />
-                        </React.Fragment>
-                      ))}
-                    </div>
-                    <div className="bx--col-lg-12">
-                      <br />
-                      <br />
-                      <strong>Panel</strong>
+                    <div className="bx--col-lg-16">
+                      <strong>
+                        Panel: Post-hoc Explainations versus Designed
+                        Explainability
+                      </strong>
                       <br />
                       <br />
                       <Accordion align="start">
                         <AccordionItem
+                          open
                           className="according-crush"
                           title={<span>More </span>}>
-                          Comming soon!
+                          Research on Explainable AI has developed along two
+                          seemingly conflicting threads: explanations that are
+                          derived after the fact from decisions or algorithms
+                          that are designed to be explainable. The
+                          explainability of planning techniques also faces the
+                          same questions in the form of the nature of the
+                          decision-making models, domain abstractions, learned
+                          state representation, and so on. In this panel, we
+                          will ask experts about their experiences working on
+                          that spectrum, tradeoffs between the two approaches,
+                          bust myths on explainability versus accuracy, and much
+                          more. Submit your questions for the panelists as
+                          "ideas" below!
                         </AccordionItem>
                       </Accordion>
+                    </div>
+                    <div className="bx--col-lg-16">
+                      <div className="bx--row">
+                        {PanelList.map((item, key) => (
+                          <React.Fragment key={key}>
+                            <Member props={item} />
+                          </React.Fragment>
+                        ))}
+                      </div>
+                    </div>
+                    <div className="bx--col-lg-16">
+                      <iframe
+                        title="Submit your questions here!"
+                        width="100%"
+                        height="500"
+                        src="http://www.tricider.com/embed/?show=2VsnmQDBZZ3"
+                        frameborder="0"
+                        scrolling="no"
+                        marginheight="0"
+                        marginwidth="0"></iframe>
                     </div>
                   </div>
                 </StructuredListCell>
@@ -476,10 +534,11 @@ class LandingPage extends React.Component {
               </StructuredListBody>
             </StructuredListWrapper>
 
-            <Link
-              href="https://openreview.net/group?id=icaps-conference.org/ICAPS/2021/Workshop/XAIP"
-              target="_blank">
-              <Button size="small" kind="ghost">
+            <Link disabled>
+              <Button
+                size="small"
+                kind="ghost"
+                style={{ cursor: 'not-allowed' }}>
                 Submit
               </Button>
             </Link>
@@ -508,7 +567,7 @@ class LandingPage extends React.Component {
 
           <div className="bx--col-lg-4 xaip-tags">
             <div className="some-container" style={{ marginTop: '70px' }}>
-              <ProgressIndicator vertical currentIndex={1}>
+              <ProgressIndicator vertical currentIndex={2}>
                 <ProgressStep
                   invalid
                   label={
@@ -525,14 +584,13 @@ class LandingPage extends React.Component {
                   secondaryLabel="July 7 UTC-12"
                 />
                 <ProgressStep
-                  disabled
-                  label="Camera Ready Deadline"
-                  secondaryLabel="After the workshop"
+                  label="XAIP 2021 Workshop"
+                  secondaryLabel="August 2"
                 />
                 <ProgressStep
                   disabled
-                  label="ICAPS 2021 Workshops"
-                  secondaryLabel="August 2 - 6"
+                  label="Camera Ready Deadline"
+                  secondaryLabel="After the workshop"
                 />
               </ProgressIndicator>
             </div>
