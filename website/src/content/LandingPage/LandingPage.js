@@ -189,7 +189,7 @@ class LandingPage extends React.Component {
             </Link>
 
             <Link
-              href="https://join.slack.com/t/xaip2020/shared_invite/zt-i8uy3uw0-hRqomirHfO__c5Bu47Uunw"
+              href="https://join.slack.com/t/xaip2021/shared_invite/zt-svdiylde-EwqOBkguynR6jKbi_UKDXA"
               target="_blank"
               style={{ marginLeft: '0.5rem', textDecoration: 'none' }}>
               <Button kind="danger" size="field">
@@ -375,9 +375,10 @@ class LandingPage extends React.Component {
                     </div>
                     <div className="bx--col-lg-16">
                       <iframe
+                        title="Questions for XAIP 2021 Panelists"
                         width="100%"
                         height="500"
-                        src="http://www.tricider.com/embed/?show=3P8sNvT5eIl"
+                        src="http://www.tricider.com/embed/?show=3IiA21QTWxJ"
                         frameborder="0"
                         scrolling="no"
                         marginheight="0"

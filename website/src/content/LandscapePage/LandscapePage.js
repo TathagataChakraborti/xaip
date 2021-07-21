@@ -32,7 +32,7 @@ const LandscapePage = () => {
                     </Link>{' '}
                     or get in touch with us on our{' '}
                     <Link
-                      href="https://join.slack.com/t/xaip2020/shared_invite/zt-i8uy3uw0-hRqomirHfO__c5Bu47Uunw"
+                      href="https://join.slack.com/t/xaip2021/shared_invite/zt-svdiylde-EwqOBkguynR6jKbi_UKDXA"
                       target="_blank">
                       Slack
                     </Link>

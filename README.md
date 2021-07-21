@@ -25,6 +25,6 @@ Find out more here :point_right: [ibm.biz/xaip2021](http://ibm.biz/xaip2021).
 
 We will be maintaining the growing XAIP landscape [here](http://xaip.mybluemix.net/#/landscape) with your contributions! If you would
 want to bring a new work to our attention, please raise an issue in this repo or contact us 
-on our [Slack workspace](https://join.slack.com/t/xaip2020/shared_invite/zt-i8uy3uw0-hRqomirHfO__c5Bu47Uunw) and we will make sure to follow up. 
+on our [Slack workspace](https://join.slack.com/t/xaip2021/shared_invite/zt-svdiylde-EwqOBkguynR6jKbi_UKDXA) and we will make sure to follow up. 
 
-[`Landscape`](http://xaip.mybluemix.net/#/landscape)  [`Slack`](https://join.slack.com/t/xaip2020/shared_invite/zt-i8uy3uw0-hRqomirHfO__c5Bu47Uunw)
+[`Landscape`](http://xaip.mybluemix.net/#/landscape)  [`Slack`](https://join.slack.com/t/xaip2021/shared_invite/zt-svdiylde-EwqOBkguynR6jKbi_UKDXA)

@@ -15,6 +15,7 @@ class ExplorePage extends React.Component {
         xaip: false,
         uisp: false,
         invited: false,
+        '2021': false,
         '2020': false,
         '2019': false,
         '2018': false,
@@ -33,6 +34,7 @@ class ExplorePage extends React.Component {
           xaip: false,
           uisp: false,
           invited: false,
+          '2021': false,
           '2020': false,
           '2019': false,
           '2018': false,
@@ -68,7 +70,7 @@ class ExplorePage extends React.Component {
         if (currentState.filter[tag]) item.render = item.render && item[tag];
       });
 
-      ['2017', '2018', '2019', '2020'].forEach(function(year, i) {
+      ['2017', '2018', '2019', '2020', '2021'].forEach(function(year, i) {
         if (currentState.filter[year])
           item.render = item.render && item.year === year;
       });
@@ -178,6 +180,16 @@ class ExplorePage extends React.Component {
             name="invited">
             {' '}
             Invited{' '}
+          </Tag>
+          <Tag
+            filter={this.state.filter['2021']}
+            type="cool-gray"
+            className="explore-tags"
+            onClose={this.onCloseTag.bind(this, '2021')}
+            onClick={this.onClickTag.bind(this)}
+            name="2021">
+            {' '}
+            2021{' '}
           </Tag>
           <Tag
             filter={this.state.filter['2020']}
