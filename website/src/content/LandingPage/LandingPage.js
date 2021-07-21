@@ -1,7 +1,8 @@
 import React from 'react';
 import { Download16 } from '@carbon/icons-react';
-import { Member } from '../../components/Info';
-import { InvitedList } from '../../components/Data/XAIP2021Data';
+import { Member, Talk, Speaker } from '../../components/Info';
+import { DATA } from '../../components/Data/PaperData';
+import { InvitedList, PanelList } from '../../components/Data/XAIP2021Data';
 import {
   Link,
   ListItem,
@@ -16,7 +17,40 @@ import {
   ProgressIndicator,
   ProgressStep,
   Modal,
+  Accordion,
+  AccordionItem,
 } from 'carbon-components-react';
+
+import { FaceDissatisfied16 } from '@carbon/icons-react';
+import { FaceCool16 } from '@carbon/icons-react';
+
+var items = [];
+var shuffledData = DATA.filter(item => item.year === '2021');
+shuffledData.sort(
+  (item1, item2) =>
+    item1.session * 10 + item1.position - (item2.session * 10 + item2.position)
+);
+
+shuffledData.forEach(function(item, key) {
+  if (item.year === '2021') {
+    if (item.invited) {
+      items.push({
+        id: item.id,
+        label: 'Invited Talk | ' + item.title,
+      });
+    } else if (item.xaip) {
+      items.push({
+        id: item.id,
+        label: 'XAIP 2021 Accepted Paper | ' + item.title,
+      });
+    } else if (item.xai) {
+      items.push({
+        id: item.id,
+        label: 'XAI 2021 Highlight | ' + item.title,
+      });
+    }
+  }
+});
 
 class LandingPage extends React.Component {
   constructor(props) {
@@ -56,7 +90,7 @@ class LandingPage extends React.Component {
                 </Link>
               </h1>
               <p style={{ paddingTop: '5px', color: 'grey' }}>
-                Online, August 2-6
+                Online, August 6
               </p>
               <br />
               <br />
@@ -77,7 +111,9 @@ class LandingPage extends React.Component {
               </p>
               <br />
               <br />
-              <Link href="#program" style={{ marginRight: '10px' }}>
+              <Link
+                href="#program"
+                style={{ marginRight: '10px', textDecoration: 'none' }}>
                 <Button
                   kind="primary"
                   size="field"
@@ -89,7 +125,7 @@ class LandingPage extends React.Component {
               <Link
                 href="https://github.com/TathagataChakraborti/xaip"
                 target="_blank"
-                style={{ marginRight: '10px' }}>
+                style={{ marginRight: '10px', textDecoration: 'none' }}>
                 <Button
                   kind="secondary"
                   size="field"
@@ -108,7 +144,7 @@ class LandingPage extends React.Component {
           </div>
         </div>
 
-        <div className="bx--grid bx--grid--full-width landing-page landing-page__banner">
+        {/* <div className="bx--grid bx--grid--full-width landing-page landing-page__banner">
           <div className="bx--row landing-page__tab-content" id="program">
             <div className="bx--col-lg-12 bx--offset-lg-2">
               <StructuredListWrapper style={{ marginBottom: '20px' }}>
@@ -132,6 +168,327 @@ class LandingPage extends React.Component {
               </div>
             </div>
           </div>
+        </div> */}
+
+        <div id="program" className="bx--col-lg-12 bx--offset-lg-2">
+          <br />
+          <br />
+          <br />
+          <br />
+          <h4>XAIP 2021 Program</h4>
+          <hr />
+
+          <div className="bx--row">
+            <Link
+              href="https://openreview.net/group?id=icaps-conference.org/ICAPS/2021/Workshop/XAIP"
+              style={{ marginLeft: '1rem', textDecoration: 'none' }}
+              target="_blank">
+              <Button small kind="primary" size="field">
+                Papers
+              </Button>
+            </Link>
+
+            <Link
+              href="https://join.slack.com/t/xaip2021/shared_invite/zt-svdiylde-EwqOBkguynR6jKbi_UKDXA"
+              target="_blank"
+              style={{ marginLeft: '0.5rem', textDecoration: 'none' }}>
+              <Button kind="danger" size="field">
+                Slack
+              </Button>
+            </Link>
+          </div>
+
+          <br />
+          <br />
+
+          <StructuredListWrapper>
+            <StructuredListHead>
+              <StructuredListRow>
+                <StructuredListCell head>
+                  Session 1 | Aug 06 GMT 13:00 - 16:30
+                </StructuredListCell>
+              </StructuredListRow>
+            </StructuredListHead>
+            <StructuredListBody>
+              <StructuredListRow>
+                <StructuredListCell>GMT 13:00 - 13:10</StructuredListCell>
+                <StructuredListCell>
+                  Welcome! <FaceCool16 />{' '}
+                </StructuredListCell>
+              </StructuredListRow>
+              <StructuredListRow className="no-border">
+                <StructuredListCell>GMT 13:10 - 14:00</StructuredListCell>
+                <StructuredListCell>
+                  Talks from Accepted Papers
+                </StructuredListCell>
+              </StructuredListRow>
+              <StructuredListRow>
+                <StructuredListCell />
+                <StructuredListCell style={{ padding: '0' }}>
+                  <Accordion align="start">
+                    {shuffledData.map((item, key) => (
+                      <React.Fragment key={key}>
+                        {item.session === 1 && item.position <= 3 && (
+                          <Talk props={item} />
+                        )}
+                      </React.Fragment>
+                    ))}
+                  </Accordion>
+                </StructuredListCell>
+              </StructuredListRow>
+              <StructuredListRow>
+                <StructuredListCell>GMT 14:00 - 14:10</StructuredListCell>
+                <StructuredListCell>Small Break</StructuredListCell>
+              </StructuredListRow>
+              <StructuredListRow className="no-border">
+                <StructuredListCell>GMT 14:10 - 15:20</StructuredListCell>
+                <StructuredListCell>
+                  Talks from Accepted Papers
+                </StructuredListCell>
+              </StructuredListRow>
+              <StructuredListRow>
+                <StructuredListCell />
+                <StructuredListCell style={{ padding: '0' }}>
+                  <Accordion align="start">
+                    {shuffledData.map((item, key) => (
+                      <React.Fragment key={key}>
+                        {item.session === 1 && item.position > 3 && (
+                          <Talk props={item} />
+                        )}
+                      </React.Fragment>
+                    ))}
+                  </Accordion>
+                </StructuredListCell>
+              </StructuredListRow>
+              <StructuredListRow>
+                <StructuredListCell>GMT 15:20 - 15:30</StructuredListCell>
+                <StructuredListCell>Small Break</StructuredListCell>
+              </StructuredListRow>
+              <StructuredListRow>
+                <StructuredListCell>GMT 15:30 - 16:30</StructuredListCell>
+                <StructuredListCell>
+                  <div className="bx--row">
+                    <div className="bx--col-lg-4">
+                      <Speaker props={InvitedList[1]} />
+                    </div>
+                    <div className="bx--col-lg-12">
+                      <br />
+                      <br />
+                      <strong>Invited Talk by Steve Chien</strong>
+                      <br />
+                      <br />
+                      <Accordion align="start">
+                        <AccordionItem
+                          className="according-crush"
+                          title={<span>More </span>}>
+                          Comming soon!
+                        </AccordionItem>
+                      </Accordion>
+                    </div>
+                  </div>
+                </StructuredListCell>
+              </StructuredListRow>
+              <StructuredListRow>
+                <StructuredListCell>GMT 16:30 - 17:30</StructuredListCell>
+                <StructuredListCell>Break</StructuredListCell>
+              </StructuredListRow>
+            </StructuredListBody>
+          </StructuredListWrapper>
+
+          <StructuredListWrapper style={{ marginBottom: '2rem' }}>
+            <StructuredListHead>
+              <StructuredListRow>
+                <StructuredListCell head>
+                  Session 2 | Aug 06 GMT 17:30 - 19:50
+                </StructuredListCell>
+              </StructuredListRow>
+            </StructuredListHead>
+            <StructuredListBody>
+              <StructuredListRow>
+                <StructuredListCell>GMT 17:30 - 18:30</StructuredListCell>
+                <StructuredListCell>
+                  <div className="bx--row">
+                    <div className="bx--col-lg-4">
+                      <Speaker props={InvitedList[0]} />
+                    </div>
+                    <div className="bx--col-lg-12">
+                      <br />
+                      <br />
+                      <strong>Invited Talk by Been Kim</strong>
+                      <br />
+                      <br />
+                      <Accordion align="start">
+                        <AccordionItem
+                          className="according-crush"
+                          title={<span>More </span>}>
+                          Comming soon!
+                        </AccordionItem>
+                      </Accordion>
+                    </div>
+                  </div>
+                </StructuredListCell>
+              </StructuredListRow>
+              <StructuredListRow>
+                <StructuredListCell>GMT 18:30 - 18:40</StructuredListCell>
+                <StructuredListCell>Small Break</StructuredListCell>
+              </StructuredListRow>
+              <StructuredListRow>
+                <StructuredListCell>GMT 18:40 - 19:50</StructuredListCell>
+                <StructuredListCell>
+                  <div className="bx--row">
+                    <div className="bx--col-lg-16">
+                      <strong>
+                        Panel: Post-hoc Explainations versus Designed
+                        Explainability
+                      </strong>
+                      <br />
+                      <br />
+                      <Accordion align="start">
+                        <AccordionItem
+                          open
+                          className="according-crush"
+                          title={<span>More </span>}>
+                          Research on Explainable AI has developed along two
+                          seemingly conflicting threads: explanations that are
+                          derived after the fact from decisions or algorithms
+                          that are designed to be explainable. The
+                          explainability of planning techniques also faces the
+                          same questions in the form of the nature of the
+                          decision-making models, domain abstractions, learned
+                          state representation, and so on. In this panel, we
+                          will ask experts about their experiences working on
+                          that spectrum, tradeoffs between the two approaches,
+                          bust myths on explainability versus accuracy, and much
+                          more. Submit your questions for the panelists as
+                          "ideas" below!
+                        </AccordionItem>
+                      </Accordion>
+                    </div>
+                    <div className="bx--col-lg-16">
+                      <div className="bx--row">
+                        {PanelList.map((item, key) => (
+                          <React.Fragment key={key}>
+                            <Member props={item} />
+                          </React.Fragment>
+                        ))}
+                      </div>
+                    </div>
+                    <div className="bx--col-lg-16">
+                      <iframe
+                        title="Questions for XAIP 2021 Panelists"
+                        width="100%"
+                        height="500"
+                        src="http://www.tricider.com/embed/?show=3IiA21QTWxJ"
+                        frameborder="0"
+                        scrolling="no"
+                        marginheight="0"
+                        marginwidth="0"></iframe>
+                    </div>
+                  </div>
+                </StructuredListCell>
+              </StructuredListRow>
+
+              <StructuredListRow>
+                <StructuredListCell>GMT 19:50 - 20:50</StructuredListCell>
+                <StructuredListCell>Break</StructuredListCell>
+              </StructuredListRow>
+            </StructuredListBody>
+          </StructuredListWrapper>
+
+          <StructuredListWrapper style={{ marginBottom: '2rem' }}>
+            <StructuredListHead>
+              <StructuredListRow>
+                <StructuredListCell head>
+                  Session 3 | Aug 06 GMT 20:50 - 00:45
+                </StructuredListCell>
+              </StructuredListRow>
+            </StructuredListHead>
+            <StructuredListBody>
+              <StructuredListRow className="no-border">
+                <StructuredListCell>GMT 20:50 - 21:55</StructuredListCell>
+                <StructuredListCell>
+                  Talks from Accepted Papers
+                </StructuredListCell>
+              </StructuredListRow>
+              <StructuredListRow>
+                <StructuredListCell />
+                <StructuredListCell style={{ padding: '0' }}>
+                  <Accordion align="start">
+                    {shuffledData.map((item, key) => (
+                      <React.Fragment key={key}>
+                        {item.session === 2 && item.position <= 4 && (
+                          <Talk props={item} />
+                        )}
+                      </React.Fragment>
+                    ))}
+                  </Accordion>
+                </StructuredListCell>
+              </StructuredListRow>
+
+              <StructuredListRow>
+                <StructuredListCell>GMT 21:55 - 22:05</StructuredListCell>
+                <StructuredListCell>Small Break</StructuredListCell>
+              </StructuredListRow>
+
+              <StructuredListRow className="no-border">
+                <StructuredListCell>GMT 22:05 - 23:15</StructuredListCell>
+                <StructuredListCell>
+                  Talks from Accepted Papers
+                </StructuredListCell>
+              </StructuredListRow>
+              <StructuredListRow>
+                <StructuredListCell />
+                <StructuredListCell style={{ padding: '0' }}>
+                  <Accordion align="start">
+                    {shuffledData.map((item, key) => (
+                      <React.Fragment key={key}>
+                        {item.session === 2 && item.position > 4 && (
+                          <Talk props={item} />
+                        )}
+                      </React.Fragment>
+                    ))}
+                  </Accordion>
+                </StructuredListCell>
+              </StructuredListRow>
+
+              <StructuredListRow>
+                <StructuredListCell>GMT 23:15 - 23:30</StructuredListCell>
+                <StructuredListCell>Small Break</StructuredListCell>
+              </StructuredListRow>
+
+              <StructuredListRow>
+                <StructuredListCell>GMT 23:30 - 00:30</StructuredListCell>
+                <StructuredListCell>
+                  <div className="bx--row">
+                    <div className="bx--col-lg-4">
+                      <Speaker props={InvitedList[2]} />
+                    </div>
+                    <div className="bx--col-lg-12">
+                      <br />
+                      <br />
+                      <strong>Invited Talk by Dan Weld</strong>
+                      <br />
+                      <br />
+                      <Accordion align="start">
+                        <AccordionItem
+                          className="according-crush"
+                          title={<span>More </span>}>
+                          Comming soon!
+                        </AccordionItem>
+                      </Accordion>
+                    </div>
+                  </div>
+                </StructuredListCell>
+              </StructuredListRow>
+
+              <StructuredListRow className="no-border">
+                <StructuredListCell>GMT 00:30 - 00:45</StructuredListCell>
+                <StructuredListCell>
+                  Goodbye! <FaceDissatisfied16 />
+                </StructuredListCell>
+              </StructuredListRow>
+            </StructuredListBody>
+          </StructuredListWrapper>
         </div>
 
         <div className="bx--row landing-page__tab-content" id="call">
@@ -177,10 +534,11 @@ class LandingPage extends React.Component {
               </StructuredListBody>
             </StructuredListWrapper>
 
-            <Link
-              href="https://openreview.net/group?id=icaps-conference.org/ICAPS/2021/Workshop/XAIP"
-              target="_blank">
-              <Button size="small" kind="ghost">
+            <Link disabled>
+              <Button
+                size="small"
+                kind="ghost"
+                style={{ cursor: 'not-allowed' }}>
                 Submit
               </Button>
             </Link>
@@ -209,7 +567,7 @@ class LandingPage extends React.Component {
 
           <div className="bx--col-lg-4 xaip-tags">
             <div className="some-container" style={{ marginTop: '70px' }}>
-              <ProgressIndicator vertical currentIndex={1}>
+              <ProgressIndicator vertical currentIndex={2}>
                 <ProgressStep
                   invalid
                   label={
@@ -226,14 +584,13 @@ class LandingPage extends React.Component {
                   secondaryLabel="July 7 UTC-12"
                 />
                 <ProgressStep
-                  disabled
-                  label="Camera Ready Deadline"
-                  secondaryLabel="After the workshop"
+                  label="XAIP 2021 Workshop"
+                  secondaryLabel="August 2"
                 />
                 <ProgressStep
                   disabled
-                  label="ICAPS 2021 Workshops"
-                  secondaryLabel="August 2 - 6"
+                  label="Camera Ready Deadline"
+                  secondaryLabel="After the workshop"
                 />
               </ProgressIndicator>
             </div>

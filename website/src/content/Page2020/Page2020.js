@@ -19,7 +19,7 @@ import { FaceDissatisfied16 } from '@carbon/icons-react';
 import { FaceCool16 } from '@carbon/icons-react';
 
 var items = [];
-var shuffledData = DATA;
+var shuffledData = DATA.filter(item => item.year === '2020');
 
 shuffledData.forEach(function(item, key) {
   if (item.year === '2020') {
@@ -89,8 +89,7 @@ class Page2020 extends React.Component {
             These are proceedings of the XAIP 2020 edition. You can select a
             paper from above to view the poster or scroll down below for the
             recordings. You can also explore all previous editions by clicking{' '}
-            <Link href="/#/explore">here</Link>. Submissions for{' '}
-            <Link href="/">XAIP 2021</Link> are now open!
+            <Link href="/#/explore">here</Link>.
           </p>
           <br />
           <StructuredListWrapper>
@@ -118,7 +117,7 @@ class Page2020 extends React.Component {
                 <StructuredListCell />
                 <StructuredListCell style={{ padding: '0' }}>
                   <Accordion align="start">
-                    {DATA.map((item, key) => (
+                    {shuffledData.map((item, key) => (
                       <React.Fragment key={key}>
                         {item.session === 1 && <Talk props={item} />}
                       </React.Fragment>
@@ -269,7 +268,7 @@ class Page2020 extends React.Component {
                 <StructuredListCell />
                 <StructuredListCell style={{ padding: '0' }}>
                   <Accordion align="start">
-                    {DATA.map((item, key) => (
+                    {shuffledData.map((item, key) => (
                       <React.Fragment key={key}>
                         {item.session === 2 && <Talk props={item} />}
                       </React.Fragment>
@@ -417,7 +416,7 @@ class Page2020 extends React.Component {
                 <StructuredListCell />
                 <StructuredListCell style={{ padding: '0' }}>
                   <Accordion align="start">
-                    {DATA.map((item, key) => (
+                    {shuffledData.map((item, key) => (
                       <React.Fragment key={key}>
                         {item.session === 3 && <Talk props={item} />}
                       </React.Fragment>
@@ -447,7 +446,7 @@ class Page2020 extends React.Component {
                 <StructuredListCell />
                 <StructuredListCell style={{ padding: '0' }}>
                   <Accordion align="start">
-                    {DATA.map((item, key) => (
+                    {shuffledData.map((item, key) => (
                       <React.Fragment key={key}>
                         {item.xai && <Talk props={item} />}
                       </React.Fragment>

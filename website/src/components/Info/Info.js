@@ -55,30 +55,30 @@ function shuffleArray(array) {
 
 const Member = props => {
   return (
-    <Tile
-      className="bx--col-lg-4"
-      style={{ margin: '10px', backgroundColor: 'white' }}>
-      <div className="bx--col-sm-2 bx--offset-sm-1 bx--col-lg-10 bx--offset-lg-3">
-        <img
-          style={{
-            marginTop: '20px',
-            marginBottom: '20px',
-            borderRadius: '50%',
-            maxWidth: '100%',
-          }}
-          src={generateImageUrl(props.props.image)}
-          alt="Carbon illustration"
-        />
-      </div>
+    <div className="bx--col-lg-4" style={{ padding: '1rem' }}>
+      <Tile style={{ backgroundColor: 'white' }}>
+        <div className="bx--col-sm-2 bx--offset-sm-1 bx--col-lg-10 bx--offset-lg-3">
+          <img
+            style={{
+              marginTop: '20px',
+              marginBottom: '20px',
+              borderRadius: '50%',
+              maxWidth: '100%',
+            }}
+            src={generateImageUrl(props.props.image)}
+            alt="Carbon illustration"
+          />
+        </div>
 
-      <div style={{ textAlign: 'center' }}>
-        <Link href={props.props.link} target="_blank">
-          {props.props.name}
-        </Link>
+        <div style={{ textAlign: 'center' }}>
+          <Link href={props.props.link} target="_blank">
+            {props.props.name}
+          </Link>
 
-        <h6>{props.props.affiliation}</h6>
-      </div>
-    </Tile>
+          <h6>{props.props.affiliation}</h6>
+        </div>
+      </Tile>
+    </div>
   );
 };
 
