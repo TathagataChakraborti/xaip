@@ -375,10 +375,9 @@ class LandingPage extends React.Component {
                     </div>
                     <div className="bx--col-lg-16">
                       <iframe
-                        title="Submit your questions here!"
                         width="100%"
                         height="500"
-                        src="http://www.tricider.com/embed/?show=2VsnmQDBZZ3"
+                        src="http://www.tricider.com/embed/?show=3P8sNvT5eIl"
                         frameborder="0"
                         scrolling="no"
                         marginheight="0"
