@@ -274,14 +274,120 @@ class LandingPage extends React.Component {
                     <div className="bx--col-lg-12">
                       <br />
                       <br />
-                      <strong>Invited Talk by Steve Chien</strong>
+                      <strong>
+                        Why Explain? Or Why didn't I get my observation?
+                        Explanation in Space Mission Scheduling for the Rosetta
+                        and M2020 Missions
+                      </strong>
                       <br />
                       <br />
                       <Accordion align="start">
                         <AccordionItem
                           className="according-crush"
-                          title={<span>More </span>}>
-                          Comming soon!
+                          title={<span>Details</span>}>
+                          <p>
+                            AI scheduling techniques have been used for decades
+                            in a wide range of space missions including
+                            observatories: Hubble Space Telescope, Spitzer
+                            Infrared Telescope Facility; Orbiters: Earth
+                            Observing One, Mars Express; and surface missions:
+                            Mars Exploration Rovers and M2020.
+                          </p>
+                          <br />
+                          <p>
+                            In all of these missions, explanation of the
+                            scheduler behavior serves a valuable function. In
+                            this talk, I highlight the role of explanation
+                            (mostly by human scheduling experts) in two very
+                            different missions. First, I describe scheduling and
+                            explanation in the ASPEN-RSSC scheduling system for
+                            the Rosetta Orbiter, a multi flyby mission that
+                            escorted the comet 67P/Churyumov-Gerasimenko for
+                            over two years. For Rosetta, explanation, analytics,
+                            and visualization were essential to understand how
+                            to best plan complex science campaigns in a mission
+                            driven by geometry and pointing. Second, I describe
+                            the Crosscheck system used in the operations of the
+                            M2020 Perseverance Rover on Mars. Crosscheck
+                            explains ground generated plans and provides
+                            guidance on how to enable unscheduled activities to
+                            be scheduled.
+                          </p>
+                          <br />
+                          <p>
+                            In both missions, the scheduling process is highly
+                            interactive and the purpose of explanation is to
+                            facilitate the user to improve the overall schedule
+                            produced by the combined user/automated scheduler
+                            team.
+                          </p>
+                          <br />
+                          <p>
+                            I highlight several insights related to more
+                            automated explanation in the context of space
+                            mission operations.
+                          </p>
+
+                          <br />
+                          <UnorderedList>
+                            <ListItem>
+                              The most common query is “Why didn’t I get X?” [as
+                              opposed to why did I get X] This query is a
+                              general statement over a large area of the search
+                              space.
+                            </ListItem>
+                            <ListItem>
+                              Blame assignment is more challenging in a resource
+                              centric scheduling view
+                            </ListItem>
+                            <ListItem>
+                              In many cases resource modeling is complex and
+                              opaque (energy, thermal, pointing)
+                            </ListItem>
+                            <ListItem>
+                              Complex campaign structure also complicates blame
+                              assignment
+                            </ListItem>
+                            <ListItem>
+                              Optimization of complex interacting preferences is
+                              more common than hard constraint satisfaction
+                            </ListItem>
+                            <ListItem>
+                              Users operate more at the strategic level (how can
+                              I reduce contention for energy at Mid Day? Can
+                              this campaign be moved to the 3rd flyby?). This is
+                              a leap from individual resource constraint
+                              violations to search space and problem structure
+                            </ListItem>
+                            <ListItem>
+                              Because the overall goal is optimization of the
+                              user – machine combination, user understanding of
+                              the scheduling algorithm is critical, making a
+                              simple scheduler far more important that scheduler
+                              optimality.
+                            </ListItem>
+                          </UnorderedList>
+                        </AccordionItem>
+                        <AccordionItem
+                          className="according-crush"
+                          title={<span>Bio</span>}>
+                          <p>
+                            Steve Chien is a JPL Fellow, Senior Research
+                            Scientist, and Technical Group Supervisor at the Jet
+                            Propulsion Laboratory, California Institute of
+                            Technology. He supported the deployment of AI
+                            software to operational use in numerous missions
+                            including: EO-1, MER, Rosetta, ECOSTRESS, OCO-3, and
+                            M2020. He is a three time honoree in the NASA
+                            Software of the Year Competition and has been
+                            awarded four NASA Medals for his work in space
+                            autonomy.{' '}
+                            <Link
+                              target="_blank"
+                              href="https://ai.jpl.nasa.gov/public/people/chien/">
+                              Learn More
+                            </Link>
+                          </p>
                         </AccordionItem>
                       </Accordion>
                     </div>
@@ -320,7 +426,7 @@ class LandingPage extends React.Component {
                       <Accordion align="start">
                         <AccordionItem
                           className="according-crush"
-                          title={<span>More </span>}>
+                          title={<span>Details</span>}>
                           Comming soon!
                         </AccordionItem>
                       </Accordion>
@@ -347,7 +453,7 @@ class LandingPage extends React.Component {
                         <AccordionItem
                           open
                           className="according-crush"
-                          title={<span>More </span>}>
+                          title={<span>Details</span>}>
                           Research on Explainable AI has developed along two
                           seemingly conflicting threads: explanations that are
                           derived after the fact from decisions or algorithms
@@ -359,8 +465,7 @@ class LandingPage extends React.Component {
                           will ask experts about their experiences working on
                           that spectrum, tradeoffs between the two approaches,
                           bust myths on explainability versus accuracy, and much
-                          more. Submit your questions for the panelists as
-                          "ideas" below!
+                          more.
                         </AccordionItem>
                       </Accordion>
                     </div>
@@ -472,7 +577,7 @@ class LandingPage extends React.Component {
                       <Accordion align="start">
                         <AccordionItem
                           className="according-crush"
-                          title={<span>More </span>}>
+                          title={<span>Details</span>}>
                           Comming soon!
                         </AccordionItem>
                       </Accordion>
