@@ -10,7 +10,7 @@ var InvitedList = [
     id: 1,
     name: 'Steve Chien',
     image: 'stevechien',
-    affiliation: 'NASA Jet Propulsion Lab',
+    affiliation: 'NASA Jet Propulsion Lab, California Institute of Technology',
     link: 'https://ai.jpl.nasa.gov/public/people/chien/',
   },
   {
