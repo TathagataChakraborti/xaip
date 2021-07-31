@@ -183,7 +183,7 @@ class LandingPage extends React.Component {
               href="https://openreview.net/group?id=icaps-conference.org/ICAPS/2021/Workshop/XAIP"
               style={{ marginLeft: '1rem', textDecoration: 'none' }}
               target="_blank">
-              <Button small kind="primary" size="field">
+              <Button kind="primary" size="sm">
                 Papers
               </Button>
             </Link>
@@ -192,7 +192,7 @@ class LandingPage extends React.Component {
               href="https://join.slack.com/t/xaip2021/shared_invite/zt-svdiylde-EwqOBkguynR6jKbi_UKDXA"
               target="_blank"
               style={{ marginLeft: '0.5rem', textDecoration: 'none' }}>
-              <Button kind="danger" size="field">
+              <Button kind="danger" size="sm">
                 Slack
               </Button>
             </Link>
@@ -420,14 +420,43 @@ class LandingPage extends React.Component {
                     <div className="bx--col-lg-12">
                       <br />
                       <br />
-                      <strong>Invited Talk by Been Kim</strong>
+                      <strong>
+                        Interpretability with a Skeptical and User-Centric Mind
+                      </strong>
                       <br />
                       <br />
                       <Accordion align="start">
                         <AccordionItem
                           className="according-crush"
                           title={<span>Details</span>}>
-                          Comming soon!
+                          Interpretable machine learning has been a popular
+                          topic of study in the era of machine learning. But are
+                          we making progress? Are we heading in the right
+                          direction? In this talk, I start with a
+                          skeptically-minded journey of this field on our
+                          past-selves, before moving on to recent developments
+                          of more user-focused methods. The talk will finish
+                          with where we might be heading, and a number of open
+                          questions we should think about.
+                        </AccordionItem>
+                        <AccordionItem
+                          className="according-crush"
+                          title={<span>Bio</span>}>
+                          Been Kim is a staff research scientist at Google
+                          Brain. Her research focuses on improving
+                          interpretability in machine learning: not only by
+                          building interpretability methods but also challenging
+                          them for their validity. She gave a talk at the G20
+                          meeting in Argentina in 2019. Her work TCAV received
+                          UNESCO Netexplo award, was featured at Google I/O 19'
+                          and in Brian Christian's book on "The Alignment
+                          Problem". Been has given keynote at ECML 2020,
+                          tutorials on interpretability at ICML, University of
+                          Toronto, CVPR and at Lawrence Berkeley National
+                          Laboratory. She was a co-workshop Chair ICLR 2019, and
+                          has been an (senior) area chair at conferences
+                          including NeurIPS, ICML, ICLR, and AISTATS. She
+                          received her PhD. from MIT.
                         </AccordionItem>
                       </Accordion>
                     </div>
@@ -484,10 +513,10 @@ class LandingPage extends React.Component {
                         width="100%"
                         height="500"
                         src="http://www.tricider.com/embed/?show=3IiA21QTWxJ"
-                        frameborder="0"
+                        frameBorder="0"
                         scrolling="no"
-                        marginheight="0"
-                        marginwidth="0"></iframe>
+                        marginHeight="0"
+                        marginWidth="0"></iframe>
                     </div>
                   </div>
                 </StructuredListCell>
@@ -571,14 +600,53 @@ class LandingPage extends React.Component {
                     <div className="bx--col-lg-12">
                       <br />
                       <br />
-                      <strong>Invited Talk by Dan Weld</strong>
+                      <strong>
+                        Explanations & Complementarity for Optimal Human-AI
+                        Teams
+                      </strong>
                       <br />
                       <br />
                       <Accordion align="start">
                         <AccordionItem
                           className="according-crush"
                           title={<span>Details</span>}>
-                          Comming soon!
+                          While some AI systems operate in an autonomous mode,
+                          many AI systems are deployed in an advisory capacity
+                          where a human (eg, loan-officer, judge or doctor) is
+                          responsible for the final decision. Should such
+                          collaborative AI system be trained in the same way as
+                          autonomous AIs, eg by solely optimizing their
+                          accuracy? We answer “No” – instead arguing for a
+                          human-centered AI (HCAI) approach, that makes
+                          fundamentally different demands: complementary
+                          performance instead of just accuracy, explanations
+                          that increase appropriate reliance instead of mere
+                          trust, and controls for accepting user feedback. We
+                          discuss several novel methods for achieving these
+                          goals, present the results of user studies which
+                          challenge current directions in explanation
+                          generation, and sketch directions for future research.
+                        </AccordionItem>
+                        <AccordionItem
+                          className="according-crush"
+                          title={<span>Bio</span>}>
+                          Daniel S. Weld is Thomas J. Cable / WRF Professor in
+                          the Paul G. Allen School of Computer Science &
+                          Engineering and manages the Semantic Scholar research
+                          group at the Allen Institute of Artificial
+                          Intelligence. After formative education at Phillips
+                          Academy, he received bachelor's degrees in both
+                          Computer Science and Biochemistry at Yale University
+                          in 1982. He landed a Ph.D. from the MIT Artificial
+                          Intelligence Lab in 1988, received a Presidential
+                          Young Investigator's award in 1989, an Office of Naval
+                          Research Young Investigator's award in 1990, was named
+                          AAAI Fellow in 1999 and deemed ACM Fellow in 2005. Dan
+                          was a founding editor for the Journal of AI Research,
+                          was area editor for the Journal of the ACM, guest
+                          editor for Computational Intelligence and Artificial
+                          Intelligence, and was Program Chair for AAAI-96. Dan
+                          has published two books and scads of technical papers.
                         </AccordionItem>
                       </Accordion>
                     </div>
@@ -641,7 +709,8 @@ class LandingPage extends React.Component {
 
             <Link disabled>
               <Button
-                size="small"
+                className="no-decoration-on-hover"
+                size="sm"
                 kind="ghost"
                 style={{ cursor: 'not-allowed' }}>
                 Submit
@@ -649,22 +718,27 @@ class LandingPage extends React.Component {
             </Link>
 
             <Link
+              className="no-decoration-on-hover"
               href="https://www.aaai.org/Publications/Templates/AuthorKit21.zip"
               target="_blank">
-              <Button size="small" kind="ghost">
+              <Button size="sm" kind="ghost">
                 Template
               </Button>
             </Link>
 
             <Button
-              size="small"
+              className="no-decoration-on-hover"
+              size="sm"
               kind="ghost"
               onClick={this.onClickREADME.bind(this)}>
               README
             </Button>
 
-            <Link href="/files/call-for-papers-xaip-2021.pdf" target="_blank">
-              <Button size="small" kind="ghost">
+            <Link
+              href="/files/call-for-papers-xaip-2021.pdf"
+              target="_blank"
+              className="no-decoration-on-hover">
+              <Button size="sm" kind="ghost">
                 <Download16 />
               </Button>
             </Link>

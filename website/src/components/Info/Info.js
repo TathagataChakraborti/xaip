@@ -108,7 +108,7 @@ const Software = props => {
                 style={{ fontSize: '0.75rem', marginRight: '10px' }}>
                 <Button
                   kind="ghost"
-                  size="small"
+                  size="sm"
                   style={{ backgroundColor: 'aliceblue' }}>
                   Code
                 </Button>
@@ -122,7 +122,7 @@ const Software = props => {
                 style={{ fontSize: '0.75rem', marginRight: '10px' }}>
                 <Button
                   kind="ghost"
-                  size="small"
+                  size="sm"
                   style={{ backgroundColor: 'aliceblue' }}>
                   Link
                 </Button>
@@ -136,7 +136,7 @@ const Software = props => {
                 style={{ fontSize: '0.75rem' }}>
                 <Button
                   kind="ghost"
-                  size="small"
+                  size="sm"
                   style={{ backgroundColor: 'aliceblue' }}>
                   Paper
                 </Button>
@@ -244,8 +244,11 @@ const Paper = props => {
                 <Tag type="cool-gray"> {props.props.year} </Tag>
               )}
               {props.props.link && (
-                <Link href={props.props.link} target="_blank">
-                  <Button kind="ghost" size="small">
+                <Link
+                  href={props.props.link}
+                  target="_blank"
+                  className="no-decoration-on-hover">
+                  <Button kind="ghost" size="sm">
                     {' '}
                     <FaDownload16 />{' '}
                   </Button>
@@ -354,8 +357,11 @@ const Talk = props => {
       <br />
       <br />
       {props.props.link && (
-        <Link href={props.props.link} target="_blank">
-          <Button kind="ghost" size="small">
+        <Link
+          href={props.props.link}
+          target="_blank"
+          className="no-decoration-on-hover">
+          <Button kind="ghost" size="sm">
             Download
           </Button>
         </Link>

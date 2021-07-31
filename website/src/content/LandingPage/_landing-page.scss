@@ -177,3 +177,12 @@
   position: absolute;
   bottom: 0;
 }
+
+.bx--btn--ghost {
+  background-color: #f1f1f1;
+  margin-right: 10px;
+}
+
+.no-decoration-on-hover:hover {
+  text-decoration: none;
+}
