@@ -186,6 +186,21 @@ const PC = props => {
   );
 };
 
+const PCReduced = props => {
+  return (
+    <Tile className="bx--col-lg-4">
+      <div
+        className="bx--col-16"
+        style={{ padding: '10px', backgroundColor: 'white' }}>
+        <div style={{ textAlign: 'center' }}>
+          <h6 style={{ marginBottom: '5px' }}>{props.props.name}</h6>
+          <span>{props.props.affiliation}</span>
+        </div>
+      </div>
+    </Tile>
+  );
+};
+
 const Speaker = props => {
   return (
     <Tile className="bx--col-lg-16" style={{ padding: '0' }}>
@@ -374,6 +389,7 @@ export {
   LinkList,
   Member,
   PC,
+  PCReduced,
   Talk,
   Speaker,
   Stub,

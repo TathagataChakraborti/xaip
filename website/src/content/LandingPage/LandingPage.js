@@ -473,7 +473,7 @@ class LandingPage extends React.Component {
                   <div className="bx--row">
                     <div className="bx--col-lg-16">
                       <strong>
-                        Panel: Post-hoc Explainations versus Designed
+                        Panel: Post-hoc Explanations versus Designed
                         Explainability
                       </strong>
                       <br />
