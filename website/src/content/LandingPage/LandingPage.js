@@ -189,6 +189,15 @@ class LandingPage extends React.Component {
             </Link>
 
             <Link
+              href="https://ibm.box.com/s/qds11d8aqzi8ja7pd8dh1695170qtyxn"
+              target="_blank"
+              style={{ marginLeft: '0.5rem', textDecoration: 'none' }}>
+              <Button kind="secondary" size="sm">
+                Recordings
+              </Button>
+            </Link>
+
+            <Link
               href="https://join.slack.com/t/xaip2021/shared_invite/zt-svdiylde-EwqOBkguynR6jKbi_UKDXA"
               target="_blank"
               style={{ marginLeft: '0.5rem', textDecoration: 'none' }}>
@@ -246,7 +255,7 @@ class LandingPage extends React.Component {
                   Talks from Accepted Papers
                 </StructuredListCell>
               </StructuredListRow>
-              <StructuredListRow>
+              <StructuredListRow className="no-border">
                 <StructuredListCell />
                 <StructuredListCell style={{ padding: '0' }}>
                   <Accordion align="start">
@@ -258,6 +267,19 @@ class LandingPage extends React.Component {
                       </React.Fragment>
                     ))}
                   </Accordion>
+                </StructuredListCell>
+              </StructuredListRow>
+              <StructuredListRow>
+                <StructuredListCell />
+                <StructuredListCell>
+                  <Link
+                    href="https://ibm.box.com/s/ylxb6twdeo9z73k89df8ef1dbu4f0slc"
+                    target="_blank"
+                    style={{ textDecoration: 'none', padding: '10px' }}>
+                    <Button kind="secondary" size="sm">
+                      Recordings
+                    </Button>
+                  </Link>
                 </StructuredListCell>
               </StructuredListRow>
               <StructuredListRow>
@@ -279,6 +301,16 @@ class LandingPage extends React.Component {
                         Explanation in Space Mission Scheduling for the Rosetta
                         and M2020 Missions
                       </strong>
+                      <br />
+                      <br />
+                      <Link
+                        href="https://ibm.box.com/s/qjm4893zh031yt3j99rqnds05h35to6s"
+                        target="_blank"
+                        style={{ textDecoration: 'none' }}>
+                        <Button kind="secondary" size="sm">
+                          Recording
+                        </Button>
+                      </Link>
                       <br />
                       <br />
                       <Accordion align="start">
@@ -425,6 +457,16 @@ class LandingPage extends React.Component {
                       </strong>
                       <br />
                       <br />
+                      <Link
+                        href="https://ibm.box.com/s/xph8vmooij069rwavdnm0r226dechtmq"
+                        target="_blank"
+                        style={{ textDecoration: 'none' }}>
+                        <Button kind="secondary" size="sm">
+                          Recording
+                        </Button>
+                      </Link>
+                      <br />
+                      <br />
                       <Accordion align="start">
                         <AccordionItem
                           className="according-crush"
@@ -476,6 +518,16 @@ class LandingPage extends React.Component {
                         Panel: Post-hoc Explanations versus Designed
                         Explainability
                       </strong>
+                      <br />
+                      <br />
+                      <Link
+                        href="https://ibm.box.com/s/grhdwyknneumx9recbgksyszockhf49z"
+                        target="_blank"
+                        style={{ textDecoration: 'none' }}>
+                        <Button kind="secondary" size="sm">
+                          Recording
+                        </Button>
+                      </Link>
                       <br />
                       <br />
                       <Accordion align="start">
@@ -570,7 +622,7 @@ class LandingPage extends React.Component {
                   Talks from Accepted Papers
                 </StructuredListCell>
               </StructuredListRow>
-              <StructuredListRow>
+              <StructuredListRow className="no-border">
                 <StructuredListCell />
                 <StructuredListCell style={{ padding: '0' }}>
                   <Accordion align="start">
@@ -582,6 +634,19 @@ class LandingPage extends React.Component {
                       </React.Fragment>
                     ))}
                   </Accordion>
+                </StructuredListCell>
+              </StructuredListRow>
+              <StructuredListRow>
+                <StructuredListCell />
+                <StructuredListCell>
+                  <Link
+                    href="https://ibm.box.com/s/7c6gvgjc530ey8pmj9knjhhrvjvipgt5"
+                    target="_blank"
+                    style={{ textDecoration: 'none', padding: '10px' }}>
+                    <Button kind="secondary" size="sm">
+                      Recordings
+                    </Button>
+                  </Link>
                 </StructuredListCell>
               </StructuredListRow>
 
@@ -604,6 +669,16 @@ class LandingPage extends React.Component {
                         Explanations & Complementarity for Optimal Human-AI
                         Teams
                       </strong>
+                      <br />
+                      <br />
+                      <Link
+                        href="https://ibm.box.com/s/293l51pd9ueicdtploy4lu5kv6whyr9h"
+                        target="_blank"
+                        style={{ textDecoration: 'none' }}>
+                        <Button kind="secondary" size="sm">
+                          Recording
+                        </Button>
+                      </Link>
                       <br />
                       <br />
                       <Accordion align="start">
@@ -746,7 +821,7 @@ class LandingPage extends React.Component {
 
           <div className="bx--col-lg-4 xaip-tags">
             <div className="some-container" style={{ marginTop: '70px' }}>
-              <ProgressIndicator vertical currentIndex={2}>
+              <ProgressIndicator vertical currentIndex={3}>
                 <ProgressStep
                   invalid
                   label={
@@ -767,7 +842,6 @@ class LandingPage extends React.Component {
                   secondaryLabel="August 2"
                 />
                 <ProgressStep
-                  disabled
                   label="Camera Ready Deadline"
                   secondaryLabel="After the workshop"
                 />
