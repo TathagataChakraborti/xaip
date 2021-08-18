@@ -30,6 +30,14 @@ const DATA = [
     code: 'https://github.com/maumagnaguagno/HTN_Plan_Viewer',
     tldr: 'Graph visualization of HTN plans using IPC output format.',
   },
+  {
+    id: 4,
+    name: 'String Diagrams For PDDL',
+    paper: 'https://openreview.net/forum?id=YlA8hA4Z-5Z',
+    code: 'https://github.com/aaguinal/String-Diagrams-For-PDDL',
+    tldr:
+      'A Graphical, Model-Based Representation for PDDL using Category Theory.',
+  },
 ];
 
 export { DATA };
