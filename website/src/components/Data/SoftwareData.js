@@ -38,6 +38,14 @@ const DATA = [
     tldr:
       'A Graphical, Model-Based Representation for PDDL using Category Theory.',
   },
+  {
+    id: 5,
+    name: 'BayesLTL',
+    paper: 'https://www.ijcai.org/proceedings/2019/776',
+    code: 'https://github.com/IBM/BayesLTL',
+    tldr:
+      'Bayesian inference of LTL specifications to explain differences across two sets of traces.',
+  },
 ];
 
 export { DATA };

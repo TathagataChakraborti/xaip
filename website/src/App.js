@@ -11,6 +11,7 @@ import ExplorePage from './content/ExplorePage';
 import SoftwarePage from './content/SoftwarePage';
 import LandscapePage from './content/LandscapePage';
 import Page2020 from './content/Page2020';
+import Page2021 from './content/Page2021';
 
 class App extends Component {
   render() {
@@ -25,6 +26,7 @@ class App extends Component {
             <Route exact path="/landscape" component={LandscapePage} />
             <Route exact path="/software" component={SoftwarePage} />
             <Route exact path="/2020" component={Page2020} />
+            <Route exact path="/2021" component={Page2021} />
             <Route component={LandingPage} />
           </Switch>
         </Content>

@@ -1,7 +1,18 @@
 import React from 'react';
 import { DATA } from '../../components/Data/PaperData';
-import { InvitedList } from '../../components/Data/XAIP2020Data';
-import { Stub, Talk, Speaker } from '../../components/Info';
+import {
+  InvitedList,
+  MemberListCache,
+  PCListCache,
+} from '../../components/Data/XAIP2020Data';
+import {
+  Stub,
+  Member,
+  Talk,
+  Speaker,
+  PCReduced,
+  shuffleArray,
+} from '../../components/Info';
 import {
   Dropdown,
   StructuredListWrapper,
@@ -17,6 +28,9 @@ import {
 
 import { FaceDissatisfied16 } from '@carbon/icons-react';
 import { FaceCool16 } from '@carbon/icons-react';
+
+var MemberList = shuffleArray(MemberListCache);
+var PCList = shuffleArray(PCListCache);
 
 var items = [];
 var shuffledData = DATA.filter(item => item.year === '2020');
@@ -71,25 +85,31 @@ class Page2020 extends React.Component {
       <div
         className="bx--grid bx--grid--full-width landing-page landing-page__banner"
         style={{ minHeight: '100vh' }}>
-        <Dropdown
-          light
-          ariaLabel="Dropdown"
-          id="carbon-dropdown-example"
-          items={items}
-          label="Select a paper"
-          titleText="XAIP 2020 Program"
-          style={{ marginBottom: '30px' }}
-          itemToString={item => (item ? item.label : '')}
-          onChange={({ selectedItem }) => this.RenderPoster(selectedItem)}
-        />
-        {this.state.current && <Stub props={this.state.current} />}
+        <div id="program" className="bx--col-lg-12 bx--offset-lg-2">
+          <br />
+          <br />
+          <br />
+          <br />
+          <h4>XAIP 2020 Program</h4>
+          <hr />
+          <Dropdown
+            light
+            ariaLabel="Dropdown"
+            id="carbon-dropdown-example"
+            items={items}
+            label="Select to view Poster"
+            titleText=""
+            style={{ marginBottom: '10px' }}
+            itemToString={item => (item ? item.label : '')}
+            onChange={({ selectedItem }) => this.RenderPoster(selectedItem)}
+          />
+          {this.state.current && <Stub props={this.state.current} />}
 
-        <div id="program" className="bx--col-lg-16">
           <p style={{ color: 'gray' }}>
             These are proceedings of the XAIP 2020 edition. You can select a
             paper from above to view the poster or scroll down below for the
-            recordings. You can also explore all previous editions by clicking{' '}
-            <Link href="/#/explore">here</Link>.
+            PDFs and recordings of the presentations. You can also explore other
+            XAIP editions by clicking <Link href="/#/explore">here</Link>.
           </p>
           <br />
           <StructuredListWrapper>
@@ -466,6 +486,45 @@ class Page2020 extends React.Component {
               </StructuredListRow>
             </StructuredListBody>
           </StructuredListWrapper>
+        </div>
+
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <div id="team" className="bx--col-lg-12 bx--offset-lg-2">
+          <h4>XAIP 2021 Organizing Team</h4>
+          <hr />
+          <Link href="mailto:xaip21team@gmail.com">
+            <Button size="small" kind="secondary">
+              Contact
+            </Button>
+          </Link>
+
+          <div className="bx--row publications-page__tab-content">
+            {MemberList.map((item, key) => (
+              <React.Fragment key={key}>
+                <Member props={item} />
+              </React.Fragment>
+            ))}
+          </div>
+
+          <br />
+          <br />
+          <br />
+
+          <Accordion align="start">
+            <AccordionItem open title="Extended Program Committee">
+              <div className="bx--row">
+                {PCList.map((item, key) => (
+                  <React.Fragment key={key}>
+                    <PCReduced props={item} />
+                  </React.Fragment>
+                ))}
+              </div>
+            </AccordionItem>
+          </Accordion>
         </div>
       </div>
     );
