@@ -47,13 +47,14 @@ class LandingPage extends React.Component {
               <h1 className="landing-page__heading">
                 XAIP @{' '}
                 <Link
-                  href="https://icaps21.icaps-conference.org/"
+                  href="https://icaps22.icaps-conference.org/"
                   target="_blank"
                   style={{ fontSize: 'inherit' }}>
-                  ICAPS Conference
+                  ICAPS 22
                 </Link>
               </h1>
               <p style={{ paddingTop: '5px', color: 'grey' }}>
+                <Link href="#call">2022</Link> |{' '}
                 <Link href="/#/2021">2021</Link> |{' '}
                 <Link href="/#/2020">2020</Link>
               </p>
@@ -172,7 +173,7 @@ class LandingPage extends React.Component {
               </StructuredListBody>
             </StructuredListWrapper>
 
-            <Link href="/#/2021">
+            {/*<Link href="/#/2021">
               <Button
                 className="no-decoration-on-hover"
                 size="sm"
@@ -190,7 +191,7 @@ class LandingPage extends React.Component {
                 style={{ marginRight: '10px' }}>
                 2020
               </Button>
-            </Link>
+            </Link>*/}
 
             <Link href="/#/explore">
               <Button
@@ -230,7 +231,7 @@ class LandingPage extends React.Component {
             </Button>
 
             <Link
-              href="/files/call-for-papers-xaip-2021.pdf"
+              href="/files/call-for-papers-xaip-2022.pdf"
               target="_blank"
               className="no-decoration-on-hover">
               <Button size="sm" kind="ghost">
@@ -251,19 +252,19 @@ class LandingPage extends React.Component {
                       </span>
                     </>
                   }
-                  secondaryLabel="May 31 UTC-12"
+                  secondaryLabel="March 31 UTC-12"
                 />
                 <ProgressStep
                   label="Author Notification"
-                  secondaryLabel="July 7 UTC-12"
+                  secondaryLabel="TBD"
                 />
                 <ProgressStep
                   label="XAIP 2021 Workshop"
-                  secondaryLabel="August 2"
+                  secondaryLabel="June 19 - 24, 2022"
                 />
                 <ProgressStep
                   label="Camera Ready Deadline"
-                  secondaryLabel="After the workshop"
+                  secondaryLabel="TBD"
                 />
               </ProgressIndicator>
             </div>
