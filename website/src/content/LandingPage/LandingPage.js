@@ -60,7 +60,7 @@ class LandingPage extends React.Component {
               </p>
               */}
               <p style={{ paddingTop: '5px', color: 'grey' }}>
-                June, 2022. Singapore.
+                June, 2022 | Singapore
               </p>
               <br />
               <br />
