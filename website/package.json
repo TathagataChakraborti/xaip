@@ -2,8 +2,8 @@
   "name": "xaip-landing-page",
   "version": "0.0.0",
   "private": true,
-  "repository": "git@github.ibm.com:Tathagata-Chakraborti1/nlc2cmd-at-neurips-2020.git",
-  "bugs": "https://github.ibm.com/Tathagata-Chakraborti1/nlc2cmd-at-neurips-2020/issues",
+  "repository": "git@github.com:TathagataChakraborti/xaip.git",
+  "bugs": "https://github.com/TathagataChakraborti/xaip/issues",
   "license": "MIT",
   "scripts": {
     "build": "react-scripts build",
