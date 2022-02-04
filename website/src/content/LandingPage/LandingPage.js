@@ -47,15 +47,20 @@ class LandingPage extends React.Component {
               <h1 className="landing-page__heading">
                 XAIP @{' '}
                 <Link
-                  href="https://icaps21.icaps-conference.org/"
+                  href="https://icaps22.icaps-conference.org/"
                   target="_blank"
                   style={{ fontSize: 'inherit' }}>
                   ICAPS Conference
                 </Link>
               </h1>
+              {/* 
               <p style={{ paddingTop: '5px', color: 'grey' }}>
                 <Link href="/#/2021">2021</Link> |{' '}
                 <Link href="/#/2020">2020</Link>
+              </p>
+              */}
+              <p style={{ paddingTop: '5px', color: 'grey' }}>
+                June, 2022. Singapore.
               </p>
               <br />
               <br />
@@ -172,6 +177,8 @@ class LandingPage extends React.Component {
               </StructuredListBody>
             </StructuredListWrapper>
 
+            {/* 
+
             <Link href="/#/2021">
               <Button
                 className="no-decoration-on-hover"
@@ -201,6 +208,8 @@ class LandingPage extends React.Component {
                 Explore
               </Button>
             </Link>
+
+            */}
 
             <Link disabled>
               <Button
