@@ -53,10 +53,15 @@ class LandingPage extends React.Component {
                   ICAPS 22
                 </Link>
               </h1>
+              {/* 
               <p style={{ paddingTop: '5px', color: 'grey' }}>
                 <Link href="#call">2022</Link> |{' '}
                 <Link href="/#/2021">2021</Link> |{' '}
                 <Link href="/#/2020">2020</Link>
+              </p>
+              */}
+              <p style={{ paddingTop: '5px', color: 'grey' }}>
+                June, 2022 | Singapore
               </p>
               <br />
               <br />
@@ -173,7 +178,10 @@ class LandingPage extends React.Component {
               </StructuredListBody>
             </StructuredListWrapper>
 
-            {/*<Link href="/#/2021">
+
+            {/* 
+
+            <Link href="/#/2021">
               <Button
                 className="no-decoration-on-hover"
                 size="sm"
@@ -202,6 +210,8 @@ class LandingPage extends React.Component {
                 Explore
               </Button>
             </Link>
+
+            */}
 
             <Link disabled>
               <Button
