@@ -177,10 +177,7 @@ class LandingPage extends React.Component {
                 </StructuredListRow>
               </StructuredListBody>
             </StructuredListWrapper>
-
-
             {/* 
-
             <Link href="/#/2021">
               <Button
                 className="no-decoration-on-hover"
@@ -200,7 +197,6 @@ class LandingPage extends React.Component {
                 2020
               </Button>
             </Link>*/}
-
             <Link href="/#/explore">
               <Button
                 className="no-decoration-on-hover"
@@ -209,10 +205,8 @@ class LandingPage extends React.Component {
                 style={{ marginRight: '10px' }}>
                 Explore
               </Button>
-            </Link>
-
+            </Link>{' '}
             */}
-
             <Link disabled>
               <Button
                 className="no-decoration-on-hover"
@@ -222,7 +216,6 @@ class LandingPage extends React.Component {
                 Submit
               </Button>
             </Link>
-
             <Link
               className="no-decoration-on-hover"
               href="https://www.aaai.org/Publications/Templates/AuthorKit21.zip"
@@ -231,7 +224,6 @@ class LandingPage extends React.Component {
                 Template
               </Button>
             </Link>
-
             <Button
               className="no-decoration-on-hover"
               size="sm"
@@ -239,7 +231,6 @@ class LandingPage extends React.Component {
               onClick={this.onClickREADME.bind(this)}>
               README
             </Button>
-
             <Link
               href="/files/call-for-papers-xaip-2022.pdf"
               target="_blank"
@@ -257,8 +248,8 @@ class LandingPage extends React.Component {
                   invalid
                   label={
                     <>
-                      <span style={{ color: 'red' }}>
-                        Submission are closed.
+                      <span style={{ color: 'Blue' }}>
+                        Submission site coming soon!
                       </span>
                     </>
                   }
