@@ -195,7 +195,7 @@ class LandingPage extends React.Component {
                 style={{ marginRight: '10px' }}>
                 2020
               </Button>
-            </Link> */}
+            </Link>
             <Link href="/#/explore">
               <Button
                 className="no-decoration-on-hover"
@@ -204,7 +204,7 @@ class LandingPage extends React.Component {
                 style={{ marginRight: '10px' }}>
                 Explore
               </Button>
-            </Link>{' '}
+            </Link>{' '} */}
             <Link disabled>
               <Button
                 className="no-decoration-on-hover"
@@ -222,13 +222,15 @@ class LandingPage extends React.Component {
                 Template
               </Button>
             </Link>
-            <Button
+
+            {/*  <Button
               className="no-decoration-on-hover"
               size="sm"
               kind="ghost"
               onClick={this.onClickREADME.bind(this)}>
               README
-            </Button>
+            </Button> */}
+
             <Link
               href="/files/call-for-papers-xaip-2022.pdf"
               target="_blank"
