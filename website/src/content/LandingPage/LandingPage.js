@@ -177,8 +177,7 @@ class LandingPage extends React.Component {
                 </StructuredListRow>
               </StructuredListBody>
             </StructuredListWrapper>
-            {/* 
-            <Link href="/#/2021">
+            {/* <Link href="/#/2021">
               <Button
                 className="no-decoration-on-hover"
                 size="sm"
@@ -196,7 +195,7 @@ class LandingPage extends React.Component {
                 style={{ marginRight: '10px' }}>
                 2020
               </Button>
-            </Link>*/}
+            </Link> */}
             <Link href="/#/explore">
               <Button
                 className="no-decoration-on-hover"
@@ -206,7 +205,6 @@ class LandingPage extends React.Component {
                 Explore
               </Button>
             </Link>{' '}
-            */}
             <Link disabled>
               <Button
                 className="no-decoration-on-hover"
