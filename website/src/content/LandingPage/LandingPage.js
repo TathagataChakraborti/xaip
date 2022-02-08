@@ -50,11 +50,12 @@ class LandingPage extends React.Component {
                   href="https://icaps22.icaps-conference.org/"
                   target="_blank"
                   style={{ fontSize: 'inherit' }}>
-                  ICAPS Conference
+                  ICAPS 22
                 </Link>
               </h1>
               {/* 
               <p style={{ paddingTop: '5px', color: 'grey' }}>
+                <Link href="#call">2022</Link> |{' '}
                 <Link href="/#/2021">2021</Link> |{' '}
                 <Link href="/#/2020">2020</Link>
               </p>
@@ -176,10 +177,7 @@ class LandingPage extends React.Component {
                 </StructuredListRow>
               </StructuredListBody>
             </StructuredListWrapper>
-
-            {/* 
-
-            <Link href="/#/2021">
+            {/* <Link href="/#/2021">
               <Button
                 className="no-decoration-on-hover"
                 size="sm"
@@ -198,7 +196,6 @@ class LandingPage extends React.Component {
                 2020
               </Button>
             </Link>
-
             <Link href="/#/explore">
               <Button
                 className="no-decoration-on-hover"
@@ -207,39 +204,31 @@ class LandingPage extends React.Component {
                 style={{ marginRight: '10px' }}>
                 Explore
               </Button>
-            </Link>
-
-            */}
-
-            <Link disabled>
-              <Button
-                className="no-decoration-on-hover"
-                size="sm"
-                kind="ghost"
-                style={{ cursor: 'not-allowed' }}>
+            </Link>{' '} */}
+            <Link href="https://openreview.net/group?id=icaps-conference.org/ICAPS/2022/Workshop/XAIP">
+              <Button size="sm" kind="ghost">
                 Submit
               </Button>
             </Link>
-
             <Link
               className="no-decoration-on-hover"
-              href="https://www.aaai.org/Publications/Templates/AuthorKit21.zip"
+              href="https://www.aaai.org/Publications/Templates/AuthorKit22.zip"
               target="_blank">
               <Button size="sm" kind="ghost">
                 Template
               </Button>
             </Link>
 
-            <Button
+            {/*  <Button
               className="no-decoration-on-hover"
               size="sm"
               kind="ghost"
               onClick={this.onClickREADME.bind(this)}>
               README
-            </Button>
+            </Button> */}
 
             <Link
-              href="/files/call-for-papers-xaip-2021.pdf"
+              href="/files/call-for-papers-xaip-2022.pdf"
               target="_blank"
               className="no-decoration-on-hover">
               <Button size="sm" kind="ghost">
@@ -252,27 +241,28 @@ class LandingPage extends React.Component {
             <div className="some-container" style={{ marginTop: '70px' }}>
               <ProgressIndicator vertical currentIndex={4}>
                 <ProgressStep
-                  invalid
                   label={
                     <>
-                      <span style={{ color: 'red' }}>
-                        Submission are closed.
+                      <span style={{ color: 'Blue' }}>
+                        <a href="https://openreview.net/group?id=icaps-conference.org/ICAPS/2022/Workshop/XAIP">
+                          Submission Deadline{' '}
+                        </a>
                       </span>
                     </>
                   }
-                  secondaryLabel="May 31 UTC-12"
+                  secondaryLabel="March 20 UTC-12"
                 />
                 <ProgressStep
                   label="Author Notification"
-                  secondaryLabel="July 7 UTC-12"
+                  secondaryLabel="TBD"
                 />
                 <ProgressStep
                   label="XAIP 2021 Workshop"
-                  secondaryLabel="August 2"
+                  secondaryLabel="June 19 - 24, 2022"
                 />
                 <ProgressStep
                   label="Camera Ready Deadline"
-                  secondaryLabel="After the workshop"
+                  secondaryLabel="TBD"
                 />
               </ProgressIndicator>
             </div>
@@ -288,7 +278,7 @@ class LandingPage extends React.Component {
             <div className="bx--col-lg-6 bx--offset-lg-2 xaip-tags">
               <Tag type="magenta" title="Clear Filter">
                 {' '}
-                Core XAIP{' '}
+                Topics of interest{' '}
               </Tag>
 
               <br />
@@ -325,58 +315,18 @@ class LandingPage extends React.Component {
                   Ethical quandaries in explainable automated planning and
                   scheduling
                 </ListItem>
-              </UnorderedList>
-
-              <br />
-              <br />
-            </div>
-
-            <div className="bx--col-lg-6 xaip-tags">
-              <Tag type="purple" title="Clear Filter">
-                {' '}
-                The UX of XAIP{' '}
-              </Tag>
-
-              <br />
-              <br />
-
-              <UnorderedList>
                 <ListItem>
                   User interfaces for explainable automated planning and
                   scheduling
-                  <UnorderedList nested>
-                    <ListItem>Plan and schedule visualization</ListItem>
-                    <ListItem>
-                      Mixed initiative planning and scheduling
-                    </ListItem>
-                    <ListItem>
-                      Emerging technology for human-planner interaction
-                    </ListItem>
-                    <ListItem>
-                      Metrics for human readability or comprehensibility of
-                      plans and schedules
-                    </ListItem>
-                  </UnorderedList>
                 </ListItem>
                 <ListItem>
                   Explainable automated planning and scheduling for user
                   interfaces
-                  <UnorderedList nested>
-                    <ListItem>
-                      Representing and solving planning domains for user
-                      interface creation and design tasks
-                    </ListItem>
-                    <ListItem>
-                      Plan, activity, and intent recognition of users’
-                      interactions with interfaces
-                    </ListItem>
-                    <ListItem>
-                      Developing user (mental) models with description languages
-                      and decision processes
-                    </ListItem>
-                  </UnorderedList>
                 </ListItem>
               </UnorderedList>
+
+              <br />
+              <br />
             </div>
           </div>
         </div>
