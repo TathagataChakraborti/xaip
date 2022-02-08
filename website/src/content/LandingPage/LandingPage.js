@@ -205,18 +205,14 @@ class LandingPage extends React.Component {
                 Explore
               </Button>
             </Link>{' '} */}
-            <Link disabled>
-              <Button
-                className="no-decoration-on-hover"
-                size="sm"
-                kind="ghost"
-                style={{ cursor: 'not-allowed' }}>
+            <Link href="https://openreview.net/group?id=icaps-conference.org/ICAPS/2022/Workshop/XAIP">
+              <Button size="sm" kind="ghost">
                 Submit
               </Button>
             </Link>
             <Link
               className="no-decoration-on-hover"
-              href="https://www.aaai.org/Publications/Templates/AuthorKit21.zip"
+              href="https://www.aaai.org/Publications/Templates/AuthorKit22.zip"
               target="_blank">
               <Button size="sm" kind="ghost">
                 Template
@@ -245,15 +241,16 @@ class LandingPage extends React.Component {
             <div className="some-container" style={{ marginTop: '70px' }}>
               <ProgressIndicator vertical currentIndex={4}>
                 <ProgressStep
-                  invalid
                   label={
                     <>
                       <span style={{ color: 'Blue' }}>
-                        Submission site coming soon!
+                        <a href="https://openreview.net/group?id=icaps-conference.org/ICAPS/2022/Workshop/XAIP">
+                          Submission Deadline{' '}
+                        </a>
                       </span>
                     </>
                   }
-                  secondaryLabel="March 31 UTC-12"
+                  secondaryLabel="March 20 UTC-12"
                 />
                 <ProgressStep
                   label="Author Notification"
@@ -281,7 +278,7 @@ class LandingPage extends React.Component {
             <div className="bx--col-lg-6 bx--offset-lg-2 xaip-tags">
               <Tag type="magenta" title="Clear Filter">
                 {' '}
-                Core XAIP{' '}
+                Topics of interest{' '}
               </Tag>
 
               <br />
@@ -318,58 +315,18 @@ class LandingPage extends React.Component {
                   Ethical quandaries in explainable automated planning and
                   scheduling
                 </ListItem>
-              </UnorderedList>
-
-              <br />
-              <br />
-            </div>
-
-            <div className="bx--col-lg-6 xaip-tags">
-              <Tag type="purple" title="Clear Filter">
-                {' '}
-                The UX of XAIP{' '}
-              </Tag>
-
-              <br />
-              <br />
-
-              <UnorderedList>
                 <ListItem>
                   User interfaces for explainable automated planning and
                   scheduling
-                  <UnorderedList nested>
-                    <ListItem>Plan and schedule visualization</ListItem>
-                    <ListItem>
-                      Mixed initiative planning and scheduling
-                    </ListItem>
-                    <ListItem>
-                      Emerging technology for human-planner interaction
-                    </ListItem>
-                    <ListItem>
-                      Metrics for human readability or comprehensibility of
-                      plans and schedules
-                    </ListItem>
-                  </UnorderedList>
                 </ListItem>
                 <ListItem>
                   Explainable automated planning and scheduling for user
                   interfaces
-                  <UnorderedList nested>
-                    <ListItem>
-                      Representing and solving planning domains for user
-                      interface creation and design tasks
-                    </ListItem>
-                    <ListItem>
-                      Plan, activity, and intent recognition of users’
-                      interactions with interfaces
-                    </ListItem>
-                    <ListItem>
-                      Developing user (mental) models with description languages
-                      and decision processes
-                    </ListItem>
-                  </UnorderedList>
                 </ListItem>
               </UnorderedList>
+
+              <br />
+              <br />
             </div>
           </div>
         </div>
