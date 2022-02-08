@@ -244,9 +244,7 @@ class LandingPage extends React.Component {
                   label={
                     <>
                       <span style={{ color: 'Blue' }}>
-                        <a href="https://openreview.net/group?id=icaps-conference.org/ICAPS/2022/Workshop/XAIP">
-                          Submission Deadline{' '}
-                        </a>
+                        Submission Deadline{' '}
                       </span>
                     </>
                   }
