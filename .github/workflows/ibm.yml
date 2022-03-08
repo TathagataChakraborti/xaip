@@ -43,8 +43,9 @@ jobs:
     - name: Build
       run: |
         sudo apt update
+        curl -sL https://deb.nodesource.com/setup_14.x | sudo bash -
         sudo apt install nodejs
-        sudo apt upgrade nodejs
+        #sudo apt upgrade nodejs
         node -v
         cd ./website/
         yarn add node-sass@4.14.1
