@@ -239,8 +239,9 @@ class LandingPage extends React.Component {
 
           <div className="bx--col-lg-4 xaip-tags">
             <div className="some-container" style={{ marginTop: '70px' }}>
-              <ProgressIndicator vertical currentIndex={4}>
-                <ProgressStep
+              <ProgressIndicator vertical currentIndex={0}>
+                <ProgressStep 
+		  current
                   label={
                     <>
                       <span style={{ color: 'Blue' }}>
@@ -248,7 +249,7 @@ class LandingPage extends React.Component {
                       </span>
                     </>
                   }
-                  secondaryLabel="March 20 UTC-12"
+                  secondaryLabel="April 5 UTC-12"
                 />
                 <ProgressStep
                   label="Author Notification"
@@ -256,7 +257,7 @@ class LandingPage extends React.Component {
                 />
                 <ProgressStep
                   label="XAIP 2021 Workshop"
-                  secondaryLabel="June 19 - 24, 2022"
+                  secondaryLabel="June 13 - 17, 2022"
                 />
                 <ProgressStep
                   label="Camera Ready Deadline"
