@@ -1,0 +1,57 @@
+name: Build and Deploy to Bluemix
+
+on:
+  push:
+    branches:
+      - master
+
+
+# Environment variables available to all jobs and steps in this workflow
+env:
+  GITHUB_SHA: ${{ github.sha }}
+  IBM_CLOUD_REGION: us-south
+  IBM_CLOUD_SPACE: xaip
+  IBM_CLOUD_API_KEY: ${{ secrets.IBM_CLOUD_API_KEY }}
+  IBM_CLOUD_ORG: ${{ secrets.IBM_CLOUD_ORG }}
+
+jobs:
+  setup-build-publish-deploy:
+    name: Setup, Build, Publish, and Deploy
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    # Download and Install IBM Cloud CLI
+    - name: Install IBM Cloud CLI
+      run: |
+        curl -fsSL https://clis.cloud.ibm.com/install/linux | sh
+        ibmcloud --version
+        ibmcloud config --check-version=false
+        ibmcloud cf install
+
+    # Authenticate with IBM Cloud CLI
+    - name: Authenticate with IBM Cloud CLI
+      run: |
+        ibmcloud login --apikey ${IBM_CLOUD_APIKEY} -r ${IBM_CLOUD_REGION}
+        export NODE_OPTIONS=--max_old_space_size=8192
+        ibmcloud cr region-set "${IBM_CLOUD_REGION}"
+        ibmcloud cr login
+        ibmcloud target -s ${IBM_CLOUD_SPACE} -o ${IBM_CLOUD_ORG}
+
+    # Build Project
+    - name: Build
+      run: |
+        sudo apt update
+        sudo apt install nodejs
+        sudo apt upgrade nodejs
+        node -v
+        yarn install --ignore-engines
+        yarn build
+
+    # Deploy
+    - name: Deploy
+      run: |
+        ibmcloud cf push
