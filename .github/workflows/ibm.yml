@@ -46,6 +46,7 @@ jobs:
         sudo apt install nodejs
         sudo apt upgrade nodejs
         node -v
+        cd ./website/
         yarn install --ignore-engines
         yarn build
 
