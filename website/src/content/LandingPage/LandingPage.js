@@ -15,7 +15,14 @@ import {
   ProgressStep,
   Modal,
 } from 'carbon-components-react';
-import { MemberListCache } from '../../components/Data/XAIP2021Data';
+import {
+  Member,
+  Talk,
+  Speaker,
+  PCReduced,
+  shuffleArray,
+} from '../../components/Info';
+import { MemberListCache } from '../../components/Data/XAIP2022Data';
 
 var MemberList = shuffleArray(MemberListCache);
 
@@ -336,7 +343,7 @@ class LandingPage extends React.Component {
         <div id="team" className="bx--col-lg-12 bx--offset-lg-2">
           <h4>XAIP 2021 Organizing Team</h4>
           <hr />
-          <Link href="mailto:xaip21team@gmail.com">
+          <Link href="mailto:xaip.workshop@gmail.com">
             <Button size="small" kind="secondary">
               Contact
             </Button>
