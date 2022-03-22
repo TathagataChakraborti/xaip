@@ -15,6 +15,9 @@ import {
   ProgressStep,
   Modal,
 } from 'carbon-components-react';
+import { MemberListCache } from '../../components/Data/XAIP2021Data';
+
+var MemberList = shuffleArray(MemberListCache);
 
 class LandingPage extends React.Component {
   constructor(props) {
@@ -53,7 +56,7 @@ class LandingPage extends React.Component {
                   ICAPS 22
                 </Link>
               </h1>
-              {/* 
+              {/*
               <p style={{ paddingTop: '5px', color: 'grey' }}>
                 <Link href="#call">2022</Link> |{' '}
                 <Link href="/#/2021">2021</Link> |{' '}
@@ -240,8 +243,8 @@ class LandingPage extends React.Component {
           <div className="bx--col-lg-4 xaip-tags">
             <div className="some-container" style={{ marginTop: '70px' }}>
               <ProgressIndicator vertical currentIndex={0}>
-                <ProgressStep 
-		  current
+                <ProgressStep
+                  current
                   label={
                     <>
                       <span style={{ color: 'Blue' }}>
@@ -328,6 +331,28 @@ class LandingPage extends React.Component {
               <br />
             </div>
           </div>
+        </div>
+
+        <div id="team" className="bx--col-lg-12 bx--offset-lg-2">
+          <h4>XAIP 2021 Organizing Team</h4>
+          <hr />
+          <Link href="mailto:xaip21team@gmail.com">
+            <Button size="small" kind="secondary">
+              Contact
+            </Button>
+          </Link>
+
+          <div className="bx--row publications-page__tab-content">
+            {MemberList.map((item, key) => (
+              <React.Fragment key={key}>
+                <Member props={item} />
+              </React.Fragment>
+            ))}
+          </div>
+
+          <br />
+          <br />
+          <br />
         </div>
 
         <Modal
