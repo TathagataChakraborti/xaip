@@ -15,13 +15,7 @@ import {
   ProgressStep,
   Modal,
 } from 'carbon-components-react';
-import {
-  Member,
-  Talk,
-  Speaker,
-  PCReduced,
-  shuffleArray,
-} from '../../components/Info';
+import { Member, shuffleArray } from '../../components/Info';
 import { MemberListCache } from '../../components/Data/XAIP2022Data';
 
 var MemberList = shuffleArray(MemberListCache);

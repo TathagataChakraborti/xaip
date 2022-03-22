@@ -1,7 +1,3 @@
-var InvitedList = [];
-
-var PanelList = [];
-
 var MemberListCache = [
   {
     id: 1,
@@ -46,7 +42,5 @@ var MemberListCache = [
     link: 'http://www.public.asu.edu/~ssreedh3/',
   },
 ];
-
-var PCListCache = [];
 
 export { MemberListCache };
