@@ -337,7 +337,7 @@ class LandingPage extends React.Component {
         <div
           id="team"
           className="bx--col-lg-12 bx--offset-lg-2 landing-page landing-page__banner">
-          <h4>XAIP 2021 Organizing Team</h4>
+          <h4>XAIP 2022 Organizing Team</h4>
           <hr />
           <Link href="mailto:xaip.workshop@gmail.com">
             <Button size="small" kind="secondary">
