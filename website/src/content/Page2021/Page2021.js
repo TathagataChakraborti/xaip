@@ -86,7 +86,7 @@ class Page2021 extends React.Component {
           <div className="bx--row">
             <Link
               href="https://openreview.net/group?id=icaps-conference.org/ICAPS/2021/Workshop/XAIP"
-              style={{ marginLeft: '1rem', textDecoration: 'none' }}
+              style={{ marginLeft: '0.5rem', textDecoration: 'none' }}
               target="_blank">
               <Button kind="primary" size="sm">
                 Papers
