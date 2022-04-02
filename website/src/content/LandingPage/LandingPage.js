@@ -223,13 +223,13 @@ class LandingPage extends React.Component {
               </Button>
             </Link>
 
-            {/*  <Button
+            <Button
               className="no-decoration-on-hover"
               size="sm"
               kind="ghost"
               onClick={this.onClickREADME.bind(this)}>
-              README
-            </Button> */}
+              Other Instructions
+            </Button>
 
             <Link
               href="/files/call-for-papers-xaip-2022.pdf"
