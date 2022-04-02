@@ -228,7 +228,7 @@ class LandingPage extends React.Component {
               size="sm"
               kind="ghost"
               onClick={this.onClickREADME.bind(this)}>
-              Other Instructions
+              Additional Instructions
             </Button>
 
             <Link
@@ -361,7 +361,7 @@ class LandingPage extends React.Component {
         <Modal
           iconDescription="Close"
           modalHeading="Additional Instructions"
-          modalLabel="XAIP @ ICAPS 2021"
+          modalLabel="XAIP @ ICAPS 2022"
           passiveModal
           hasScrollingContent
           open={this.state.readme}
