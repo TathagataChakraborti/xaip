@@ -253,7 +253,7 @@ class LandingPage extends React.Component {
                       </span>
                     </>
                   }
-                  secondaryLabel="April 5 UTC-12"
+                  secondaryLabel="April 10 UTC-12"
                 />
                 <ProgressStep
                   label="Author Notification"
@@ -261,7 +261,7 @@ class LandingPage extends React.Component {
                 />
                 <ProgressStep
                   label="XAIP 2021 Workshop"
-                  secondaryLabel="June 13 - 17, 2022"
+                  secondaryLabel="June 13 - 17, 2022 (TBD)"
                 />
                 <ProgressStep
                   label="Camera Ready Deadline"
