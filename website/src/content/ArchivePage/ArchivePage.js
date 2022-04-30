@@ -5,7 +5,7 @@ import { DATA } from '../../components/Data/PaperData';
 
 const data = shuffleArray(DATA);
 
-class ExplorePage extends React.Component {
+class ArchivePage extends React.Component {
   constructor(props) {
     super();
     this.state = {
@@ -253,4 +253,4 @@ class ExplorePage extends React.Component {
   }
 }
 
-export default ExplorePage;
+export default ArchivePage;

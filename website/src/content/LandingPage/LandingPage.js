@@ -99,13 +99,13 @@ class LandingPage extends React.Component {
               </Link>
               <br />
               <Link
-                href="#/explore"
+                href="#/archive"
                 style={{ marginRight: '10px', textDecoration: 'none' }}>
                 <Button
                   kind="primary"
                   size="field"
                   style={{ minWidth: '175px' }}>
-                  Explore
+                  Past Papers
                 </Button>
               </Link>
             </div>

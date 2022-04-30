@@ -10,7 +10,7 @@ import {
   Tile,
 } from 'carbon-components-react';
 
-const LandscapePage = () => {
+const OverviewPage = () => {
   return (
     <div
       className="bx--grid bx--grid--full-width landing-page landing-page__banner"
@@ -21,7 +21,7 @@ const LandscapePage = () => {
             <StructuredListHead>
               <StructuredListRow className="no-border">
                 <StructuredListCell head>
-                  The Landscape of XAIP
+                  An Overview of the Landscape of XAIP
                   <br />
                   <p className="disclaimer">
                     Want to contribute to this list? Open an issue{' '}
@@ -627,4 +627,4 @@ const LandscapePage = () => {
   );
 };
 
-export default LandscapePage;
+export default OverviewPage;

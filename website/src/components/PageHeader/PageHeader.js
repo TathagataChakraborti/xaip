@@ -40,11 +40,11 @@ const PageHeader = (isSideNavExpanded, onClickSideNavExpand) => (
             <HeaderMenuItem element={Link} to="/2020">
               2020
             </HeaderMenuItem>
-            <HeaderMenuItem element={Link} to="/explore">
-              Explore
+            <HeaderMenuItem element={Link} to="/archive">
+              Archive
             </HeaderMenuItem>
-            <HeaderMenuItem element={Link} to="/landscape">
-              Landscape
+            <HeaderMenuItem element={Link} to="/overview">
+              Overview
             </HeaderMenuItem>
             <HeaderMenuItem element={Link} to="/software">
               Software
