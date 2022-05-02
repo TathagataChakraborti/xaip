@@ -14,6 +14,7 @@ import {
   ProgressIndicator,
   ProgressStep,
   Modal,
+  Tile,
 } from 'carbon-components-react';
 import { Member, shuffleArray } from '../../components/Info';
 import { MemberListCache } from '../../components/Data/XAIP2022Data';
@@ -54,7 +55,7 @@ class LandingPage extends React.Component {
                   href="https://icaps22.icaps-conference.org/"
                   target="_blank"
                   style={{ fontSize: 'inherit' }}>
-                  ICAPS 22
+                  ICAPS 2022
                 </Link>
               </h1>
               {/*
@@ -86,28 +87,54 @@ class LandingPage extends React.Component {
               </p>
               <br />
               <br />
-              <Link
-                href="https://github.com/TathagataChakraborti/xaip"
-                target="_blank"
-                style={{ marginRight: '10px', textDecoration: 'none' }}>
-                <Button
-                  kind="secondary"
-                  size="field"
-                  style={{ marginBottom: '20px', minWidth: '175px' }}>
-                  Community
-                </Button>
-              </Link>
-              <br />
-              <Link
-                href="#/archive"
-                style={{ marginRight: '10px', textDecoration: 'none' }}>
-                <Button
-                  kind="primary"
-                  size="field"
-                  style={{ minWidth: '175px' }}>
-                  Past Papers
-                </Button>
-              </Link>
+
+              <div className="bx--row">
+                <div className="bx--col-lg-4">
+                  <Tile style={{ minHeight: '200px' }}>
+                    <Tag
+                      type="blue"
+                      size="sm"
+                      style={{ borderRadius: '0', marginLeft: '0' }}>
+                      {' '}
+                      NEW{' '}
+                    </Tag>
+
+                    <p>
+                      Landscape of <br />
+                      Explainable AI <br /> Planning
+                    </p>
+                    <br />
+                    <br />
+
+                    <Button
+                      target="_blank"
+                      href="http://ibm.biz/xaipviz"
+                      className="no-decoration-on-hover"
+                      size="sm"
+                      kind="primary">
+                      Explore
+                    </Button>
+                  </Tile>
+                </div>
+
+                <div className="bx--col-lg-4">
+                  <Tile style={{ minHeight: '200px' }}>
+                    <Tag
+                      type="magenta"
+                      size="sm"
+                      style={{ borderRadius: '0', marginLeft: '0' }}>
+                      {' '}
+                      Coming Soon{' '}
+                    </Tag>
+
+                    <p>
+                      XAIP 2022
+                      <br />
+                      Program
+                    </p>
+                  </Tile>
+                </div>
+              </div>
             </div>
             <div className="bx--col-lg-8">
               <img
@@ -285,10 +312,8 @@ class LandingPage extends React.Component {
         <div className="bx--grid bx--grid--full-width landing-page landing-page__banner">
           <div className="bx--row landing-page__tab-content">
             <div className="bx--col-lg-6 bx--offset-lg-2 xaip-tags">
-              <Tag type="magenta" title="Clear Filter">
-                {' '}
-                Topics of interest{' '}
-              </Tag>
+              <h3>Topics of Interest</h3>
+              <hr />
 
               <br />
               <br />
@@ -336,6 +361,14 @@ class LandingPage extends React.Component {
 
               <br />
               <br />
+
+              <Button
+                href="/overview"
+                className="no-decoration-on-hover"
+                size="sm"
+                kind="primary">
+                Topics
+              </Button>
             </div>
           </div>
         </div>
@@ -343,25 +376,29 @@ class LandingPage extends React.Component {
         <div
           id="team"
           className="bx--grid bx--grid--full-width landing-page landing-page__banner">
-          <h4>XAIP 2022 Organizing Team</h4>
-          <hr />
-          <Link href="mailto:xaip.workshop@gmail.com">
-            <Button size="small" kind="secondary">
-              Contact
-            </Button>
-          </Link>
+          <div className="bx--row landing-page__tab-content">
+            <div className="bx--col-lg-12 bx--offset-lg-2 xaip-tags">
+              <h4>XAIP 2022 Organizing Team</h4>
+              <hr />
+              <Link href="mailto:xaip.workshop@gmail.com">
+                <Button size="small" kind="secondary">
+                  Contact
+                </Button>
+              </Link>
 
-          <div className="bx--row publications-page__tab-content">
-            {MemberList.map((item, key) => (
-              <React.Fragment key={key}>
-                <Member props={item} />
-              </React.Fragment>
-            ))}
+              <div className="bx--row publications-page__tab-content">
+                {MemberList.map((item, key) => (
+                  <React.Fragment key={key}>
+                    <Member props={item} />
+                  </React.Fragment>
+                ))}
+              </div>
+
+              <br />
+              <br />
+              <br />
+            </div>
           </div>
-
-          <br />
-          <br />
-          <br />
         </div>
 
         <Modal

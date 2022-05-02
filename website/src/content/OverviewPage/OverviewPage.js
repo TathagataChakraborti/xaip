@@ -8,6 +8,8 @@ import {
   Link,
   Tag,
   Tile,
+  ToastNotification,
+  Button,
 } from 'carbon-components-react';
 
 const OverviewPage = () => {
@@ -26,7 +28,7 @@ const OverviewPage = () => {
                   <p className="disclaimer">
                     Want to contribute to this list? Open an issue{' '}
                     <Link
-                      href="https://github.com/TathagataChakraborti/xaip"
+                      href="https://github.com/TathagataChakraborti/survey-visualizer#how-to-contribute"
                       target="_blank">
                       here
                     </Link>{' '}
@@ -42,6 +44,34 @@ const OverviewPage = () => {
               </StructuredListRow>
             </StructuredListHead>
           </StructuredListWrapper>
+
+          <div>
+            <ToastNotification
+              lowContrast
+              kind="info"
+              caption={
+                <Button
+                  target="_blank"
+                  href="http://ibm.biz/xaipviz"
+                  className="no-decoration-on-hover"
+                  size="sm"
+                  kind="primary">
+                  Explore
+                </Button>
+              }
+              subtitle={
+                <span>
+                  Like what you see here? Check out our brand new page{' '}
+                  <Link href="http://ibm.biz/xaipviz" target="_blank">
+                    here
+                  </Link>
+                  .
+                </span>
+              }
+              title="Landscape of XAIP"
+            />
+            <br />
+          </div>
 
           <StructuredListWrapper>
             <StructuredListBody>

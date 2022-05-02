@@ -25,7 +25,7 @@ class ArchivePage extends React.Component {
     };
   }
 
-  componentWillMount = () => {
+  componentDidMount = () => {
     this.setState(
       {
         search: '',
