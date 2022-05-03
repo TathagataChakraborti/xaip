@@ -1,4 +1,4 @@
-# :house: [ibm.biz/xaip2021](http://ibm.biz/xaip2020)
+# :house: [ibm.biz/xaip-workshop](http://ibm.biz/xaip-workshop)
 
 ## How to run
 
@@ -11,7 +11,7 @@
 ### Set up dependencies
 
 ```
->> sudo yarn install
+>> yarn
 ```
 
 ### Start application

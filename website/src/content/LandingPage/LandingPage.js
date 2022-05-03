@@ -90,7 +90,7 @@ class LandingPage extends React.Component {
 
               <div className="bx--row">
                 <div className="bx--col-lg-4">
-                  <Tile style={{ minHeight: '200px' }}>
+                  <Tile style={{ minHeight: '200px', marginBottom: '20px' }}>
                     <Tag
                       type="blue"
                       size="sm"
@@ -107,6 +107,7 @@ class LandingPage extends React.Component {
                     <br />
 
                     <Button
+                      style={{ maxWidth: '75%' }}
                       target="_blank"
                       href="http://ibm.biz/xaipviz"
                       className="no-decoration-on-hover"
@@ -311,10 +312,19 @@ class LandingPage extends React.Component {
 
         <div className="bx--grid bx--grid--full-width landing-page landing-page__banner">
           <div className="bx--row landing-page__tab-content">
-            <div className="bx--col-lg-6 bx--offset-lg-2 xaip-tags">
-              <h3>Topics of Interest</h3>
+            <div className="bx--col-lg-12 bx--offset-lg-2 xaip-tags">
+              <h4>Topics of Interest</h4>
               <hr />
 
+              <Button
+                href="/overview"
+                className="no-decoration-on-hover"
+                size="sm"
+                kind="secondary">
+                Topics
+              </Button>
+
+              <br />
               <br />
               <br />
 
@@ -358,17 +368,6 @@ class LandingPage extends React.Component {
                   interfaces
                 </ListItem>
               </UnorderedList>
-
-              <br />
-              <br />
-
-              <Button
-                href="/overview"
-                className="no-decoration-on-hover"
-                size="sm"
-                kind="primary">
-                Topics
-              </Button>
             </div>
           </div>
         </div>
