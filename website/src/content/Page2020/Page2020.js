@@ -109,7 +109,7 @@ class Page2020 extends React.Component {
             These are proceedings of the XAIP 2020 edition. You can select a
             paper from above to view the poster or scroll down below for the
             PDFs and recordings of the presentations. You can also explore other
-            XAIP editions by clicking <Link href="/#/explore">here</Link>.
+            XAIP editions by clicking <Link href="/archive">here</Link>.
           </p>
           <br />
           <StructuredListWrapper>

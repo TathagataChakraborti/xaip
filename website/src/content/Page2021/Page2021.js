@@ -77,8 +77,7 @@ class Page2021 extends React.Component {
 
           <p style={{ color: 'gray' }}>
             These are proceedings of the XAIP 2021 edition. You can also explore
-            all previous editions by clicking{' '}
-            <Link href="/#/explore">here</Link>.
+            all previous editions by clicking <Link href="/archive">here</Link>.
           </p>
           <br />
           <br />
