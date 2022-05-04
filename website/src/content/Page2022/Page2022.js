@@ -14,13 +14,8 @@ import {
   Accordion,
   AccordionItem,
   Link,
-  Button,
-  Tag,
-  Tile
+  Button
 } from 'carbon-components-react';
-
-import { FaceDissatisfied16 } from '@carbon/icons-react';
-import { FaceCool16 } from '@carbon/icons-react';
 
 var MemberList = shuffleArray(MemberListCache);
 var PCList = shuffleArray(PCListCache);
