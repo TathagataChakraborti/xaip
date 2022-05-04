@@ -67,11 +67,6 @@ class Page2022 extends React.Component {
           <h4>XAIP 2022 Program</h4>
           <hr />
 
-          <p style={{ color: 'gray' }}>
-            These are proceedings of the XAIP 2021 edition. You can also explore
-            all previous editions by clicking{' '}
-            <Link href="/#/explore">here</Link>.
-          </p>
           <br />
           <br />
 
@@ -106,24 +101,12 @@ class Page2022 extends React.Component {
 
           <br />
           <br />
+          <h4>Schedule</h4>
+          <hr />
+          <p>Comming soon!</p>
 
-          <div className="bx--col-lg-4">
-            <Tile style={{ minHeight: '200px' }}>
-              <Tag
-                type="magenta"
-                size="sm"
-                style={{ borderRadius: '0', marginLeft: '0' }}>
-                {' '}
-                Coming Soon{' '}
-              </Tag>
-
-              <p>
-                XAIP 2022
-                <br />
-                Schedule
-              </p>
-            </Tile>
-        </div>
+          <br />
+          <br />
 
           <br />
           <h4>Accepted Papers</h4>

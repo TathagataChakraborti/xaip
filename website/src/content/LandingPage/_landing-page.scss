@@ -186,3 +186,9 @@
 .no-decoration-on-hover:hover {
   text-decoration: none;
 }
+
+.announcement-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

@@ -90,21 +90,21 @@ class LandingPage extends React.Component {
 
               <div className="bx--row">
                 <div className="bx--col-lg-4">
-                  <Tile style={{ minHeight: '200px', marginBottom: '20px' }}>
-                    <Tag
-                      type="blue"
-                      size="sm"
-                      style={{ borderRadius: '0', marginLeft: '0' }}>
-                      {' '}
-                      NEW{' '}
-                    </Tag>
+                  <Tile style={{ minHeight: '200px', marginBottom: '20px' }} className="announcement-card">
+                    <div>
+                      <Tag
+                        type="blue"
+                        size="sm"
+                        style={{ borderRadius: '0', marginLeft: '0' }}>
+                        {' '}
+                        NEW{' '}
+                      </Tag>
 
-                    <p>
-                      Landscape of <br />
-                      Explainable AI <br /> Planning
-                    </p>
-                    <br />
-                    <br />
+                      <p>
+                        Landscape of <br />
+                        Explainable AI <br /> Planning
+                      </p>
+                    </div>
 
                     <Button
                       style={{ maxWidth: '75%' }}
@@ -119,24 +119,22 @@ class LandingPage extends React.Component {
                 </div>
 
                 <div className="bx--col-lg-4">
-                  <Tile style={{ minHeight: '200px' }}>
-                    <Tag
-                      type="blue"
-                      size="sm"
-                      style={{ borderRadius: '0', marginLeft: '0' }}>
-                      {' '}
-                      NEW{' '}
-                    </Tag>
+                  <Tile style={{ minHeight: '200px' }} className="announcement-card">
+                    <div>
+                      <Tag
+                        type="blue"
+                        size="sm"
+                        style={{ borderRadius: '0', marginLeft: '0' }}>
+                        {' '}
+                        NEW{' '}
+                      </Tag>
 
-                    <p>
-                      XAIP 2022
-                      <br />
-                      Accepted Papers
-                    </p>
-                    <br />
-                    <br />
-                    <br />
-                    <br />
+                      <p>
+                        XAIP 2022
+                        <br />
+                        Accepted Papers
+                      </p>
+                    </div>
 
                     <Button
                       style={{ maxWidth: '75%' }}
@@ -144,7 +142,7 @@ class LandingPage extends React.Component {
                       className="no-decoration-on-hover"
                       size="sm"
                       kind="primary">
-                      To Program
+                      Program
                     </Button>
                   </Tile>
                 </div>
