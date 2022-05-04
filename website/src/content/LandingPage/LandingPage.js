@@ -53,7 +53,7 @@ class LandingPage extends React.Component {
                   ICAPS 22
                 </Link>
               </h1>
-              {/* 
+              {/*
               <p style={{ paddingTop: '5px', color: 'grey' }}>
                 <Link href="#call">2022</Link> |{' '}
                 <Link href="/#/2021">2021</Link> |{' '}
@@ -81,6 +81,18 @@ class LandingPage extends React.Component {
                 </Link>
               </p>
               <br />
+              <br />
+              <Link
+                href="#/2022"
+                target="_blank"
+                style={{ marginRight: '10px', textDecoration: 'none' }}>
+                <Button
+                  kind="primary"
+                  size="field"
+                  style={{ marginBottom: '20px', minWidth: '175px' }}>
+                  Programm 2022
+                </Button>
+              </Link>
               <br />
               <Link
                 href="https://github.com/TathagataChakraborti/xaip"
