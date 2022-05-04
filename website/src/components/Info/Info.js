@@ -368,7 +368,7 @@ const Talk = props => {
           )}
         </span>
       }>
-      {props.props.abstract}
+      <p>{props.props.abstract}</p>
       <br />
       <br />
       {props.props.link && (

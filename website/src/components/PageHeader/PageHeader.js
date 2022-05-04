@@ -34,6 +34,9 @@ const PageHeader = (isSideNavExpanded, onClickSideNavExpand) => (
               Team
             </HeaderMenuItem>
              */}
+            <HeaderMenuItem element={Link} to="/2022">
+              2022
+            </HeaderMenuItem>
             <HeaderMenuItem element={Link} to="/2021">
               2021
             </HeaderMenuItem>
@@ -64,6 +67,9 @@ const PageHeader = (isSideNavExpanded, onClickSideNavExpand) => (
                   Team
                 </HeaderMenuItem>
                  */}
+                <HeaderMenuItem element={Link} to="/2022">
+                  2022
+                </HeaderMenuItem>
                 <HeaderMenuItem element={Link} to="/2021">
                   2021
                 </HeaderMenuItem>

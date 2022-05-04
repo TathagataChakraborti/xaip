@@ -121,18 +121,31 @@ class LandingPage extends React.Component {
                 <div className="bx--col-lg-4">
                   <Tile style={{ minHeight: '200px' }}>
                     <Tag
-                      type="magenta"
+                      type="blue"
                       size="sm"
                       style={{ borderRadius: '0', marginLeft: '0' }}>
                       {' '}
-                      Coming Soon{' '}
+                      NEW{' '}
                     </Tag>
 
                     <p>
                       XAIP 2022
                       <br />
-                      Program
+                      Accepted Papers
                     </p>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+
+                    <Button
+                      style={{ maxWidth: '75%' }}
+                      href="/2022"
+                      className="no-decoration-on-hover"
+                      size="sm"
+                      kind="primary">
+                      To Program
+                    </Button>
                   </Tile>
                 </div>
               </div>

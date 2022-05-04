@@ -1,0 +1,30 @@
+.publications-page__tab-content {
+  padding-top: $layout-01;
+  padding-bottom: $layout-01;
+}
+
+.publications-page__publications-list-header {
+  color: $visited-link;
+  font-weight: normal;
+}
+
+.pub-margin {
+  margin-top: 10px;
+  font-style: italic;
+}
+
+.bx--structured-list-row.no-border {
+  border: none;
+}
+
+.bx--structured-list.low-margin {
+  margin-bottom: 0;
+}
+
+.bx--structured-list-row.roof {
+  border-top: 1px solid #e0e0e0;
+}
+
+.bx--structured-list-td {
+  vertical-align: top;
+}

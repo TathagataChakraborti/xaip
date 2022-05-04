@@ -1509,6 +1509,197 @@ const DATA = [
     render: true,
     xaipid: 202119,
   },
+  {
+    id: 151,
+    title:
+      'Subgoal-Based Explanations for Unreliable Intelligent Decision Support Systems',
+    authors: 'Devleena Das, Been Kim, Sonia Chernova',
+    abstract:
+      'Intelligent decision support (IDS) systems leverage artificial intelligence techniques to generate recommendations that guide human users through the decision making phases of a task. However, a key challenge is that IDS systems are not perfect, and in complex real-world scenarios may produce suboptimal output or fail to work altogether.  The field of explainable AI planning (XAIP) has sought to develop techniques that make the decision making of sequential decision making AI systems more explainable to end-users. Critically, prior work in applying XAIP techniques to IDS systems has assumed that the plan being proposed by the planner is always optimal, and therefore the action or plan being recommended as decision support to the user is always optimal. In this work, we examine novice user interactions with a non-robust IDS system -- one that occasionally recommends a suboptimal actions, and one that may become unavailable after users have become accustomed to its guidance.  We introduce a new explanation type, subgoal-based explanations, for plan-based IDS systems, that supplements traditional IDS output with information about the subgoal toward which the recommended action would contribute. We demonstrate that subgoal-based explanations lead to improved user task performance, improve user ability to distinguish optimal and suboptimal IDS recommendations, are preferred by users, and enable more robust user performance in the case of IDS failure.',
+    uisp: false,
+    xaip: true,
+    invited: false,
+    year: '2022',
+    link: 'https://openreview.net/forum?id=jzPrbN9CbF3',
+    render: true,
+    xaipid: 202119,
+  },
+  {
+    id: 152,
+    title: 'On Generating Abstract Explanations via Knowledge Forgetting',
+    authors: 'Stylianos Loukas Vasileiou, William Yeoh',
+    abstract:
+      'In this paper, we investigate the problem of generating explanations from the context of Human-aware AI Planning. Particularly, we focus on an explanatory setting for tasks encoded in a logical formalism, where given an agent model (encoding the task), an explanandum entailed by the agent, and a user vocabulary specifying terms in the task, the goal is to find an explanation that is at an appropriate abstraction level with respect to the users vocabulary. We propose a logic-based framework aimed at generating such explanations by leveraging a method called knowledge forgetting, and present an algorithmic approach for computing them. Our experimental evaluation shows the promise of our framework.',
+    uisp: false,
+    xaip: true,
+    invited: false,
+    year: '2022',
+    link: 'https://openreview.net/forum?id=oy_eip8_Ljn',
+    render: true,
+    xaipid: 202119,
+  },
+  {
+    id: 153,
+    title: 'Explaining Soft-Goal Conflicts through Constraint Relaxations',
+    authors: 'Rebecca Eifler, Jeremy Frank, Jörg Hoffmann',
+    abstract:
+      'Recent work suggests to explain trade-offs between soft goals in terms of their conflicts, i. e., minimal unsolvable soft-goal subsets. But this does not explain the conflicts themselves: Why can a given set of soft goals not be jointly achieved? Here we approach that question in terms of the underlying constraints on plans in the task at hand, namely resource availability and time windows. In this context, a natural form of explanation for a soft-goal conflict is a minimal constraint relaxation under which the conflict disappears (“if the deadline was 1 hour later, it would work”). We explore algorithms for computing such explanations. A baseline is to simply loop over all relaxed tasks and compute the conflicts for each separately. We improve over this by two algorithms that leverage information -- conflicts, reachable states -- across relaxed tasks. We show that these algorithms can exponentially outperform the baseline in theory, and we run experiments confirming that advantage in practice.',
+    uisp: false,
+    xaip: true,
+    invited: false,
+    year: '2022',
+    link: 'https://openreview.net/forum?id=iMIPkk143Rh',
+    render: true,
+    xaipid: 202119,
+  },
+  {
+    id: 154,
+    title:
+      'Computing Policies That Account for the Effects of Human Uncertainty During Execution in Markov Decision Processes',
+    authors: 'Sriram Gopalakrishnan, Mudit Verma, Subbarao Kambhampati',
+    abstract:
+      'When humans are given a policy to execute, there can be policy execution errors and deviations in policy if there is uncertainty in identifying a state. This can happen due to the human agents cognitive limitations and/or perceptual errors. So an algorithm that computes a policy for a human to execute ought to consider these effects in its computations. An optimal Markov Decision Process (MDP) policy that is poorly executed (because of a human agent) maybe much worse than another policy that is suboptimal in the MDP, but considers the human-agents execution behavior. In this paper we consider two problems that arise from state uncertainty; these are erroneous state-inference, and extra-sensing actions that a person might take as a result of their uncertainty. We present an approach to model the human agents behavior with respect to state uncertainty, which can then be used to compute MDP policies that accounts for these problems. This is followed by a hill climbing algorithm to search for good policies given our model of the human agent. We also present a branch and bound algorithm which can find the optimal policy for such problems. We show experimental results in a Gridworld domain, and warehouse-worker domain. Finally, we present human-subject studies that support our human model assumptions. ',
+    uisp: false,
+    xaip: true,
+    invited: false,
+    year: '2022',
+    link: 'https://openreview.net/forum?id=0wdfuNN7h2S',
+    render: true,
+    xaipid: 202119,
+  },
+  {
+    id: 155,
+    title:
+      'Discrete Time Series Clustering and Delineation: A Tree-Based Approach to Linear Temporal Logic Discovery',
+    authors: 'Brennan Cruse, Christian Muise',
+    abstract:
+      'Inferring temporal logic specifications from plan traces can offer significant insight into several aspects of planning such as goal recognition, policy summarization, and system dynamic modelling. Prior work in this area has predominantly focused on the identification of specifications that satisfy all plan traces within a set, however more recently, contrastive approaches concerning the delineation of two sets have also been established. While these approaches are effective in their defined scope, they assume the existence of only one or two behavioural clusters. In this paper, we re-imagine contrastive specification learning by proposing a novel tree generation technique which allows k clusters to be discovered. By embracing a Monte Carlo node-splitting approach, our algorithm seeks balance to contrastively divide any given set of plan traces into two sets with an accompanying temporal logic specification satisfying one of the sets. Recursing this procedure, we demonstrate the effectiveness of our approach to cluster and delineate plan traces, allowing temporal logic specifications to evoke insight at each level of the resulting tree.',
+    uisp: false,
+    xaip: true,
+    invited: false,
+    year: '2022',
+    link: 'https://openreview.net/forum?id=nil-578ERCL',
+    render: true,
+    xaipid: 202119,
+  },
+  {
+    id: 156,
+    title: 'Interactive Explanations of Agent Behavior ',
+    authors: 'Yotam Amitai, Guy Avni, Ofra Amir',
+    abstract:
+      'As reinforcement learning methods increasingly amass accomplishments, the need for comprehending their solutions becomes more crucial. Most explainable reinforcement learning (XRL) methods generate a static explanation depicting their developers intuition of what should be explained and how. In contrast, literature from the social sciences proposes that meaningful explanations are structured as a dialog between the explainer and the explainee, suggesting a more active role for the user and her communication with the agent. In this paper, we present ASQ-IT -- an interactive tool that presents video clips of the agent acting in its environment based on queries given by the user that describe temporal properties of behaviors of interest. Our approach is based on formal methods: queries in ASQ-ITs user interface map to a fragment of Linear Temporal Logic over finite traces (LTLf), which we developed, and our algorithm for query processing is based on automata theory. We provide experimental results from a user-study aimed at testing ASQ-ITs usability, and report positive outcomes from both objective performance and self-reported ability of participants to use our tool.',
+    uisp: false,
+    xaip: true,
+    invited: false,
+    year: '2022',
+    link: 'https://openreview.net/forum?id=G8ebd2uY7OC',
+    render: true,
+    xaipid: 202119,
+  },
+  {
+    id: 157,
+    title:
+      'Integrating Policy Summaries with Reward Decomposition Explanations',
+    authors: 'Yael Septon, Ofra Amir',
+    abstract:
+      'Explaining the behavior of agents operating in sequential decision-making settings is challenging, as their behavior is affected by a dynamic environment and delayed reward. In this paper, we study a new way of combining local and global explanations of sequential decision-making agents in order to help understand their behavior. Specifically, we combine reward decomposition, a local explanation method that exposes agent preferences, with HIGHLIGHTS, a global explanation method that shows a summary of the agents behavior in important states. We conducted a user study to evaluate the integration of these explanation methods and their respective benefits. Our results show that local information in the form of reward decomposition contributed to participants understanding of agents preferences, while HIGHLIGHTS summaries did not lead to an improvement compared to a baseline showing frequent agent trajectories.',
+    uisp: false,
+    xaip: true,
+    invited: false,
+    year: '2022',
+    link: 'https://openreview.net/forum?id=xQf6Htgm5r1',
+    render: true,
+    xaipid: 202119,
+  },
+  {
+    id: 158,
+    title: 'JEDAI: A System for Skill-Aligned Explainable Robot Planning',
+    authors: 'Naman Shah, Pulkit Verma, Trevor Angle, Siddharth Srivastava',
+    abstract:
+      'This paper presents JEDAI, an AI system designed for outreach and educational efforts aimed at non-AI experts. JEDAI features a novel synthesis of research ideas from integrated task and motion planning and explainable AI. JEDAI helps users create high-level, intuitive plans while ensuring that they will be executable by the robot. It also provides users customized explanations about errors and helps improve their understanding of AI planning as well as the limits and capabilities of the underlying robot system.',
+    uisp: false,
+    xaip: true,
+    invited: false,
+    year: '2022',
+    link: 'https://openreview.net/forum?id=T2vKIy4uOnV',
+    render: true,
+    xaipid: 202119,
+  },
+  {
+    id: 159,
+    title:
+      'Why Did You Do That? Generalizing Causal Link Explanations to Fully Observable Non-Deterministic Planning Problems',
+    authors: 'Sarath Sreedharan, Christian Muise, Subbarao Kambhampati',
+    abstract:
+      'The problem of designing automated agents, particularly automated planning agents that can explain their decisions has been receiving a lot of attention in recent years. The field of explainable planning or XAIP has already made a lot of progress in recent years and many of them centered around the problem of explaining decisions derived for classical planning problems. As the field progresses there is interest in tackling problems from more complex planning formalisms. However, one important aspect to keep in mind as we start focusing on such settings is that the explanatory challenges we study in the context of classical planning problems do not disappear when we move to more general settings but are just magnified. As such, when we move to these more general settings, a significant challenge before us is to see how one could generalize the well-established methods studied in the context of classical planning problems to these new settings. To provide a concrete example for this new research program we will start with causal link explanations, one of the earliest and most widely used explanations techniques used in the context of policies generated for fully observable non-deterministic planning problems. This would see us generalizing a concept that was originally developed for a specific solution concept, i.e, sequential plans, and see them applied to a very different solution concept (i.e. policies). We will develop a compilation-based method for generating generalized causal link explanations and show how as the domain is limited to deterministic cases, our method would generate causal link chains as identified by earlier works.',
+    uisp: false,
+    xaip: true,
+    invited: false,
+    year: '2022',
+    link: 'https://openreview.net/forum?id=D44ytXrLXuS',
+    render: true,
+    xaipid: 202119,
+  },
+  {
+    id: 160,
+    title:
+      'Why Not This MAPF Plan Instead? Contrastive Map-based Explanations for Optimal MAPF',
+    authors: 'Martim Brandão, Yonathan Setiawan',
+    abstract:
+      'Multi-Agent Path Finding (MAPF) plans can be very complex to analyze and understand. Recent user studies have shown that explanations would be a welcome tool for MAPF practitioners and developers to better understand plans, as well as to tune map layouts and cost functions. In this paper we formulate two variants of an explanation problem in MAPF that we call contrastive map-based explanation. The problem consists of answering the question why dont agents A follow paths P instead? ---by finding regions of the map that would have to be an obstacle in order for the expected plan to be optimal. We propose three different methods to compute these explanations, and evaluate them quantitatively on a set of benchmark problems that we make publicly available. Motivations for generating this type of explanation are discussed in the paper and include both user understanding of MAPF problems, and designer-aids to guide the improvement of map layouts.',
+    uisp: false,
+    xaip: true,
+    invited: false,
+    year: '2022',
+    link: 'https://openreview.net/forum?id=Ty8oieMHLNy',
+    render: true,
+    xaipid: 202119,
+  },
+  {
+    id: 161,
+    title:
+      'Repair Suggestions for Planning Domains with Missing Actions Effects',
+    authors: 'Alba Gragera, Ángel García-Olaya, Fernando Fernández',
+    abstract:
+      'In Automated Planning (AP) a proper definition of the domain and problem files is assumed. However, producing complete model descriptions is a time consuming and challenging task, especially for non-experts. It is easy to make mistakes when creating formal models, turning the planning task unsolvable for the planners. This can happen if the initial state is not fully and properly specified, some actions are missing, or some actions are incomplete. Explaining the absence of solution in such cases is essential to help humans in the development of AP tasks. In this paper we focus on repairing planning models where the effects of some actions are incomplete. We propose a compilation of the unsolvable task to a new extended planning task, where the actions are allowed to insert possible missing predicates in their effects. The solution to such task is a plan that achieves the goals of the original problem while also warning about the modifications that were necessary to do so. Experimental results show this approach can be effectively used to repair incomplete planning tasks across different planning domains.',
+    uisp: false,
+    xaip: true,
+    invited: false,
+    year: '2022',
+    link: 'https://openreview.net/forum?id=KrHA1GyDF4n',
+    render: true,
+    xaipid: 202119,
+  },
+  {
+    id: 162,
+    title: 'Demonstrating the Impact of Modelling Decisions',
+    authors: 'Alan Lindsay, Ron Petrick',
+    abstract:
+      'The modelling problem involves making compromises between a variety of competing factors, including planning efficiency, plan language usefulness, and real-world optimisation goals. Optimal plans in the resulting model may appear suboptimal when executed in the world. As a consequence, a human observer might find it difficult to comprehend the apparent inefficient behaviours of the agent, which might impact on the human’s trust of the agent. In this work we consider modelling decisions, such as abstractions, and their impact on the resulting plans. Our aim is to build a general approach that can assist a user to better understand both the implications of a modelling step and provide justification to support the modelling step. As a start, we have extended an off-the-shelf plan visualisation tool to provide plan failure visualisations, to demonstrate the impact of these modelling decisions to the user.',
+    uisp: false,
+    xaip: true,
+    invited: false,
+    year: '2022',
+    link: 'https://openreview.net/forum?id=9ShFZ6a8LpI',
+    render: true,
+    xaipid: 202119,
+  },
+  {
+    id: 163,
+    title:
+      'Explainable Pathfinding for Inscrutable Planners with Inductive Logic Programming',
+    authors:
+      'Forest Agostinelli, Rojina panta, Vedant Khandelwal, Biplav Srivastava, Bharath Muppasani, Dezhi Wu',
+    abstract:
+      'The complexity of the solutions that artificial intelligence can learn to solve problems currently surpasses its ability to explain these solutions. In many domains, explainable solutions are a necessary condition while optimality is not. Therefore, we seek to constrain solutions to the space of solutions that can be explained to a human. To do this, we build on inductive logic programming (ILP) techniques that allow us to define robust background knowledge and inductive biases. By combining ILP with a given inscrutable planner, we are able to construct an explainable graph representing solutions to all states in the state space. This graph can then be summarized using a variety of methods such as hierarchical representations and simple if/else rules. We test our approach on Towers of Hanoi and discuss future work for applications to the Rubik’s cube.',
+    uisp: false,
+    xaip: true,
+    invited: false,
+    year: '2022',
+    link: 'https://openreview.net/forum?id=S44aSPW6lRa',
+    render: true,
+    xaipid: 202119,
+  },
 ];
 
 export { DATA };
