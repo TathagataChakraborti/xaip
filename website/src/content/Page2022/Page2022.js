@@ -4,17 +4,12 @@ import {
   MemberListCache,
   PCListCache,
 } from '../../components/Data/XAIP2022Data';
-import {
-  Member,
-  Talk,
-  PCReduced,
-  shuffleArray,
-} from '../../components/Info';
+import { Member, Talk, PCReduced, shuffleArray } from '../../components/Info';
 import {
   Accordion,
   AccordionItem,
   Link,
-  Button
+  Button,
 } from 'carbon-components-react';
 
 var MemberList = shuffleArray(MemberListCache);
@@ -120,7 +115,9 @@ class Page2022 extends React.Component {
         <br />
         <br />
 
-        <div id="team" className="bx--col-lg-12 bx--offset-lg-2 landing-page__banner">
+        <div
+          id="team"
+          className="bx--col-lg-12 bx--offset-lg-2 landing-page__banner">
           <h4>XAIP 2022 Organizing Team</h4>
           <hr />
           <Link href="mailto:xaip21team@gmail.com">
@@ -140,7 +137,6 @@ class Page2022 extends React.Component {
           <br />
           <br />
           <br />
-
 
           <Accordion align="start">
             <AccordionItem open title="Extended Program Committee">
