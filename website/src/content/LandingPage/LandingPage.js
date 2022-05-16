@@ -4,7 +4,6 @@ import {
   Link,
   ListItem,
   UnorderedList,
-  Tag,
   Button,
   StructuredListWrapper,
   StructuredListHead,
@@ -90,16 +89,10 @@ class LandingPage extends React.Component {
 
               <div className="bx--row">
                 <div className="bx--col-lg-4">
-                  <Tile style={{ minHeight: '200px', marginBottom: '20px' }} className="announcement-card">
+                  <Tile
+                    style={{ minHeight: '175px', marginBottom: '20px' }}
+                    className="announcement-card">
                     <div>
-                      <Tag
-                        type="blue"
-                        size="sm"
-                        style={{ borderRadius: '0', marginLeft: '0' }}>
-                        {' '}
-                        NEW{' '}
-                      </Tag>
-
                       <p>
                         Landscape of <br />
                         Explainable AI <br /> Planning
@@ -109,26 +102,20 @@ class LandingPage extends React.Component {
                     <Button
                       style={{ maxWidth: '75%' }}
                       target="_blank"
-                      href="http://ibm.biz/xaipviz"
+                      href="https://explainableplanning.com"
                       className="no-decoration-on-hover"
                       size="sm"
-                      kind="primary">
+                      kind="secondary">
                       Explore
                     </Button>
                   </Tile>
                 </div>
 
                 <div className="bx--col-lg-4">
-                  <Tile style={{ minHeight: '200px' }} className="announcement-card">
+                  <Tile
+                    style={{ minHeight: '175px' }}
+                    className="announcement-card">
                     <div>
-                      <Tag
-                        type="blue"
-                        size="sm"
-                        style={{ borderRadius: '0', marginLeft: '0' }}>
-                        {' '}
-                        NEW{' '}
-                      </Tag>
-
                       <p>
                         XAIP 2022
                         <br />
