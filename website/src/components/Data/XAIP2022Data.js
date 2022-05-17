@@ -120,7 +120,7 @@ var PCListCache = [
   },
   {
     id: 15,
-    name: 'Pascal Tobias Bercher',
+    name: 'Pascal Bercher',
     affiliation: 'Australian National University',
   },
   {
@@ -145,7 +145,7 @@ var PCListCache = [
   },
   {
     id: 20,
-    name: 'S.T. Lin',
+    name: 'Songtuan Lin',
     affiliation: 'Australian National University',
   },
   {
