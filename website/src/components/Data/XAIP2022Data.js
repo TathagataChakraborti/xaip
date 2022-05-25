@@ -1,6 +1,50 @@
-var InvitedList = [];
+var InvitedList = [
+  {
+    id: 0,
+    name: 'Mark Riedl',
+    image: 'markriedl',
+    affiliation: 'Georgia Tech',
+    link: 'https://www.cc.gatech.edu/people/mark-riedl',
+  },
+  {
+    id: 1,
+    name: 'Bertram Malle',
+    image: 'bertrammalle',
+    affiliation: 'Brown University',
+    link: 'https://research.clps.brown.edu/SocCogSci/Personnel/BFM.html',
+  },
+  {
+    id: 2,
+    name: 'Francesca Toni',
+    image: 'francescatoni',
+    affiliation: 'Imperial College London',
+    link: 'https://www.imperial.ac.uk/people/f.toni',
+  },
+];
 
-var PanelList = [];
+var PanelList = [
+  {
+    id: 0,
+    name: 'Mark Riedl',
+    image: 'markriedl',
+    affiliation: 'Georgia Tech',
+    link: 'https://www.cc.gatech.edu/people/mark-riedl',
+  },
+  {
+    id: 1,
+    name: 'Bertram Malle',
+    image: 'bertrammalle',
+    affiliation: 'Brown University',
+    link: 'https://research.clps.brown.edu/SocCogSci/Personnel/BFM.html',
+  },
+  {
+    id: 2,
+    name: 'Francesca Toni',
+    image: 'francescatoni',
+    affiliation: 'Imperial College London',
+    link: 'https://www.imperial.ac.uk/people/f.toni',
+  },
+];
 
 var MemberListCache = [
   {

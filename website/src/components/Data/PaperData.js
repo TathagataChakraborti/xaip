@@ -1522,6 +1522,8 @@ const DATA = [
     year: '2022',
     link: 'https://openreview.net/forum?id=jzPrbN9CbF3',
     render: true,
+    session: 3,
+    position: 0,
     xaipid: 202119,
   },
   {
@@ -1536,6 +1538,8 @@ const DATA = [
     year: '2022',
     link: 'https://openreview.net/forum?id=oy_eip8_Ljn',
     render: true,
+    session: 3,
+    position: 3,
     xaipid: 202119,
   },
   {
@@ -1550,6 +1554,8 @@ const DATA = [
     year: '2022',
     link: 'https://openreview.net/forum?id=iMIPkk143Rh',
     render: true,
+    session: 2,
+    position: 1,
     xaipid: 202119,
   },
   {
@@ -1565,6 +1571,8 @@ const DATA = [
     year: '2022',
     link: 'https://openreview.net/forum?id=0wdfuNN7h2S',
     render: true,
+    session: 4,
+    position: 1,
     xaipid: 202119,
   },
   {
@@ -1580,6 +1588,8 @@ const DATA = [
     year: '2022',
     link: 'https://openreview.net/forum?id=nil-578ERCL',
     render: true,
+    session: 2,
+    position: 2,
     xaipid: 202119,
   },
   {
@@ -1594,6 +1604,8 @@ const DATA = [
     year: '2022',
     link: 'https://openreview.net/forum?id=G8ebd2uY7OC',
     render: true,
+    session: 4,
+    position: 2,
     xaipid: 202119,
   },
   {
@@ -1609,6 +1621,8 @@ const DATA = [
     year: '2022',
     link: 'https://openreview.net/forum?id=xQf6Htgm5r1',
     render: true,
+    session: 1,
+    position: 3,
     xaipid: 202119,
   },
   {
@@ -1623,6 +1637,8 @@ const DATA = [
     year: '2022',
     link: 'https://openreview.net/forum?id=T2vKIy4uOnV',
     render: true,
+    session: 4,
+    position: 3,
     xaipid: 202119,
   },
   {
@@ -1638,6 +1654,8 @@ const DATA = [
     year: '2022',
     link: 'https://openreview.net/forum?id=D44ytXrLXuS',
     render: true,
+    session: 3,
+    position: 1,
     xaipid: 202119,
   },
   {
@@ -1653,6 +1671,8 @@ const DATA = [
     year: '2022',
     link: 'https://openreview.net/forum?id=Ty8oieMHLNy',
     render: true,
+    session: 1,
+    position: 4,
     xaipid: 202119,
   },
   {
@@ -1668,6 +1688,8 @@ const DATA = [
     year: '2022',
     link: 'https://openreview.net/forum?id=KrHA1GyDF4n',
     render: true,
+    session: 1,
+    position: 2,
     xaipid: 202119,
   },
   {
@@ -1682,6 +1704,8 @@ const DATA = [
     year: '2022',
     link: 'https://openreview.net/forum?id=9ShFZ6a8LpI',
     render: true,
+    session: 1,
+    position: 1,
     xaipid: 202119,
   },
   {
@@ -1698,6 +1722,8 @@ const DATA = [
     year: '2022',
     link: 'https://openreview.net/forum?id=S44aSPW6lRa',
     render: true,
+    session: 2,
+    position: 3,
     xaipid: 202119,
   },
 ];
