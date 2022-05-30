@@ -2,7 +2,7 @@ var InvitedList = [
   {
     id: 0,
     name: 'Mark Riedl',
-    image: 'markriedl',
+    image: 'mark_riedl_small',
     affiliation: 'Georgia Tech',
     link: 'https://www.cc.gatech.edu/people/mark-riedl',
   },
@@ -26,7 +26,7 @@ var PanelList = [
   {
     id: 0,
     name: 'Mark Riedl',
-    image: 'markriedl',
+    image: 'mark_riedl_small',
     affiliation: 'Georgia Tech',
     link: 'https://www.cc.gatech.edu/people/mark-riedl',
   },
@@ -43,6 +43,13 @@ var PanelList = [
     image: 'francescatoni',
     affiliation: 'Imperial College London',
     link: 'https://www.imperial.ac.uk/people/f.toni',
+  },
+    {
+    id: 3,
+    name: 'Tathagata Chakraborti',
+    image: 'tathagata',
+    affiliation: 'IBM',
+    link: 'http://tchakra2.com/',
   },
 ];
 

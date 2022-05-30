@@ -241,7 +241,7 @@ class Page2022 extends React.Component {
                 <StructuredListCell>
                   <div className="bx--row">
                     <div className="bx--col-lg-4">
-                      <Speaker props={InvitedList[1]} />
+                      <Speaker props={InvitedList[0]} />
                     </div>
                     <div className="bx--col-lg-12">
                       <br />
