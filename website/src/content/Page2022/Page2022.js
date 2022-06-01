@@ -592,7 +592,7 @@ class Page2022 extends React.Component {
           className="bx--col-lg-12 bx--offset-lg-2 landing-page__banner">
           <h4>XAIP 2022 Organizing Team</h4>
           <hr />
-          <Link href="mailto:xaip21team@gmail.com">
+          <Link href="mailto:xaip.workshop@gmail.com">
             <Button size="small" kind="secondary">
               Contact
             </Button>
