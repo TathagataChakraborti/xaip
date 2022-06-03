@@ -1604,8 +1604,8 @@ const DATA = [
     year: '2022',
     link: 'https://openreview.net/forum?id=G8ebd2uY7OC',
     render: true,
-    session: 4,
-    position: 2,
+    session: 1,
+    position: 3,
     xaipid: 202119,
   },
   {
@@ -1621,8 +1621,8 @@ const DATA = [
     year: '2022',
     link: 'https://openreview.net/forum?id=xQf6Htgm5r1',
     render: true,
-    session: 1,
-    position: 3,
+    session: 4,
+    position: 2,
     xaipid: 202119,
   },
   {
