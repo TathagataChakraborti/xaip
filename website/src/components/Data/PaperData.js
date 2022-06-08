@@ -1713,7 +1713,7 @@ const DATA = [
     title:
       'Explainable Pathfinding for Inscrutable Planners with Inductive Logic Programming',
     authors:
-      'Forest Agostinelli, Rojina panta, Vedant Khandelwal, Biplav Srivastava, Bharath Muppasani, Dezhi Wu',
+      'Forest Agostinelli, Rojina Panta, Vedant Khandelwal, Biplav Srivastava, Bharath Muppasani, Dezhi Wu',
     abstract:
       'The complexity of the solutions that artificial intelligence can learn to solve problems currently surpasses its ability to explain these solutions. In many domains, explainable solutions are a necessary condition while optimality is not. Therefore, we seek to constrain solutions to the space of solutions that can be explained to a human. To do this, we build on inductive logic programming (ILP) techniques that allow us to define robust background knowledge and inductive biases. By combining ILP with a given inscrutable planner, we are able to construct an explainable graph representing solutions to all states in the state space. This graph can then be summarized using a variety of methods such as hierarchical representations and simple if/else rules. We test our approach on Towers of Hanoi and discuss future work for applications to the Rubik’s cube.',
     uisp: false,
