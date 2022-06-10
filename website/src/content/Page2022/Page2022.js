@@ -247,7 +247,7 @@ class Page2022 extends React.Component {
                       <br />
                       <br />
                       <strong>
-                        TBD
+                        Toward Human-Centered Explainable Artificial Intelligence
                       </strong>
                       <br />
                       <br />
@@ -255,27 +255,38 @@ class Page2022 extends React.Component {
                         <AccordionItem
                           className="according-crush"
                           title={<span>Details</span>}>
-                            TBD
+                            In this talk we consider the issues pertaining to
+                            generating explanations about intelligent systems
+                            geared toward end-users that do not have technical
+                            epistemic backgrounds nor are involved in
+                            development of the AI models. At heart is the
+                            question of what makes an explanation delivered
+                            to non-technical end-users actionable. I will walk
+                            through a multi-year line of investigation that has
+                            uncovered crucial human-centered concerns about how
+                            explanations are designed and link them to
+                            challenges in explaining sequential decision-making
+                            and natural language processing systems.
                         </AccordionItem>
                         <AccordionItem
                           className="according-crush"
                           title={<span>Bio</span>}>
                           <p>
-                          Mark Riedl is a professor in the College of Computing,
-                          School of Interactive Computing.  As director of the
-                          Entertainment Intelligence Lab, Dr. Riedl's research
-                          focuses on the study of artificial intelligence and
-                          storytelling for entertainment (e.g., computer games).
-                          Narrative is a cognitive tool used by humans for
-                          communication, sense-making, entertainment, education,
-                          and training. Consequently, there is value in
-                          discovering new computational techniques that make
-                          computers better communicators, entertainers, and
-                          educators. The principle research question Dr. Riedl
-                          addresses through his research is: how can intelligent
-                          computational systems reason about and autonomously
-                          create engaging experiences for users of virtual
-                          worlds and computer games?.{' '}
+                          Dr. Mark Riedl is a Professor in the Georgia
+                          Tech School of Interactive Computing and Associate
+                          Director of the Georgia Tech Machine Learning Center.
+                          Dr. Riedl's research focuses on human-centered
+                          artificial intelligence-the development of artificial
+                          intelligence and machine learning technologies that
+                          understand and interact with human users in
+                          more natural ways. Dr. Riedl's recent work has
+                          focused on story understanding and generation,
+                          computational creativity, explainable AI, and
+                          teaching virtual agents to behave safely. His
+                          research is supported by the NSF, DARPA, ONR,
+                          the U.S. Army, U.S. Health and Human Services,
+                          Disney, and Google. He is the recipient of a
+                          DARPA Young Faculty Award and an NSF CAREER Award..{' '}
                             <Link
                               target="_blank"
                               href="https://www.cc.gatech.edu/people/mark-riedl">
