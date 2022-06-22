@@ -99,6 +99,22 @@ class Page2022 extends React.Component {
                 Slack
               </Button>
             </Link>
+            <Link
+              href="https://youtu.be/QEZ-UGdXKGU"
+              target="_blank"
+              style={{ marginLeft: '0.5rem', textDecoration: 'none' }}>
+              <Button kind="info" size="sm">
+                Day one video
+              </Button>
+            </Link>
+            <Link
+              href="https://www.youtube.com/watch?v=rWQbDEIxQVM"
+              target="_blank"
+              style={{ marginLeft: '0.5rem', textDecoration: 'none' }}>
+              <Button kind="info" size="sm">
+                Day two video
+              </Button>
+            </Link>
           </div>
 
           <br />
