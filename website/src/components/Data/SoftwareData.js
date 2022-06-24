@@ -46,6 +46,22 @@ const DATA = [
     tldr:
       'Bayesian inference of LTL specifications to explain differences across two sets of traces.',
   },
+  {
+    id: 6,
+    name: 'JEDAI',
+    paper: 'https://www.ifaamas.org/Proceedings/aamas2022/pdfs/p1917.pdf',
+    code: 'https://github.com/AAIR-lab/AAIR-JEDAI',
+    tldr:
+      'An interactive tool for skill-aligned explainable robot planning.',
+  },
+    {
+    id: 7,
+    name: 'RADAR-X',
+    paper: 'https://ojs.aaai.org/index.php/ICAPS/article/view/19837/19596',
+    code: 'https://github.com/karthikv792/RADAR-X',
+    tldr:
+      'A naturalistic decision-support system that supports contrastive explanatory dialogue.',
+  },
 ];
 
 export { DATA };
