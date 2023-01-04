@@ -52,7 +52,7 @@ const OverviewPage = () => {
               caption={
                 <Button
                   target="_blank"
-                  href="http://ibm.biz/xaipviz"
+                  href="https://explainableplanning.com/"
                   className="no-decoration-on-hover"
                   size="sm"
                   kind="primary">
@@ -62,7 +62,7 @@ const OverviewPage = () => {
               subtitle={
                 <span>
                   Like what you see here? Check out our brand new page{' '}
-                  <Link href="http://ibm.biz/xaipviz" target="_blank">
+                  <Link href="https://explainableplanning.com/" target="_blank">
                     here
                   </Link>
                   .
