@@ -15,10 +15,9 @@ import {
   Modal,
   Tile,
 } from 'carbon-components-react';
-import { Member, shuffleArray } from '../../components/Info';
-import { MemberListCache } from '../../components/Data/XAIP2022Data';
+import { Member } from '../../components/Info';
+import { OrganizingTeamList, SteeringCommitteeList } from '../../components/Data/HAXP2023Data';
 
-var MemberList = shuffleArray(MemberListCache);
 
 class LandingPage extends React.Component {
   constructor(props) {
@@ -49,12 +48,12 @@ class LandingPage extends React.Component {
           <div className="bx--row vertical-center">
             <div className="bx--col-lg-8">
               <h1 className="landing-page__heading">
-                XAIP @{' '}
+                HAXP @{' '}
                 <Link
-                  href="https://icaps22.icaps-conference.org/"
+                  href="https://icaps23.icaps-conference.org/"
                   target="_blank"
                   style={{ fontSize: 'inherit' }}>
-                  ICAPS 2022
+                  ICAPS 2023
                 </Link>
               </h1>
               {/*
@@ -65,19 +64,25 @@ class LandingPage extends React.Component {
               </p>
               */}
               <p style={{ paddingTop: '5px', color: 'grey' }}>
-                June, 2022 | Virtual
+                July, 2023 | Pargue, Czech Republic
               </p>
               <br />
               <br />
               <p className="participation-page__p">
-                The world of Explainable AI is rapidly expanding in scope from
-                classification tasks to more complex decision-making processes
-                where automated algorithms play an outsized role. The
-                International Workshop of Explainable AI Planning (XAIP) brings
-                together the latest and best in the field of explainable
-                planning and sequential decision-making. The workshop is
-                collocated with ICAPS, the premier conference on automated
-                planning and scheduling.{' '}
+                TAs artificial intelligence (AI) is increasingly being adopted
+                into application solutions, the challenge of supporting effective
+                interactions with humans is becoming more apparent. Partly this
+                is to support integrated working styles, in which humans and
+                intelligent systems cooperate in problem-solving, but also it is
+                a necessary step in the process of building and calibrating trust
+                as humans migrate greater competence and responsibility to such
+                systems. The International Workshop on Human-Aware and Explainable
+                Planning (HAXP), formerly known as the Explainable AI Planning
+                (XAIP) workshop, brings together the latest and best in human-AI
+                interaction and explainability, in the context of planning,
+                scheduling, RL and other forms of sequential decision-making
+                process. The workshop is collocated with ICAPS, the premier
+                conference on automated planning and scheduling.{' '}
                 <Link
                   href="https://www.ijcai.org/Proceedings/2020/669"
                   target="_blank">
@@ -111,28 +116,26 @@ class LandingPage extends React.Component {
                   </Tile>
                 </div>
 
-                <div className="bx--col-lg-4">
+                {/* <div className="bx--col-lg-4">
                   <Tile
                     style={{ minHeight: '175px' }}
                     className="announcement-card">
                     <div>
                       <p>
-                        XAIP 2022
-                        <br />
-                        Accepted Papers
+                        HAXP 2023
                       </p>
                     </div>
 
                     <Button
                       style={{ maxWidth: '75%' }}
-                      href="/2022"
+                      href="/2023"
                       className="no-decoration-on-hover"
                       size="sm"
                       kind="primary">
                       Program
                     </Button>
                   </Tile>
-                </div>
+                </div> */}
               </div>
             </div>
             <div className="bx--col-lg-8">
@@ -144,32 +147,6 @@ class LandingPage extends React.Component {
             </div>
           </div>
         </div>
-
-        {/* <div className="bx--grid bx--grid--full-width landing-page landing-page__banner">
-          <div className="bx--row landing-page__tab-content" id="program">
-            <div className="bx--col-lg-12 bx--offset-lg-2">
-              <StructuredListWrapper style={{ marginBottom: '20px' }}>
-                <StructuredListHead>
-                  <StructuredListRow>
-                    <StructuredListCell>
-                      <h2 className="landing-page__subheading">
-                        Invited Speakers
-                      </h2>
-                    </StructuredListCell>
-                  </StructuredListRow>
-                </StructuredListHead>
-              </StructuredListWrapper>
-
-              <div className="bx--row">
-                {InvitedList.map((item, key) => (
-                  <React.Fragment key={key}>
-                    <Member props={item} />
-                  </React.Fragment>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div> */}
 
         <div className="bx--row landing-page__tab-content" id="call">
           <div className="bx--col-lg-8 bx--offset-lg-2">
@@ -201,48 +178,20 @@ class LandingPage extends React.Component {
                 <StructuredListRow>
                   <StructuredListCell>
                     <strong>Position papers </strong>
-                    proposing XAIP challenges, outlining XAIP ideas, debating
-                    issues relevant to XAIP; up to 5 pages including references.
+                    proposing HAXP challenges, outlining HAXP ideas, debating
+                    issues relevant to HAXP; up to 5 pages including references.
                   </StructuredListCell>
                 </StructuredListRow>
               </StructuredListBody>
             </StructuredListWrapper>
-            {/* <Link href="/#/2021">
-              <Button
-                className="no-decoration-on-hover"
-                size="sm"
-                kind="primary"
-                style={{ marginRight: '10px' }}>
-                2021
-              </Button>
-            </Link>
-
-            <Link href="/#/2020">
-              <Button
-                className="no-decoration-on-hover"
-                size="sm"
-                kind="primary"
-                style={{ marginRight: '10px' }}>
-                2020
-              </Button>
-            </Link>
-            <Link href="/#/explore">
-              <Button
-                className="no-decoration-on-hover"
-                size="sm"
-                kind="secondary"
-                style={{ marginRight: '10px' }}>
-                Explore
-              </Button>
-            </Link>{' '} */}
-            <Link href="https://openreview.net/group?id=icaps-conference.org/ICAPS/2022/Workshop/XAIP">
+            <Link href="https://openreview.net/group?id=icaps-conference.org/ICAPS/2023/Workshop/HAXP">
               <Button size="sm" kind="ghost">
                 Submit
               </Button>
             </Link>
             <Link
               className="no-decoration-on-hover"
-              href="https://www.aaai.org/Publications/Templates/AuthorKit22.zip"
+              href="https://www.aaai.org/Publications/Templates/AuthorKit23.zip"
               target="_blank">
               <Button size="sm" kind="ghost">
                 Template
@@ -258,7 +207,7 @@ class LandingPage extends React.Component {
             </Button>
 
             <Link
-              href="/files/call-for-papers-xaip-2022.pdf"
+              href="/files/haxp23_cfp.pdf"
               target="_blank"
               className="no-decoration-on-hover">
               <Button size="sm" kind="ghost">
@@ -269,7 +218,7 @@ class LandingPage extends React.Component {
 
           <div className="bx--col-lg-4 xaip-tags">
             <div className="some-container" style={{ marginTop: '70px' }}>
-              <ProgressIndicator vertical currentIndex={1}>
+              <ProgressIndicator vertical currentIndex={0}>
                 <ProgressStep
                   current
                   label={
@@ -279,21 +228,15 @@ class LandingPage extends React.Component {
                       </span>
                     </>
                   }
-                  secondaryLabel="April 10 UTC-12"
+                  secondaryLabel="March 24 UTC-12"
                 />
                 <ProgressStep
-                  label={
-                    <>
-                      <span style={{ color: 'Blue' }}>
-                        Author Notification{' '}
-                      </span>
-                    </>
-                  }
+                  label="Author Notification"
                   secondaryLabel="April 30 UTC-12"
                 />
                 <ProgressStep
-                  label="XAIP 2021 Workshop"
-                  secondaryLabel="June 13 - 17, 2022 (TBD)"
+                  label="HAXP 2023 Workshop"
+                  secondaryLabel="July 8 - 13, 2023 (TBD)"
                 />
                 <ProgressStep
                   label="Camera Ready Deadline"
@@ -319,7 +262,7 @@ class LandingPage extends React.Component {
                 className="no-decoration-on-hover"
                 size="sm"
                 kind="secondary">
-                Topics
+                Landscape of HAXP
               </Button>
 
               <br />
@@ -327,44 +270,23 @@ class LandingPage extends React.Component {
               <br />
 
               <UnorderedList>
-                <ListItem>
-                  Representation, organization, and memory content used in
-                  explanation
-                </ListItem>
-                <ListItem>
-                  The creation of such content during plan generation or
-                  understanding
-                </ListItem>
-                <ListItem>Generation and evaluation of explanations</ListItem>
-                <ListItem>Contrastive explanations</ListItem>
-                <ListItem>
-                  The way in which explanations are communicated and
-                  personalized to humans (e.g., plan summaries, answers to
-                  questions)
-                </ListItem>
-                <ListItem>
-                  The role of knowledge and learning in explainable planners
-                </ListItem>
-                <ListItem>Human vs AI models in explanations</ListItem>
-                <ListItem>
-                  Links between explainable planning and other disciplines
-                  (e.g., social science, argumentation)
-                </ListItem>
-                <ListItem>
-                  Use cases and applications of explainable planning
-                </ListItem>
-                <ListItem>
-                  Ethical quandaries in explainable automated planning and
-                  scheduling
-                </ListItem>
-                <ListItem>
-                  User interfaces for explainable automated planning and
-                  scheduling
-                </ListItem>
-                <ListItem>
-                  Explainable automated planning and scheduling for user
-                  interfaces
-                </ListItem>
+                <ListItem>Human-aware planning, scheduling, and execution.</ListItem>
+                <ListItem>Human monitoring, plan & goal recognition, and behavior prediction.</ListItem>
+                <ListItem>Mixed-initiative planning and scheduling systems.</ListItem>
+                <ListItem>Learning methods for planning/scheduling in the presence of humans.</ListItem>
+                <ListItem>Explanations of behavior in sequential decision-making/decision-support.</ListItem>
+                <ListItem>Explanation of scheduling/allocation decisions to human stakeholders.</ListItem>
+                <ListItem>Improving interpretability and explainability of AI planning/scheduling systems.</ListItem>
+                <ListItem>Generating predictable and interpretable behavior.</ListItem>
+                <ListItem>Methods for reward, goal, preference, or constraint specification for reinforcement learning agents.</ListItem>
+                <ListItem>Creating interpretable and adaptive user interfaces for planning/scheduling systems.</ListItem>
+                <ListItem>Proactive assistance and decision-support in human-AI collaborative scenarios.</ListItem>
+                <ListItem>Cognitive modeling, social interaction, and theory of mind.</ListItem>
+                <ListItem>Safety, ethics, fairness, transparency and responsible behavior generation in the context of planning/scheduling systems.</ListItem>
+                <ListItem>Representation and acquisition of human behavioral models.</ListItem>
+                <ListItem>Theories and applications of human behavior models.</ListItem>
+                <ListItem>Trust, communication, and collaboration in human-AI teams.</ListItem>
+                <ListItem>Benchmarking planning/scheduling domains for human-AI interaction.</ListItem>
               </UnorderedList>
             </div>
           </div>
@@ -375,16 +297,37 @@ class LandingPage extends React.Component {
           className="bx--grid bx--grid--full-width landing-page landing-page__banner">
           <div className="bx--row landing-page__tab-content">
             <div className="bx--col-lg-12 bx--offset-lg-2 xaip-tags">
-              <h4>XAIP 2022 Organizing Team</h4>
+              <h4>HAXP 2023 Organizing Team</h4>
               <hr />
-              <Link href="mailto:xaip.workshop@gmail.com">
+              <Link href="mailto:haxp.workshop@gmail.com">
                 <Button size="small" kind="secondary">
                   Contact
                 </Button>
               </Link>
 
               <div className="bx--row publications-page__tab-content">
-                {MemberList.map((item, key) => (
+                {OrganizingTeamList.map((item, key) => (
+                  <React.Fragment key={key}>
+                    <Member props={item} />
+                  </React.Fragment>
+                ))}
+              </div>
+
+              <br />
+              <br />
+              <br />
+            </div>
+          </div>
+        </div>
+        <div
+          id="team"
+          className="bx--grid bx--grid--full-width landing-page landing-page__banner">
+          <div className="bx--row landing-page__tab-content">
+            <div className="bx--col-lg-12 bx--offset-lg-2 xaip-tags">
+              <h4>HAXP 2023 Steering Committee</h4>
+              <hr />
+              <div className="bx--row publications-page__tab-content">
+                {SteeringCommitteeList.map((item, key) => (
                   <React.Fragment key={key}>
                     <Member props={item} />
                   </React.Fragment>
@@ -401,7 +344,7 @@ class LandingPage extends React.Component {
         <Modal
           iconDescription="Close"
           modalHeading="Additional Instructions"
-          modalLabel="XAIP @ ICAPS 2022"
+          modalLabel="HAXP @ ICAPS 2023"
           passiveModal
           hasScrollingContent
           open={this.state.readme}

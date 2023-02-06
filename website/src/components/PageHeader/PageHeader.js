@@ -25,7 +25,7 @@ const PageHeader = (isSideNavExpanded, onClickSideNavExpand) => (
             isActive={isSideNavExpanded}
             aria-label=""
           />
-          <HeaderName element={Link} to="/" prefix="XAIP">
+          <HeaderName element={Link} to="/" prefix="HAXP">
             Workshop Series
           </HeaderName>
           <HeaderNavigation aria-label="">
@@ -34,6 +34,9 @@ const PageHeader = (isSideNavExpanded, onClickSideNavExpand) => (
               Team
             </HeaderMenuItem>
              */}
+             <HeaderMenuItem element={Link} to="/2023">
+              2023
+            </HeaderMenuItem>
             <HeaderMenuItem element={Link} to="/2022">
               2022
             </HeaderMenuItem>
@@ -67,6 +70,9 @@ const PageHeader = (isSideNavExpanded, onClickSideNavExpand) => (
                   Team
                 </HeaderMenuItem>
                  */}
+                  <HeaderMenuItem element={Link} to="/2023">
+                  2023
+                </HeaderMenuItem>
                 <HeaderMenuItem element={Link} to="/2022">
                   2022
                 </HeaderMenuItem>
