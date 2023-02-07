@@ -69,7 +69,7 @@ class LandingPage extends React.Component {
               <br />
               <br />
               <p className="participation-page__p">
-                TAs artificial intelligence (AI) is increasingly being adopted
+                As artificial intelligence (AI) is increasingly being adopted
                 into application solutions, the challenge of supporting effective
                 interactions with humans is becoming more apparent. Partly this
                 is to support integrated working styles, in which humans and
