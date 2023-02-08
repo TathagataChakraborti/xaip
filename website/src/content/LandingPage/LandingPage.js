@@ -83,9 +83,7 @@ class LandingPage extends React.Component {
                 scheduling, RL and other forms of sequential decision-making
                 process. The workshop is collocated with ICAPS, the premier
                 conference on automated planning and scheduling.{' '}
-                <Link
-                  href="https://www.ijcai.org/Proceedings/2020/669"
-                  target="_blank">
+                <Link href="/overview">
                   Read more
                 </Link>
               </p>
