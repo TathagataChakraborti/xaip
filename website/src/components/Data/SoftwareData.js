@@ -62,6 +62,14 @@ const DATA = [
     tldr:
       'A naturalistic decision-support system that supports contrastive explanatory dialogue.',
   },
+  {
+    id: 8,
+    name: 'XPP Iterative Planning',
+    paper: 'https://ojs.aaai.org/index.php/ICAPS/article/view/19858',
+    code: 'https://github.com/XPP-explainable-planning',
+    tldr:
+      'A online iterative planning tool that supports explanations based on softgoal conflicts',
+  },
 ];
 
 export { DATA };
