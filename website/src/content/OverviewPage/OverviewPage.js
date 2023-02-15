@@ -19,10 +19,11 @@ const OverviewPage = () => {
       style={{ minHeight: '100vh' }}>
       <div className="bx--col-lg-16">
         <div className="bx--row publications-page__tab-content">
-          <div>
-            <div style={{display: 'flex'}}>
-                <div>
-                  An Overview of the Landscape of HAXP
+          <StructuredListWrapper className="low-margin">
+            <StructuredListHead>
+              <StructuredListRow className="no-border">
+                <StructuredListCell head>
+                  An Overview of the Landscape of XAIP
                   <br />
                   <p className="disclaimer">
                     Want to contribute to this list? Open an issue{' '}
@@ -39,50 +40,38 @@ const OverviewPage = () => {
                     </Link>
                     .
                   </p>
-                </div>
-              </div>
-              <div style={{display: 'grid', gridAutoFlow: 'column', gap: '16px', marginBlock: '16px'}}>
-                <ToastNotification
-                  style={{margin: '0'}}
-                  hideCloseButton={true}
-                  lowContrast
-                  kind="warning"
-                  caption = {<span></span>}
-                  subtitle={
-                    <span>
-                      More references related to human-aware planning comming soon.
-                    </span>
-                  }
-                  title="Will be updated soon!"
-                />
-                <ToastNotification
-                  style={{margin: '0'}}
-                  hideCloseButton={true}
-                  lowContrast
-                  kind="info"
-                  caption={
-                    <Button
-                      target="_blank"
-                      href="https://explainableplanning.com/"
-                      className="no-decoration-on-hover"
-                      size="sm"
-                      kind="primary">
-                      Explore
-                    </Button>
-                  }
-                  subtitle={
-                    <span>
-                      Like what you see here? Check out our brand new page{' '}
-                      <Link href="https://explainableplanning.com/" target="_blank">
-                        here
-                      </Link>
-                      .
-                    </span>
-                  }
-                  title="Landscape of XAIP"
-                />
-              </div>
-            </div>
+                </StructuredListCell>
+              </StructuredListRow>
+            </StructuredListHead>
+          </StructuredListWrapper>
+
+          <div>
+            <ToastNotification
+              lowContrast
+              kind="info"
+              caption={
+                <Button
+                  target="_blank"
+                  href="https://explainableplanning.com/"
+                  className="no-decoration-on-hover"
+                  size="sm"
+                  kind="primary">
+                  Explore
+                </Button>
+              }
+              subtitle={
+                <span>
+                  Like what you see here? Check out our brand new page{' '}
+                  <Link href="https://explainableplanning.com/" target="_blank">
+                    here
+                  </Link>
+                  .
+                </span>
+              }
+              title="Landscape of XAIP"
+            />
+            <br />
+          </div>
 
           <StructuredListWrapper>
             <StructuredListBody>
