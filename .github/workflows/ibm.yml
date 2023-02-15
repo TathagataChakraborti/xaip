@@ -45,7 +45,8 @@ jobs:
         sudo apt update
         #curl -sL https://deb.nodesource.com/setup_14.x | sudo bash -
         echo "######## HERE #########"
-        apt-get install -o Dpkg::Options::="--force-overwrite" -y mssql-tools unixodbc-dev
+        suo apt-get remove unixodbc-dev
+        echo "######## HERE #########"
         sudo apt install nodejs
         sudo apt upgrade nodejs
         node -v
