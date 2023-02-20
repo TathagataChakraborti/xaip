@@ -12,6 +12,7 @@ import {
   SkipToContent,
   SideNav,
   SideNavItems,
+  HeaderMenu
 } from 'carbon-components-react/lib/components/UIShell';
 
 const PageHeader = (isSideNavExpanded, onClickSideNavExpand) => (
@@ -29,23 +30,14 @@ const PageHeader = (isSideNavExpanded, onClickSideNavExpand) => (
             Workshop Series
           </HeaderName>
           <HeaderNavigation aria-label="">
-            {/*
-            <HeaderMenuItem element={Link} to="/team">
-              Team
-            </HeaderMenuItem>
-             */}
-             <HeaderMenuItem element={Link} to="/2023">
+            <HeaderMenuItem element={Link} to="/2023">
               2023
             </HeaderMenuItem>
-            <HeaderMenuItem element={Link} to="/2022">
-              2022
-            </HeaderMenuItem>
-            <HeaderMenuItem element={Link} to="/2021">
-              2021
-            </HeaderMenuItem>
-            <HeaderMenuItem element={Link} to="/2020">
-              2020
-            </HeaderMenuItem>
+            <HeaderMenu aria-label="previous" menuLinkName="Previous Iterations">
+              <HeaderMenuItem element={Link} to="/2022">XAIP 2022</HeaderMenuItem>
+              <HeaderMenuItem element={Link} to="/2021">XAIP 2021</HeaderMenuItem>
+              <HeaderMenuItem element={Link} to="/2020">XAIP 2020</HeaderMenuItem>
+            </HeaderMenu>
             <HeaderMenuItem element={Link} to="/archive">
               Archive
             </HeaderMenuItem>
