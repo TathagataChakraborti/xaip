@@ -226,7 +226,7 @@ class LandingPage extends React.Component {
                       </span>
                     </>
                   }
-                  secondaryLabel="March 24 UTC-12"
+                  secondaryLabel="March 31 UTC-12"
                 />
                 <ProgressStep
                   label="Author Notification"
