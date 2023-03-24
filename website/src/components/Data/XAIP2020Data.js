@@ -108,7 +108,7 @@ var PCListCache = [
     id: 6,
     name: 'Silvia Tulli',
     image: 'silvia',
-    affiliation: 'Técnico',
+    affiliation: 'Sorbonne University',
     link: 'https://silviatulli.com/',
   },
   {
