@@ -95,7 +95,6 @@ class Page2023 extends React.Component {
           <br />
           <h4>Accepted Papers</h4>
           <hr />
-          TBD
           <Accordion align="start">
             {shuffledData.map((item, key) => (
               <React.Fragment key={key}>
@@ -150,7 +149,6 @@ class Page2023 extends React.Component {
 
           <Accordion align="start">
             <AccordionItem open title="Extended Program Committee">
-            TBD
               <div className="bx--row">
                 {PCList.map((item, key) => (
                   <React.Fragment key={key}>
