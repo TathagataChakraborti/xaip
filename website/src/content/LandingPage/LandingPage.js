@@ -218,7 +218,6 @@ class LandingPage extends React.Component {
             <div className="some-container" style={{ marginTop: '70px' }}>
               <ProgressIndicator vertical currentIndex={0}>
                 <ProgressStep
-                  current
                   label={
                     <>
                       <span style={{ color: 'Blue' }}>
@@ -229,8 +228,15 @@ class LandingPage extends React.Component {
                   secondaryLabel="April 07 UTC-12"
                 />
                 <ProgressStep
-                  label="Author Notification"
-                  secondaryLabel="April 30 UTC-12"
+                  current
+                  label={
+                    <>
+                      <span style={{ color: 'Blue' }}>
+                      Author Notification{' '}
+                      </span>
+                    </>
+                  }
+                  secondaryLabel="May 01 UTC-12"
                 />
                 <ProgressStep
                   label="HAXP 2023 Workshop"

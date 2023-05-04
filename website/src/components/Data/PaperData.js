@@ -1906,6 +1906,60 @@ const DATA = [
     position: 0,
     xaipid: 202119,
   },
+  {
+    id: 175,
+    title:
+      'Towards Intention Recognition for Robotic Assistants Through Online POMDP Planning',
+    authors:
+      'Juan Carlos Saborío, Joachim Hertzberg',
+    abstract:
+      '',
+    uisp: false,
+    xaip: true,
+    invited: false,
+    year: '2023',
+    link: '',
+    render: true,
+    session: 0,
+    position: 0,
+    xaipid: 202119,
+  },
+  {
+    id: 176,
+    title:
+      'Recognizing Hierarchical Plans via Earley Parsing',
+    authors:
+      'Kristýna Pantůčková, Roman Barták',
+    abstract:
+      '',
+    uisp: false,
+    xaip: true,
+    invited: false,
+    year: '2023',
+    link: '',
+    render: true,
+    session: 0,
+    position: 0,
+    xaipid: 202119,
+  },
+  {
+    id: 177,
+    title:
+      'Bridging the Gap between Structural and Semantic Similarity in Diverse Planning',
+    authors:
+      'Joan Espasa Arxer, Ian Gent, Alice Toniolo, Mustafa Abdelwahed',
+    abstract:
+      '',
+    uisp: false,
+    xaip: true,
+    invited: false,
+    year: '2023',
+    link: '',
+    render: true,
+    session: 0,
+    position: 0,
+    xaipid: 202119,
+  },
 ];
 
 export { DATA };
