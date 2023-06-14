@@ -1,10 +1,28 @@
 var InvitedList = [
-
+  {
+    id: 0,
+    name: 'David Smith',
+    image: 'david',
+    affiliation: 'PS Research',
+    link: 'http://psresearch.xyz/',
+  },
+  {
+    id: 1,
+    name: 'Ron Petrick',
+    image: 'ronpetrick',
+    affiliation: 'Heriot-Watt University.',
+    link: 'https://www.macs.hw.ac.uk/~rpp6/',
+  },
+  {
+    id: 2,
+    name: 'Daniel Höller',
+    image: 'danielhoeller',
+    affiliation: 'Saarland University',
+    link: 'http://fai.cs.uni-saarland.de/hoeller/',
+  },
 ];
 
-var PanelList = [
-
-];
+var PanelList = [];
 
 var OrganizingTeamList = [
   {
@@ -55,7 +73,7 @@ var OrganizingTeamList = [
     image: 'stylianos',
     affiliation: 'Washington University',
     link: 'https://thestlucas.com/',
-  }
+  },
 ];
 
 var SteeringCommitteeList = [
@@ -201,4 +219,20 @@ var PCListCache = [
   },
 ];
 
-export { OrganizingTeamList, SteeringCommitteeList, PCListCache, InvitedList, PanelList };
+var ProjectList = [
+  {
+    id: 8,
+    name: 'TUPLES',
+    image: 'tuples',
+    link: 'https://tuples.ai/',
+  },
+];
+
+export {
+  OrganizingTeamList,
+  SteeringCommitteeList,
+  PCListCache,
+  InvitedList,
+  PanelList,
+  ProjectList,
+};

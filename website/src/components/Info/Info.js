@@ -385,6 +385,37 @@ const Talk = props => {
   );
 };
 
+const Project = props => {
+  return (
+    <Tile className="bx--col-lg-5">
+      <div
+        className="bx--col-16"
+        style={{ padding: '10px', backgroundColor: 'white' }}>
+        <div className="bx--col-sm-2 bx--offset-sm-1 bx--col-lg-10 bx--offset-lg-3">
+          <img
+            style={{
+              marginTop: '10px',
+              marginBottom: '10px',
+              maxWidth: '100%',
+            }}
+            src={generateImageUrl(props.props.image)}
+            alt="Carbon illustration"
+          />
+        </div>
+
+        <div style={{ textAlign: 'center' }}>
+          <Link
+            href={props.props.link}
+            target="_blank"
+            style={{ fontSize: '0.75rem' }}>
+            {props.props.name}
+          </Link>
+        </div>
+      </div>
+    </Tile>
+  );
+};
+
 export {
   LinkList,
   Member,
@@ -395,5 +426,6 @@ export {
   Stub,
   Paper,
   Software,
+  Project,
   shuffleArray,
 };

@@ -1730,8 +1730,7 @@ const DATA = [
     id: 164,
     title:
       'Explanation Framework for Optimization-Based Scheduling: Evaluating Contributions of Constraints and Parameters by Shapley Values',
-    authors:
-      'Yuta Tsuchiya, Masaki Hamamoto',
+    authors: 'Yuta Tsuchiya, Masaki Hamamoto',
     abstract:
       'Although automated planning and scheduling systems based on optimization models are increasingly being adopted into socially responsible tasks, the derived plan is often counterintuitive under complicated considerations. Users will claim the right to know the reason for “Why did the optimal plan include something or not include something else (that I would have chosen)?” Explanations of constraints and parameters that cause the unexpected plan derivation can play an important role in building trust between users and the scheduling system. However, existing approaches require an assumption of a specific problem setting, and have not addressed quantitative analysis for multiple types of factors. In this paper, we propose a general explanation framework to quantitatively evaluate the effect of constraints and parameters on the plan derivation by applying the concept of Shapley values, which satisfy the desirable axioms for explanations. The coalitional game based on optimization models is formulated to calculate the contributions of these factors to the fulfillment of values or conditions in which users are interested. Through numerical experiments of the typical personnel assignment problem, we show that our framework can identify the major causes efficiently under various parameter settings and provide directly understandable explanations compared to the basic contrastive explanations.',
     uisp: false,
@@ -1740,16 +1739,15 @@ const DATA = [
     year: '2023',
     link: 'https://openreview.net/pdf?id=F6iSY_qM7j',
     render: true,
-    session: 0,
-    position: 0,
+    session: 1,
+    position: 2,
     xaipid: 202119,
   },
   {
     id: 165,
     title:
       'Comparing AI planning algorithms with humans on the Tower of London task',
-    authors:
-      'Chenyuan Zhang, Nir Lipovetzky, Charles Kemp',
+    authors: 'Chenyuan Zhang, Nir Lipovetzky, Charles Kemp',
     abstract:
       'Understanding problem solving or planning has been a shared challenge for both AI and cognitive science since the birth of both fields. We explore the extent to which modern planners from the field of AI can account for human performance on the Tower of London (TOL) task, a close relative of the Tower of Hanoi problem that has been extensively studied by psychologists. We characterize the task using the Planning Domain Definition Language (PDDL) and evaluate an adaptive online planner and a family of well-known planners, including online planners, optimal planners and satisficing planners. Each planner is evaluated based on its ability to predict the actions and planning times of participants in a new behavioral experiment. Our results suggest that participants use a range of strategies but that an adaptive lookahead planner provides the best overall account of both human actions and human planning times. This finding is consistent with the view that humans differ from standard AI planners by integrating a mechanism for evidence accumulation.',
     uisp: false,
@@ -1758,14 +1756,13 @@ const DATA = [
     year: '2023',
     link: 'https://openreview.net/pdf?id=j7PZ1Ow1hnw',
     render: true,
-    session: 0,
-    position: 0,
+    session: 2,
+    position: 4,
     xaipid: 202119,
   },
   {
     id: 166,
-    title:
-      'TIPs: Transparency Information Pacts',
+    title: 'TIPs: Transparency Information Pacts',
     authors:
       'Phillip Walker, Ugur Kuter, Christopher A Miller, Helen Wauck, Matthew DeHaven, Christopher Geib',
     abstract:
@@ -1776,16 +1773,15 @@ const DATA = [
     year: '2023',
     link: 'https://openreview.net/pdf?id=KDiuuZt9WG5',
     render: true,
-    session: 0,
-    position: 0,
+    session: 2,
+    position: 1,
     xaipid: 202119,
   },
   {
     id: 168,
     title:
       'Specifying Goals to Deep Neural Networks with Answer Set Programming',
-    authors:
-      'Forest Agostinelli',
+    authors: 'Forest Agostinelli',
     abstract:
       'The ability to easily and unambiguously specify a goal to a planner is fundamental to human and AI collaboration. In this context, a goal corresponds to a set of states in the state space that are considered goal states. This specification should be possible without explicitly describing any goal state in its entirety. Instead, a goal should be specified by simply describing certain properties that a goal state should or should not have. Recently, deep reinforcement learning has been used to train deep neural networks (DNNs) as heuristic functions for planning problems. While DNNs can be powerful function approximators that, combined with reinforcement learning, require little to no domain-specific knowledge to learn, there is no formal way to specify goals to DNNs. We introduce a method of training DNN heuristics to estimate the distance between a given state and a set of states, where a set of states is represented as a set of atoms in first-order logic. We then use answer set programming to specify goals, where a set of atoms representing a goal is obtained from the stable model of an answer set program. The DNN heuristic is then combined with search to achieve this goal. In our experiments with the Rubiks cube, we show that we can specify and achieve a variety of different goals without any need to re-train the DNN.',
     uisp: false,
@@ -1794,16 +1790,15 @@ const DATA = [
     year: '2023',
     link: 'https://openreview.net/pdf?id=C5KlUqULwE',
     render: true,
-    session: 0,
-    position: 0,
+    session: 1,
+    position: 4,
     xaipid: 202119,
   },
   {
     id: 169,
     title:
       'DR-HAI: Argumentation-based Dialectical Reconciliation in Human-AI Interactions',
-    authors:
-      'Stylianos Loukas Vasileiou, Ashwin Kumar, William Yeoh',
+    authors: 'Stylianos Loukas Vasileiou, Ashwin Kumar, William Yeoh',
     abstract:
       'In this paper, we introduce DR-HAI (Dialectical Reconciliation in Human-AI Interactions), a novel game-theoretic framework designed to extend model reconciliation approaches for enhanced human-AI interaction. By adopting a multi-shot reconciliation paradigm and not assuming a-priori knowledge of the human users model, DR-HAI enables interactive dialogues to address knowledge discrepancies between explainee and explainer agents. We provide formal operational semantics for DR-HAI using logic-based argumentation and offer theoretical guarantees regarding the frameworks termination and success. Furthermore, we conduct a human-user study that compares DR-HAI to single-shot reconciliation approaches, demonstrating the efficacy of our framework in improving users understanding of AI decisions in tasks characterized by substantial knowledge asymmetry. Our findings suggest that DR-HAI offers a promising direction for fostering effective human-AI interactions.',
     uisp: false,
@@ -1812,16 +1807,14 @@ const DATA = [
     year: '2023',
     link: 'https://openreview.net/pdf?id=LZHcNjVXA51',
     render: true,
-    session: 0,
-    position: 0,
+    session: 2,
+    position: 3,
     xaipid: 202119,
   },
   {
     id: 170,
-    title:
-      'Action Policy Explanations in Oversubscription Planning',
-    authors:
-      'Aleena Siji, Rebecca Eifler, Daniel Fišer, Joerg Hoffmann',
+    title: 'Action Policy Explanations in Oversubscription Planning',
+    authors: 'Aleena Siji, Rebecca Eifler, Daniel Fišer, Joerg Hoffmann',
     abstract:
       'Oversubscription planning (OSP) is a planning formalism that can deal with planning scenarios where not all goals can be achieved. If the global optimization goal is not fixed, an iterative process in which users refine their preferences based on the sample plans is suitable. To help the users, the planning systems should be able to provide answers to questions such as Why is goal not satisfied by the sampleplan? In this paper, we focus on explaining the behavior of a given black-box policy under the aforementioned planning scenario. That is, we assume that sample plans are provided by a state-dependent deterministic policy (in our case a neural network policy), and we try to automatically answer the question Why is the goal not satisfied by? by providing information how much the policy would need to diverge from its decision in order to satisfy the goal. Moreover, we also provide information in which state and how the policy should diverge. To this end, we extended action policies based on action schema networks tosupport OSP tasks and design an algorithm that is able to provide the desired explanations. We evaluate the performance of the proposed algorithm and provide a case study with sample explanations.',
     uisp: false,
@@ -1830,16 +1823,15 @@ const DATA = [
     year: '2023',
     link: 'https://openreview.net/pdf?id=RTwV-91VzFT',
     render: true,
-    session: 0,
-    position: 0,
+    session: 1,
+    position: 3,
     xaipid: 202119,
   },
   {
     id: 171,
     title:
       'Learning and Recognizing Human Behaviour with Relational Decision Trees',
-    authors:
-      'Stanislav Sitanskiy, Laura Sebastia, Eva Onaindia',
+    authors: 'Stanislav Sitanskiy, Laura Sebastia, Eva Onaindia',
     abstract:
       'The recognition of activities performed by humans is crucial in human-robot interaction. However, assuming humans always follow rational behaviour in executing activities may not be accurate since individual preferences influence their decision-making. This paper proposes a method for learning human behaviour that involves capturing how humans select actions to solve problems. This behaviour is represented by a Relational Decision Tree. We define two sets of features that can be automatically extracted from the planning domain. A behaviour library is created and used to identify the behaviour followed by a person when executing a plan in a new situation. This approach allows to anticipate the person’s needs and act accordingly. The method was tested in three different domains, showing its validity.',
     uisp: false,
@@ -1848,16 +1840,14 @@ const DATA = [
     year: '2023',
     link: 'https://openreview.net/pdf?id=Vqw4ETdqab',
     render: true,
-    session: 0,
-    position: 0,
+    session: 2,
+    position: 5,
     xaipid: 202119,
   },
   {
     id: 172,
-    title:
-      'Formal Explanations of Neural Network Policies for Planning',
-    authors:
-      'Renee Selvey, Alban Grastien, Sylvie Thiebaux',
+    title: 'Formal Explanations of Neural Network Policies for Planning',
+    authors: 'Renee Selvey, Alban Grastien, Sylvie Thiebaux',
     abstract:
       'Deep learning is increasingly used to learn policies for planning problems. However, policies represented by neural networks are difficult to interpret, verify and trust. Existing formal approaches to post-hoc explanations provide concise reasons for a single decision made by an ML model. However, understanding planning policies requires explaining sequences of decisions. In this paper,  we formulate the problem of finding explanations for the sequence of decisions recommended by a learnt policy in a given state. We show that, under certain assumptions, a minimal explanation for a sequence can be computed by solving a  number of single decision explanation problems which is linear in the length of the sequence. We present experimental results of our implementation of this approach for ASNets policies for classical planning domains.',
     uisp: false,
@@ -1866,16 +1856,14 @@ const DATA = [
     year: '2023',
     link: 'https://openreview.net/pdf?id=kLEoNfGEL00',
     render: true,
-    session: 0,
-    position: 0,
+    session: 1,
+    position: 5,
     xaipid: 202119,
   },
   {
     id: 173,
-    title:
-      'Towards Human-Aware AI via Planning with Epistemic Preferences',
-    authors:
-      'Toryn Q. Klassen, Christian Muise, Sheila A. McIlraith',
+    title: 'Towards Human-Aware AI via Planning with Epistemic Preferences',
+    authors: 'Toryn Q. Klassen, Christian Muise, Sheila A. McIlraith',
     abstract:
       'Within the field of automated planning, two areas of study are planning with preferences, and epistemic planning. Planning with preferences involves generating plans that optimize for properties of the plan instead of, or in addition to, trying to reach a fixed goal. Epistemic planning allows for planning over the knowledge or belief states of one or more agents for the purpose of achieving epistemic goals (where agents have particular states of knowledge or belief). In this paper we motivate and explore the task of planning with epistemic preferences, proposing a method by which existing automated planning techniques can be combined for this purpose. Epistemic preferences may better allow for representing what humans want, and have benefits for AI safety.',
     uisp: false,
@@ -1884,8 +1872,8 @@ const DATA = [
     year: '2023',
     link: 'https://openreview.net/pdf?id=nkn1rcI6wd',
     render: true,
-    session: 0,
-    position: 0,
+    session: 2,
+    position: 2,
     xaipid: 202119,
   },
   {
@@ -1902,62 +1890,55 @@ const DATA = [
     year: '2023',
     link: 'https://openreview.net/pdf?id=H-hBEGd1GLg',
     render: true,
-    session: 0,
-    position: 0,
+    session: 1,
+    position: 1,
     xaipid: 202119,
   },
   {
     id: 175,
     title:
       'Towards Intention Recognition for Robotic Assistants Through Online POMDP Planning',
-    authors:
-      'Juan Carlos Saborío, Joachim Hertzberg',
-    abstract:
-      '',
+    authors: 'Juan Carlos Saborío, Joachim Hertzberg',
+    abstract: '',
     uisp: false,
     xaip: true,
     invited: false,
     year: '2023',
     link: '',
     render: true,
-    session: 0,
-    position: 0,
+    session: 3,
+    position: 1,
     xaipid: 202119,
   },
   {
     id: 176,
-    title:
-      'Recognizing Hierarchical Plans via Earley Parsing',
-    authors:
-      'Kristýna Pantůčková, Roman Barták',
-    abstract:
-      '',
+    title: 'Recognizing Hierarchical Plans via Earley Parsing',
+    authors: 'Kristýna Pantůčková, Roman Barták',
+    abstract: '',
     uisp: false,
     xaip: true,
     invited: false,
     year: '2023',
     link: '',
     render: true,
-    session: 0,
-    position: 0,
+    session: 3,
+    position: 2,
     xaipid: 202119,
   },
   {
     id: 177,
     title:
       'Bridging the Gap between Structural and Semantic Similarity in Diverse Planning',
-    authors:
-      'Joan Espasa Arxer, Ian Gent, Alice Toniolo, Mustafa Abdelwahed',
-    abstract:
-      '',
+    authors: 'Joan Espasa Arxer, Ian Gent, Alice Toniolo, Mustafa Abdelwahed',
+    abstract: '',
     uisp: false,
     xaip: true,
     invited: false,
     year: '2023',
     link: '',
     render: true,
-    session: 0,
-    position: 0,
+    session: 3,
+    position: 3,
     xaipid: 202119,
   },
 ];

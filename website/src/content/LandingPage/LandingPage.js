@@ -16,8 +16,10 @@ import {
   Tile,
 } from 'carbon-components-react';
 import { Member } from '../../components/Info';
-import { OrganizingTeamList, SteeringCommitteeList } from '../../components/Data/HAXP2023Data';
-
+import {
+  OrganizingTeamList,
+  SteeringCommitteeList,
+} from '../../components/Data/HAXP2023Data';
 
 class LandingPage extends React.Component {
   constructor(props) {
@@ -70,22 +72,20 @@ class LandingPage extends React.Component {
               <br />
               <p className="participation-page__p">
                 As artificial intelligence (AI) is increasingly being adopted
-                into application solutions, the challenge of supporting effective
-                interactions with humans is becoming more apparent. Partly this
-                is to support integrated working styles, in which humans and
-                intelligent systems cooperate in problem-solving, but also it is
-                a necessary step in the process of building and calibrating trust
-                as humans migrate greater competence and responsibility to such
-                systems. The International Workshop on Human-Aware and Explainable
-                Planning (HAXP), formerly known as the Explainable AI Planning
-                (XAIP) workshop, brings together the latest and best in human-AI
-                interaction and explainability, in the context of planning,
-                scheduling, RL and other forms of sequential decision-making
-                process. The workshop is collocated with ICAPS, the premier
-                conference on automated planning and scheduling.{' '}
-                <Link href="/overview">
-                  Read more
-                </Link>
+                into application solutions, the challenge of supporting
+                effective interactions with humans is becoming more apparent.
+                Partly this is to support integrated working styles, in which
+                humans and intelligent systems cooperate in problem-solving, but
+                also it is a necessary step in the process of building and
+                calibrating trust as humans migrate greater competence and
+                responsibility to such systems. The International Workshop on
+                Human-Aware and Explainable Planning (HAXP), formerly known as
+                the Explainable AI Planning (XAIP) workshop, brings together the
+                latest and best in human-AI interaction and explainability, in
+                the context of planning, scheduling, RL and other forms of
+                sequential decision-making process. The workshop is collocated
+                with ICAPS, the premier conference on automated planning and
+                scheduling. <Link href="/overview">Read more</Link>
               </p>
               <br />
               <br />
@@ -114,14 +114,12 @@ class LandingPage extends React.Component {
                   </Tile>
                 </div>
 
-                {/* <div className="bx--col-lg-4">
+                <div className="bx--col-lg-4">
                   <Tile
                     style={{ minHeight: '175px' }}
                     className="announcement-card">
                     <div>
-                      <p>
-                        HAXP 2023
-                      </p>
+                      <p>HAXP 2023</p>
                     </div>
 
                     <Button
@@ -133,7 +131,7 @@ class LandingPage extends React.Component {
                       Program
                     </Button>
                   </Tile>
-                </div> */}
+                </div>
               </div>
             </div>
             <div className="bx--col-lg-8">
@@ -232,19 +230,24 @@ class LandingPage extends React.Component {
                   label={
                     <>
                       <span style={{ color: 'Blue' }}>
-                      Author Notification{' '}
+                        Author Notification{' '}
                       </span>
                     </>
                   }
                   secondaryLabel="May 01 UTC-12"
                 />
                 <ProgressStep
-                  label="HAXP 2023 Workshop"
-                  secondaryLabel="July 8 - 13, 2023 (TBD)"
+                  current
+                  label={
+                    <>
+                      <span style={{ color: 'Blue' }}>HAXP 2023 Workshop </span>
+                    </>
+                  }
+                  secondaryLabel="July 10, 2023"
                 />
                 <ProgressStep
                   label="Camera Ready Deadline"
-                  secondaryLabel="TBD"
+                  secondaryLabel="TBD (after the workshop)"
                 />
               </ProgressIndicator>
             </div>
@@ -269,29 +272,73 @@ class LandingPage extends React.Component {
                 Landscape of HAXP
               </Button>
 
-
               <br />
               <br />
               <br />
 
               <UnorderedList>
-                <ListItem>Human-aware planning, scheduling, and execution.</ListItem>
-                <ListItem>Human monitoring, plan & goal recognition, and behavior prediction.</ListItem>
-                <ListItem>Mixed-initiative planning and scheduling systems.</ListItem>
-                <ListItem>Learning methods for planning/scheduling in the presence of humans.</ListItem>
-                <ListItem>Explanations of behavior in sequential decision-making/decision-support.</ListItem>
-                <ListItem>Explanation of scheduling/allocation decisions to human stakeholders.</ListItem>
-                <ListItem>Improving interpretability and explainability of AI planning/scheduling systems.</ListItem>
-                <ListItem>Generating predictable and interpretable behavior.</ListItem>
-                <ListItem>Methods for reward, goal, preference, or constraint specification for reinforcement learning agents.</ListItem>
-                <ListItem>Creating interpretable and adaptive user interfaces for planning/scheduling systems.</ListItem>
-                <ListItem>Proactive assistance and decision-support in human-AI collaborative scenarios.</ListItem>
-                <ListItem>Cognitive modeling, social interaction, and theory of mind.</ListItem>
-                <ListItem>Safety, ethics, fairness, transparency and responsible behavior generation in the context of planning/scheduling systems.</ListItem>
-                <ListItem>Representation and acquisition of human behavioral models.</ListItem>
-                <ListItem>Theories and applications of human behavior models.</ListItem>
-                <ListItem>Trust, communication, and collaboration in human-AI teams.</ListItem>
-                <ListItem>Benchmarking planning/scheduling domains for human-AI interaction.</ListItem>
+                <ListItem>
+                  Human-aware planning, scheduling, and execution.
+                </ListItem>
+                <ListItem>
+                  Human monitoring, plan & goal recognition, and behavior
+                  prediction.
+                </ListItem>
+                <ListItem>
+                  Mixed-initiative planning and scheduling systems.
+                </ListItem>
+                <ListItem>
+                  Learning methods for planning/scheduling in the presence of
+                  humans.
+                </ListItem>
+                <ListItem>
+                  Explanations of behavior in sequential
+                  decision-making/decision-support.
+                </ListItem>
+                <ListItem>
+                  Explanation of scheduling/allocation decisions to human
+                  stakeholders.
+                </ListItem>
+                <ListItem>
+                  Improving interpretability and explainability of AI
+                  planning/scheduling systems.
+                </ListItem>
+                <ListItem>
+                  Generating predictable and interpretable behavior.
+                </ListItem>
+                <ListItem>
+                  Methods for reward, goal, preference, or constraint
+                  specification for reinforcement learning agents.
+                </ListItem>
+                <ListItem>
+                  Creating interpretable and adaptive user interfaces for
+                  planning/scheduling systems.
+                </ListItem>
+                <ListItem>
+                  Proactive assistance and decision-support in human-AI
+                  collaborative scenarios.
+                </ListItem>
+                <ListItem>
+                  Cognitive modeling, social interaction, and theory of mind.
+                </ListItem>
+                <ListItem>
+                  Safety, ethics, fairness, transparency and responsible
+                  behavior generation in the context of planning/scheduling
+                  systems.
+                </ListItem>
+                <ListItem>
+                  Representation and acquisition of human behavioral models.
+                </ListItem>
+                <ListItem>
+                  Theories and applications of human behavior models.
+                </ListItem>
+                <ListItem>
+                  Trust, communication, and collaboration in human-AI teams.
+                </ListItem>
+                <ListItem>
+                  Benchmarking planning/scheduling domains for human-AI
+                  interaction.
+                </ListItem>
               </UnorderedList>
             </div>
           </div>
