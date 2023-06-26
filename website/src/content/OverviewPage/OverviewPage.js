@@ -50,7 +50,7 @@ const OverviewPage = () => {
                   caption = {<span></span>}
                   subtitle={
                     <span>
-                      More references related to human-aware planning comming soon.
+                      More references related to human-aware planning coming soon.
                     </span>
                   }
                   title="Will be updated soon!"
