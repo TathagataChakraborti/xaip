@@ -1774,7 +1774,7 @@ const DATA = [
     link: 'https://openreview.net/pdf?id=KDiuuZt9WG5',
     render: true,
     session: 2,
-    position: 1,
+    position: 2,
     xaipid: 202119,
   },
   {
@@ -1873,7 +1873,7 @@ const DATA = [
     link: 'https://openreview.net/pdf?id=nkn1rcI6wd',
     render: true,
     session: 2,
-    position: 2,
+    position: 1,
     xaipid: 202119,
   },
   {

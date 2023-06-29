@@ -67,7 +67,7 @@ class Page2023 extends React.Component {
           <br />
           <br />
           <br />
-          <h4>XAIP 2023 Program</h4>
+          <h4>HAXP 2023 Program</h4>
           <hr />
 
           <br />
