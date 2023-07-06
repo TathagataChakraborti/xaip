@@ -352,12 +352,35 @@ class Page2023 extends React.Component {
                           <AccordionItem
                             className="according-crush"
                             title={<span>Details</span>}>
-                            TBD
+                            In recent years, the idea of plan recognition as
+                            planning has provided significant advances in the
+                            field of plan recognition. The main benefits of
+                            exploiting techniques from planning are the
+                            availability of efficient solvers and heuristics, as
+                            well as well-established formalisms to represent the
+                            behavior to be recognized. However, while earlier
+                            work in plan recognition often used hierarchical
+                            representations, most work in this area has been
+                            done using techniques from classical
+                            (non-hierarchical) planning. In my talk, I want to
+                            highlight some properties of hierarchical formalisms
+                            that might be interesting for plan and goal
+                            recognition as planning and advertise its use in
+                            this area.
                           </AccordionItem>
                           <AccordionItem
                             className="according-crush"
                             title={<span>Bio</span>}>
-                            <p>TBD</p>
+                            Daniel Höller has been a postdoctoral research
+                            fellow in the Foundations of Artificial Intelligence
+                            Group of Jörg Hoffmann at Saarland University since
+                            2020. Before that, he was at the Institute of
+                            Artificial Intelligence at Ulm University, where he
+                            did this PhD on hierarchical planning (especially
+                            HTN planning), supervised by Susanne Biundo. Besides
+                            HTN planning, his work is concerned with lifted
+                            planning, and with the combination of machine
+                            learning and planning.
                           </AccordionItem>
                         </Accordion>
                       </div>
