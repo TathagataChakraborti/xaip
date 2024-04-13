@@ -215,7 +215,7 @@ const Speaker = props => {
               borderRadius: '50%',
               maxWidth: '100%',
             }}
-            src={generateImageUrl(props.props.image)}
+            // src={generateImageUrl(props.props.image)}
             alt="Carbon illustration"
           />
         </div>
