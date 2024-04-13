@@ -30,10 +30,11 @@ const PageHeader = (isSideNavExpanded, onClickSideNavExpand) => (
             Workshop Series
           </HeaderName>
           <HeaderNavigation aria-label="">
-            <HeaderMenuItem element={Link} to="/2023">
-              2023
+            <HeaderMenuItem element={Link} to="/2024">
+              2024
             </HeaderMenuItem>
             <HeaderMenu aria-label="previous" menuLinkName="Previous Iterations">
+              <HeaderMenuItem element={Link} to="/2022">HAXP 2023</HeaderMenuItem>
               <HeaderMenuItem element={Link} to="/2022">XAIP 2022</HeaderMenuItem>
               <HeaderMenuItem element={Link} to="/2021">XAIP 2021</HeaderMenuItem>
               <HeaderMenuItem element={Link} to="/2020">XAIP 2020</HeaderMenuItem>
@@ -62,6 +63,9 @@ const PageHeader = (isSideNavExpanded, onClickSideNavExpand) => (
                   Team
                 </HeaderMenuItem>
                  */}
+                <HeaderMenuItem element={Link} to="/2024">
+                  2024
+                </HeaderMenuItem>
                   <HeaderMenuItem element={Link} to="/2023">
                   2023
                 </HeaderMenuItem>

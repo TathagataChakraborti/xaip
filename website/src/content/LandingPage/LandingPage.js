@@ -19,7 +19,7 @@ import { Member } from '../../components/Info';
 import {
   OrganizingTeamList,
   SteeringCommitteeList,
-} from '../../components/Data/HAXP2023Data';
+} from '../../components/Data/HAXP2024Data';
 
 class LandingPage extends React.Component {
   constructor(props) {
@@ -55,7 +55,7 @@ class LandingPage extends React.Component {
                   href="https://icaps23.icaps-conference.org/"
                   target="_blank"
                   style={{ fontSize: 'inherit' }}>
-                  ICAPS 2023
+                  ICAPS 2024
                 </Link>
               </h1>
               {/*
@@ -66,7 +66,7 @@ class LandingPage extends React.Component {
               </p>
               */}
               <p style={{ paddingTop: '5px', color: 'grey' }}>
-                July, 2023 | Pargue, Czech Republic
+                June, 2024 | Banff, Canada
               </p>
               <br />
               <br />
@@ -119,12 +119,12 @@ class LandingPage extends React.Component {
                     style={{ minHeight: '175px' }}
                     className="announcement-card">
                     <div>
-                      <p>HAXP 2023</p>
+                      <p>HAXP 2024</p>
                     </div>
 
                     <Button
                       style={{ maxWidth: '75%' }}
-                      href="/2023"
+                      href="/2024"
                       className="no-decoration-on-hover"
                       size="sm"
                       kind="primary">
@@ -180,14 +180,14 @@ class LandingPage extends React.Component {
                 </StructuredListRow>
               </StructuredListBody>
             </StructuredListWrapper>
-            <Link href="https://openreview.net/group?id=icaps-conference.org/ICAPS/2023/Workshop/HAXP">
+            <Link href="https://icaps24.icaps-conference.org/program/workshops/haxp/">
               <Button size="sm" kind="ghost">
                 Submit
               </Button>
             </Link>
             <Link
               className="no-decoration-on-hover"
-              href="https://www.aaai.org/Publications/Templates/AuthorKit23.zip"
+              href="https://www.aaai.org/Publications/Templates/AuthorKit24.zip"
               target="_blank">
               <Button size="sm" kind="ghost">
                 Template
@@ -203,7 +203,7 @@ class LandingPage extends React.Component {
             </Button>
 
             <Link
-              href="/files/haxp23_cfp.pdf"
+              href="/files/haxp24_cfp.pdf"
               target="_blank"
               className="no-decoration-on-hover">
               <Button size="sm" kind="ghost">
@@ -230,20 +230,15 @@ class LandingPage extends React.Component {
                   label={
                     <>
                       <span style={{ color: 'Blue' }}>
-                        Author Notification{' '}
+                      Author Notification{' '}
                       </span>
                     </>
                   }
-                  secondaryLabel="May 01 UTC-12"
+                  secondaryLabel="April 29 UTC-12"
                 />
                 <ProgressStep
-                  current
-                  label={
-                    <>
-                      <span style={{ color: 'Blue' }}>HAXP 2023 Workshop </span>
-                    </>
-                  }
-                  secondaryLabel="July 10, 2023"
+                  label="HAXP 2024 Workshop"
+                  secondaryLabel="June 1 or 2, 2024"
                 />
                 <ProgressStep
                   label="Camera Ready Deadline"
@@ -339,6 +334,9 @@ class LandingPage extends React.Component {
                   Benchmarking planning/scheduling domains for human-AI
                   interaction.
                 </ListItem>
+                <ListItem>
+                Large language models in human-aware planning & scheduling.
+                </ListItem>
               </UnorderedList>
             </div>
           </div>
@@ -349,9 +347,9 @@ class LandingPage extends React.Component {
           className="bx--grid bx--grid--full-width landing-page landing-page__banner">
           <div className="bx--row landing-page__tab-content">
             <div className="bx--col-lg-12 bx--offset-lg-2 xaip-tags">
-              <h4>HAXP 2023 Organizing Team</h4>
+              <h4>HAXP 2024 Organizing Team</h4>
               <hr />
-              <Link href="mailto:haxp.workshop@gmail.com">
+              <Link href="mailto:haxp.icaps@gmail.com">
                 <Button size="small" kind="secondary">
                   Contact
                 </Button>
@@ -376,7 +374,7 @@ class LandingPage extends React.Component {
           className="bx--grid bx--grid--full-width landing-page landing-page__banner">
           <div className="bx--row landing-page__tab-content">
             <div className="bx--col-lg-12 bx--offset-lg-2 xaip-tags">
-              <h4>HAXP 2023 Steering Committee</h4>
+              <h4>HAXP 2024 Steering Committee</h4>
               <hr />
               <div className="bx--row publications-page__tab-content">
                 {SteeringCommitteeList.map((item, key) => (
