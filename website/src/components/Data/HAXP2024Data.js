@@ -1,4 +1,11 @@
 var InvitedList = [
+  {
+    id: 0,
+    name: 'Sarath Sreedharan',
+    image: 'sarath',
+    affiliation: 'Colorado State University',
+    link: 'http://sarathsreedharan.com/',
+  }
 ];
 
 var PanelList = [];
@@ -93,8 +100,87 @@ var SteeringCommitteeList = [
   },
 ];
 
-var PCListCache = [
- 
+var PCList = [
+  {
+    id: 0,
+    name: 'Gerard Canal',
+    affiliation: 'King\'s College London',
+  },
+  {
+    id: 1,
+    name: 'Derek Long',
+    affiliation: 'King\'s College London',
+  },
+  {
+    id: 2,
+    name: 'Ashwin Kumar',
+    affiliation: 'Washington University',
+  },
+  {
+    id: 3,
+    name: 'Sriram Gopalakrishnan',
+    affiliation: 'J.P. Morgan Chase',
+  },
+  {
+    id: 4,
+    name: 'Pascal Tobias Bercher',
+    affiliation: 'Australian National University',
+  },
+  {
+    id: 5,
+    name: 'Emile Siboulet',
+    affiliation: 'LAAS / CNRS',
+  },
+  {
+    id: 5,
+    name: 'Mohammad Yousefi',
+    affiliation: 'Australian National University',
+  },
+  {
+    id: 6,
+    name: 'Forest Agostinelli',
+    affiliation: 'University of South Carolina',
+  },
+  {
+    id: 7,
+    name: 'Elmira Yadollahi',
+    affiliation: 'KTH Royal Institute of Technology',
+  },
+  {
+    id: 8,
+    name: 'Siddhant Bhambri',
+    affiliation: 'Arizona State University',
+  },
+  {
+    id: 9,
+    name: 'Miguel Faria',
+    affiliation: 'Instituto de Telecomunicações',
+  },
+  {
+    id: 10,
+    name: 'Hendrik Baier',
+    affiliation: 'Eindhoven University of Technology',
+  },
+  {
+    id: 11,
+    name: 'Virgile de La Rochefoucauld',
+    affiliation: 'Institut National des Sciences Appliquées de Toulouse',
+  },
+  {
+    id: 12,
+    name: 'Toryn Q. Klassen',
+    affiliation: 'University of Toronto',
+  },
+  {
+    id: 12,
+    name: 'Alberto Candela',
+    affiliation: 'Jet Propulsion Laboratory',
+  },
+  {
+    id: 13,
+    name: 'Alban Grastien',
+    affiliation: 'CEA',
+  },
 ];
 
 var ProjectList = [
@@ -109,7 +195,7 @@ var ProjectList = [
 export {
   OrganizingTeamList,
   SteeringCommitteeList,
-  PCListCache,
+  PCList,
   InvitedList,
   PanelList,
   ProjectList,

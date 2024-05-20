@@ -55,7 +55,7 @@ function shuffleArray(array) {
 
 const Member = props => {
   return (
-    <div className="bx--col-lg-4" style={{ padding: '1rem' }}>
+    <div className="bx--col-lg-4" style={{ padding: '1rem', display: 'grid'}}>
       <Tile style={{ backgroundColor: 'white' }}>
         <div className="bx--col-sm-2 bx--offset-sm-1 bx--col-lg-10 bx--offset-lg-3">
           <img
@@ -188,10 +188,10 @@ const PC = props => {
 
 const PCReduced = props => {
   return (
-    <Tile className="bx--col-lg-4">
+    <Tile className="bx--col-lg-4" style={{display: 'grid' }}>
       <div
         className="bx--col-16"
-        style={{ padding: '10px', backgroundColor: 'white' }}>
+        style={{ padding: '10px', backgroundColor: 'white'}}>
         <div style={{ textAlign: 'center' }}>
           <h6 style={{ marginBottom: '5px' }}>{props.props.name}</h6>
           <span>{props.props.affiliation}</span>
@@ -215,7 +215,7 @@ const Speaker = props => {
               borderRadius: '50%',
               maxWidth: '100%',
             }}
-            // src={generateImageUrl(props.props.image)}
+            src={generateImageUrl(props.props.image)}
             alt="Carbon illustration"
           />
         </div>

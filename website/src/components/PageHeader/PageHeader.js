@@ -34,7 +34,7 @@ const PageHeader = (isSideNavExpanded, onClickSideNavExpand) => (
               2024
             </HeaderMenuItem>
             <HeaderMenu aria-label="previous" menuLinkName="Previous Iterations">
-              <HeaderMenuItem element={Link} to="/2022">HAXP 2023</HeaderMenuItem>
+              <HeaderMenuItem element={Link} to="/2023">HAXP 2023</HeaderMenuItem>
               <HeaderMenuItem element={Link} to="/2022">XAIP 2022</HeaderMenuItem>
               <HeaderMenuItem element={Link} to="/2021">XAIP 2021</HeaderMenuItem>
               <HeaderMenuItem element={Link} to="/2020">XAIP 2020</HeaderMenuItem>
