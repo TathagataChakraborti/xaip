@@ -2060,6 +2060,8 @@ const DATA = [
     session: 0,
     position: 0,
     xaipid: 202119,
+    video: 'https://youtu.be/u2TwGcyQVds',
+    slides: '/slides/haxp24_slides_6.pdf',
   },
   {
     id: 185,

@@ -13,6 +13,7 @@ import {
   PCReduced,
   Talk,
   Speaker,
+  VideoPresentation
 } from '../../components/Info';
 import {
   Link,
@@ -147,7 +148,8 @@ class Page2024 extends React.Component {
                         <br />
                         <br />
                         <strong>
-                          Invited Talk
+                          Invited Talk: 
+                          Human-Aware AI – A Foundational Framework for Human-AI Interaction
                         </strong>
                         <br />
                         <br />
@@ -155,13 +157,13 @@ class Page2024 extends React.Component {
                           <AccordionItem
                             className="according-crush"
                             title={<span>Abstract</span>}>
-                            Coming soon!
+                            In this talk, I wish to discuss the framework of human-aware AI (HAAI) that aims to provide a unified formal framework to understand and evaluate human-AI interaction. While the notion of human-aware AI as a formal framework to model human-AI interaction was most widely applied in the context of explanations, in this talk I would like to discuss how this formalism could be applied in other contexts. Towards this goal, I will discuss how this formalism has been used to make sense of phenomena like trust, assistance, objective alignment and even deception.
                           </AccordionItem>
-                          <AccordionItem
+                          {/* <AccordionItem
                             className="according-crush"
                             title={<span>Bio</span>}>
                             Coming soon!
-                          </AccordionItem>
+                          </AccordionItem> */}
                         </Accordion>
                       </div>
                     </div>
@@ -224,7 +226,7 @@ class Page2024 extends React.Component {
 
                 <StructuredListRow>
                   <StructuredListCell>
-                    14:20 - 14:15
+                    14:20 - 15:00
                     <br />
                   </StructuredListCell>
                   <StructuredListCell>Round Table and Closing Remarks</StructuredListCell>
@@ -249,8 +251,25 @@ class Page2024 extends React.Component {
               </StructuredListBody>
             </StructuredListWrapper>
           </div>
-        
 
+          <br />
+          <br />
+          <h4>Videos </h4>
+          <p>
+          Unfortunately, some authors were unable to attend the workshop in person and have therefore provided a video presentation. We encourage you to contact the authors if you have any questions.
+          </p>
+          <hr />
+              <Accordion align="start">
+                      {shuffledData.map((item, key) => (
+                        <React.Fragment key={key}>
+                          {item.session === 0 && <VideoPresentation props={item} />}
+                        </React.Fragment>
+                      ))}
+              </Accordion>
+          
+          <br />
+          <br />
+          <br />
           <br />
           <h4>Accepted Papers</h4>
           <hr />

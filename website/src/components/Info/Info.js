@@ -385,6 +385,41 @@ const Talk = props => {
   );
 };
 
+const VideoPresentation = props => {
+  return (
+    <AccordionItem
+      title={
+        <span>
+          <strong>{props.props.title}</strong> | <em>{props.props.authors}</em>{' '}
+        </span>
+      }>
+      <p>{props.props.abstract}</p>
+      <br />
+      <br />
+      {props.props.slides && (
+        <Link
+          href={props.props.slides}
+          target="_blank"
+          className="no-decoration-on-hover">
+          <Button kind="ghost" size="sm">
+            Slides
+          </Button>
+        </Link>
+      )}
+      {props.props.video && (
+        <Link
+          href={props.props.video}
+          target="_blank"
+          className="no-decoration-on-hover">
+          <Button kind="ghost" size="sm">
+            Video
+          </Button>
+        </Link>
+      )}
+    </AccordionItem>
+  );
+};
+
 const Project = props => {
   return (
     <Tile className="bx--col-lg-5">
@@ -428,4 +463,5 @@ export {
   Software,
   Project,
   shuffleArray,
+  VideoPresentation
 };
