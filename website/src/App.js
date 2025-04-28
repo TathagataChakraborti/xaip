@@ -15,6 +15,7 @@ import Page2021 from './content/Page2021';
 import Page2022 from './content/Page2022';
 import Page2023 from './content/Page2023';
 import Page2024 from './content/Page2024';
+import Page2025 from './content/Page2025';
 
 class App extends Component {
   render() {
@@ -33,6 +34,7 @@ class App extends Component {
             <Route exact path="/2022" component={Page2022} />
             <Route exact path="/2023" component={Page2023} />
             <Route exact path="/2024" component={Page2024} />
+            <Route exact path="/2025" component={Page2025} />
             <Route component={LandingPage} />
           </Switch>
         </Content>

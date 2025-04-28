@@ -19,7 +19,7 @@ import { Member } from '../../components/Info';
 import {
   OrganizingTeamList,
   SteeringCommitteeList,
-} from '../../components/Data/HAXP2024Data';
+} from '../../components/Data/HAXP2025Data';
 
 class LandingPage extends React.Component {
   constructor(props) {
@@ -55,7 +55,7 @@ class LandingPage extends React.Component {
                   href="https://icaps23.icaps-conference.org/"
                   target="_blank"
                   style={{ fontSize: 'inherit' }}>
-                  ICAPS 2024
+                  ICAPS 2025
                 </Link>
               </h1>
               {/*
@@ -66,7 +66,7 @@ class LandingPage extends React.Component {
               </p>
               */}
               <p style={{ paddingTop: '5px', color: 'grey' }}>
-                June, 2024 | Banff, Canada
+                November, 2025 | Melbourne, Australia
               </p>
               <br />
               <br />
@@ -119,14 +119,15 @@ class LandingPage extends React.Component {
                     style={{ minHeight: '175px' }}
                     className="announcement-card">
                     <div>
-                      <p>HAXP 2024</p>
+                      <p>HAXP 2025</p>
                     </div>
 
                     <Button
                       style={{ maxWidth: '75%' }}
-                      href="/2024"
+                      href="/2025"
                       className="no-decoration-on-hover"
                       size="sm"
+                      disabled
                       kind="primary">
                       Program
                     </Button>
@@ -180,14 +181,14 @@ class LandingPage extends React.Component {
                 </StructuredListRow>
               </StructuredListBody>
             </StructuredListWrapper>
-            <Link href="https://icaps24.icaps-conference.org/program/workshops/haxp/">
+            <Link href="https://icaps25.icaps-conference.org/program/workshops/haxp/">
               <Button size="sm" kind="ghost">
                 Submit
               </Button>
             </Link>
             <Link
               className="no-decoration-on-hover"
-              href="https://www.aaai.org/Publications/Templates/AuthorKit24.zip"
+              href="https://icaps25.icaps-conference.org/files/icaps2025-author-kit.zip"
               target="_blank">
               <Button size="sm" kind="ghost">
                 Template
@@ -201,15 +202,6 @@ class LandingPage extends React.Component {
               onClick={this.onClickREADME.bind(this)}>
               Additional Instructions
             </Button>
-
-            <Link
-              href="/files/haxp24_cfp.pdf"
-              target="_blank"
-              className="no-decoration-on-hover">
-              <Button size="sm" kind="ghost">
-                <Download16 />
-              </Button>
-            </Link>
           </div>
 
           <div className="bx--col-lg-4 xaip-tags">
@@ -223,22 +215,21 @@ class LandingPage extends React.Component {
                       </span>
                     </>
                   }
-                  secondaryLabel="April 07 UTC-12"
+                  secondaryLabel="July 27, 2025 UTC-12"
                 />
                 <ProgressStep
-                  current
                   label={
                     <>
-                      <span style={{ color: 'Blue' }}>
+                      <span>
                       Author Notification{' '}
                       </span>
                     </>
                   }
-                  secondaryLabel="April 29 UTC-12"
+                  secondaryLabel="August 24, 2025 UTC-12"
                 />
                 <ProgressStep
                   label="HAXP 2024 Workshop"
-                  secondaryLabel="June 1 or 2, 2024"
+                  secondaryLabel="November 10 or 11, 2025"
                 />
                 <ProgressStep
                   label="Camera Ready Deadline"
@@ -272,71 +263,20 @@ class LandingPage extends React.Component {
               <br />
 
               <UnorderedList>
-                <ListItem>
-                  Human-aware planning, scheduling, and execution.
-                </ListItem>
-                <ListItem>
-                  Human monitoring, plan & goal recognition, and behavior
-                  prediction.
-                </ListItem>
-                <ListItem>
-                  Mixed-initiative planning and scheduling systems.
-                </ListItem>
-                <ListItem>
-                  Learning methods for planning/scheduling in the presence of
-                  humans.
-                </ListItem>
-                <ListItem>
-                  Explanations of behavior in sequential
-                  decision-making/decision-support.
-                </ListItem>
-                <ListItem>
-                  Explanation of scheduling/allocation decisions to human
-                  stakeholders.
-                </ListItem>
-                <ListItem>
-                  Improving interpretability and explainability of AI
-                  planning/scheduling systems.
-                </ListItem>
-                <ListItem>
-                  Generating predictable and interpretable behavior.
-                </ListItem>
-                <ListItem>
-                  Methods for reward, goal, preference, or constraint
-                  specification for reinforcement learning agents.
-                </ListItem>
-                <ListItem>
-                  Creating interpretable and adaptive user interfaces for
-                  planning/scheduling systems.
-                </ListItem>
-                <ListItem>
-                  Proactive assistance and decision-support in human-AI
-                  collaborative scenarios.
-                </ListItem>
-                <ListItem>
-                  Cognitive modeling, social interaction, and theory of mind.
-                </ListItem>
-                <ListItem>
-                  Safety, ethics, fairness, transparency and responsible
-                  behavior generation in the context of planning/scheduling
-                  systems.
-                </ListItem>
-                <ListItem>
-                  Representation and acquisition of human behavioral models.
-                </ListItem>
-                <ListItem>
-                  Theories and applications of human behavior models.
-                </ListItem>
-                <ListItem>
-                  Trust, communication, and collaboration in human-AI teams.
-                </ListItem>
-                <ListItem>
-                  Benchmarking planning/scheduling domains for human-AI
-                  interaction.
-                </ListItem>
-                <ListItem>
-                Large language models in human-aware planning & scheduling.
-                </ListItem>
+                <ListItem>Human-aware planning, scheduling, and execution.</ListItem>
+                <ListItem>Human monitoring, plan & goal recognition, and behavior prediction.</ListItem>
+                <ListItem>Mixed-initiative planning and scheduling systems.</ListItem>
+                <ListItem>Learning methods for planning/scheduling in the presence of humans.</ListItem>
+                <ListItem>Explanations of behavior in sequential decision-making/decision-support.</ListItem>
+                <ListItem>Explanation of scheduling/allocation decisions to human stakeholders.</ListItem>
+                <ListItem>Improving interpretability and explainability of AI planning/scheduling systems.</ListItem>
+                <ListItem>Generating predictable and interpretable behavior.</ListItem>
+                <ListItem>Methods for reward, goal, preference, or constraint specification for reinforcement learning agents.</ListItem>
+                <ListItem>Creating interpretable and adaptive user interfaces for planning/scheduling systems.</ListItem>
+                <ListItem>Proactive assistance and decision-support in human-AI collaborative scenarios.</ListItem>
+                <ListItem>Cognitive modeling, social interaction, and theory of mind.</ListItem>
+                <ListItem>Safety, ethics, fairness, transparency and responsible behavior generation in the context of planning/scheduling systems.</ListItem>
+                <ListItem>Representation and acquisition of human behavioral models.</ListItem>
               </UnorderedList>
             </div>
           </div>
@@ -394,7 +334,7 @@ class LandingPage extends React.Component {
         <Modal
           iconDescription="Close"
           modalHeading="Additional Instructions"
-          modalLabel="HAXP @ ICAPS 2023"
+          modalLabel="HAXP @ ICAPS 2025"
           passiveModal
           hasScrollingContent
           open={this.state.readme}
@@ -409,36 +349,34 @@ class LandingPage extends React.Component {
             <StructuredListBody>
               <StructuredListRow>
                 <StructuredListCell>
-                  Authors who are considering submitting to the workshop papers
-                  rejected from the main conference, please ensure you do your
-                  utmost to address the comments given by ICAPS reviewers.
-                  Please do not submit papers that are already accepted for the
-                  main conference to the workshop.
+                Authors who are considering submitting to the workshop papers 
+                rejected from the main conference, please ensure you do your 
+                utmost to address the comments given by ICAPS reviewers. Please 
+                do not submit papers that are already accepted for the main 
+                conference to the workshop.
                 </StructuredListCell>
               </StructuredListRow>
               <StructuredListRow>
                 <StructuredListCell>
-                  Every submission will be reviewed by members of the program
-                  committee according to the usual criteria such as relevance to
-                  the workshop, the significance of the contribution, and
-                  technical quality. Authors can choose for themselves if they
-                  want their submissions to be single-blind or double-blind
-                  (recommended for NeurIPS and IJCAI dual submissions) at the
-                  time of submission.
+                Every submission will be reviewed by members of the program 
+                committee according to the usual criteria such as relevance to 
+                the workshop, the significance of the contribution, and 
+                technical quality. Submissions are double-blind.
                 </StructuredListCell>
               </StructuredListRow>
               <StructuredListRow>
                 <StructuredListCell>
-                  The workshop is meant to be an open and inclusive forum, and
-                  we encourage papers that report on work in progress or that do
-                  not fit the mold of a typical conference paper.
+                The workshop is meant to be an open and inclusive forum, and we 
+                encourage papers that report on work in progress or that do not 
+                fit the mold of a typical conference paper.
                 </StructuredListCell>
               </StructuredListRow>
               <StructuredListRow>
                 <StructuredListCell>
-                  At least one author of each accepted paper must attend the
-                  workshop in order to present the paper. There will be no
-                  separate registration required.
+                At least one author of each accepted paper must attend the 
+                workshop in order to present the paper. All participants need 
+                to register to the main ICAPS conference. There will be no 
+                separate registration required.
                 </StructuredListCell>
               </StructuredListRow>
               <StructuredListRow>
