@@ -55,7 +55,7 @@ class Page2025 extends React.Component {
           <br />
           <br />
           <br />
-          <h4>HAXP 2024 Program</h4>
+          <h4>HAXP 2025 Program</h4>
           <hr />
 
           <br />

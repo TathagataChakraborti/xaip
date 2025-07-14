@@ -181,7 +181,7 @@ class LandingPage extends React.Component {
                 </StructuredListRow>
               </StructuredListBody>
             </StructuredListWrapper>
-            <Link href="https://icaps25.icaps-conference.org/program/workshops/haxp/">
+            <Link href="https://openreview.net/group?id=icaps-conference.org/ICAPS/2025/Workshop/HAXP">
               <Button size="sm" kind="ghost">
                 Submit
               </Button>
@@ -215,7 +215,7 @@ class LandingPage extends React.Component {
                       </span>
                     </>
                   }
-                  secondaryLabel="July 27, 2025 UTC-12"
+                  secondaryLabel="August 10, 2025 UTC-12"
                 />
                 <ProgressStep
                   label={
@@ -225,7 +225,7 @@ class LandingPage extends React.Component {
                       </span>
                     </>
                   }
-                  secondaryLabel="August 24, 2025 UTC-12"
+                  secondaryLabel="August 29, 2025 UTC-12"
                 />
                 <ProgressStep
                   label="HAXP 2024 Workshop"

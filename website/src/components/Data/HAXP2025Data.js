@@ -30,7 +30,7 @@ var OrganizingTeamList = [
     id: 4,
     name: 'Lindsay Sanneman',
     image: 'lindsay',
-    affiliation: 'MIT',
+    affiliation: 'Arizona State University',
     link: 'https://www.lindsaysanneman.com/',
   },
   {
@@ -44,7 +44,7 @@ var OrganizingTeamList = [
     id: 7,
     name: 'Stylianos Vasileiou',
     image: 'stylianos',
-    affiliation: 'Washington University',
+    affiliation: 'New Mexico State University',
     link: 'https://thestlucas.com/',
   },
   {
