@@ -215,7 +215,7 @@ class LandingPage extends React.Component {
                       </span>
                     </>
                   }
-                  secondaryLabel="August 10, 2025 UTC-12"
+                  secondaryLabel="August 15, 2025 UTC-12"
                 />
                 <ProgressStep
                   label={
