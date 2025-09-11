@@ -127,9 +127,8 @@ class LandingPage extends React.Component {
                       href="/2025"
                       className="no-decoration-on-hover"
                       size="sm"
-                      disabled
                       kind="primary">
-                      Program
+                      Accepted Papers
                     </Button>
                   </Tile>
                 </div>

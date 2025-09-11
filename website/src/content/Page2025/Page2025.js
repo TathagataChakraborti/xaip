@@ -4,14 +4,19 @@ import {
   OrganizingTeamList,
   SteeringCommitteeList,
   ProjectList,
+  PCList,
 } from '../../components/Data/HAXP2025Data';
 import {
   Member,
   shuffleArray,
+  PCReduced,
+  Talk,
 } from '../../components/Info';
 import {
   Link,
   Button,
+  Accordion,
+  AccordionItem,
 } from 'carbon-components-react';
 
 var MemberList = shuffleArray(OrganizingTeamList);
@@ -79,6 +84,21 @@ class Page2025 extends React.Component {
               </Button>
             </Link>
           </div>
+
+          <br />
+          <br />
+          <br />
+          <br />
+
+          <h4>Accepted Papers</h4>
+          <hr />
+          <Accordion align="start">
+            {shuffledData.map((item, key) => (
+              <React.Fragment key={key}>
+                <Talk props={item} />
+              </React.Fragment>
+            ))}
+          </Accordion>
           
         </div>
 
@@ -124,6 +144,18 @@ class Page2025 extends React.Component {
           <br />
           <br />
           <br />
+          
+          <Accordion align="start">
+            <AccordionItem open title="Extended Program Committee">
+              <div className="bx--row">
+                {PCList.map((item, key) => (
+                  <React.Fragment key={key}>
+                    <PCReduced props={item} />
+                  </React.Fragment>
+                ))}
+              </div>
+            </AccordionItem>
+          </Accordion>
 
           <h4>Affiliated Projects</h4>
           <hr />

@@ -102,7 +102,61 @@ var SteeringCommitteeList = [
 ];
 
 var PCList = [
-
+  {
+    id: 0,
+    name: 'Pascal Bercher',
+    affiliation: 'Australian National University, Australia',
+  },
+  {
+    id: 1,
+    name: 'Daniel Fišer',
+    affiliation: 'Aalborg University, Denmark',
+  },
+  {
+    id: 2,
+    name: 'Ho Chit Siu',
+    affiliation: 'MIT Lincoln Laboratory, USA',
+  },
+  {
+    id: 3,
+    name: 'Christabel Wayllace',
+    affiliation: 'New Mexico State University, USA',
+  },
+  {
+    id: 4,
+    name: 'Akkamahadevi Hanni',
+    affiliation: 'Arizona State University, USA',
+  },
+  {
+    id: 5,
+    name: 'Daniel Gnad',
+    affiliation: 'Heidelberg University, Germany and Linköping University, Sweden',
+  },
+  {
+    id: 6,
+    name: 'Alban Grastien',
+    affiliation: 'Australian National University, Australia',
+  },
+  {
+    id: 7,
+    name: 'Rohan R Paleja',
+    affiliation: 'Purdue University, USA',
+  },
+  {
+    id: 8,
+    name: 'Shashank Shekhar',
+    affiliation: 'University of Caen Normandy, France',
+  },
+  {
+    id: 9,
+    name: 'Mohammad Yousefi',
+    affiliation: 'Australian National University, Australia',
+  },
+  {
+    id: 10,
+    name: 'Emile Siboulet',
+    affiliation: 'LAAS-CNRS, France and Safran Electronics & Defense, France',
+  },
 ];
 
 var ProjectList = [
