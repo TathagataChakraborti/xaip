@@ -1,8 +1,43 @@
 var InvitedList = [
-
+  {
+      id: 0,
+      name: 'Mor Vered',
+      image: 'mor',
+      affiliation: 'Monash University',
+      link: 'https://research.monash.edu/en/persons/mor-vered',
+    },
+    {
+      id: 1,
+      name: 'Antonio Rago',
+      image: 'antonio',
+      affiliation: 'Kings College London',
+      link: 'https://antoniorago.github.io/',
+    }
 ];
 
-var PanelList = [];
+var PanelList = [
+  {
+      id: 0,
+      name: 'Mor Vered',
+      image: 'mor',
+      affiliation: 'Monash University',
+      link: 'https://research.monash.edu/en/persons/mor-vered',
+    },
+    {
+      id: 1,
+      name: 'Antonio Rago',
+      image: 'antonio',
+      affiliation: 'Kings College London',
+      link: 'https://antoniorago.github.io/',
+    },
+    {
+    id: 2,
+    name: 'Sarath Sreedharan',
+    image: 'sarath',
+    affiliation: 'Colorado State University',
+    link: 'http://sarathsreedharan.com/',
+  }
+];
 
 var OrganizingTeamList = [
   {

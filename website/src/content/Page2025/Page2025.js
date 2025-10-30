@@ -5,18 +5,25 @@ import {
   SteeringCommitteeList,
   ProjectList,
   PCList,
+  InvitedList,
+  PanelList
 } from '../../components/Data/HAXP2025Data';
 import {
   Member,
   shuffleArray,
   PCReduced,
   Talk,
+  Speaker
 } from '../../components/Info';
 import {
   Link,
   Button,
   Accordion,
   AccordionItem,
+  StructuredListWrapper,
+  StructuredListBody,
+  StructuredListRow,
+  StructuredListCell,
 } from 'carbon-components-react';
 
 var MemberList = shuffleArray(OrganizingTeamList);
@@ -83,6 +90,231 @@ class Page2025 extends React.Component {
                 Slack
               </Button>
             </Link>
+          </div>
+
+          <br />
+          <br />
+          <h4>Schedule (10 November 8:30 - 17:00)</h4>
+          <hr />
+
+          <div>
+            <StructuredListWrapper>
+              <StructuredListBody>
+                <StructuredListCell>8:30 - 10:00</StructuredListCell>
+                <StructuredListCell>
+                  Session I
+                </StructuredListCell>
+                <StructuredListRow>
+                  <StructuredListCell>8:30 - 8:40</StructuredListCell>
+                  <StructuredListCell>
+                    Opening Remarks
+                  </StructuredListCell>
+                </StructuredListRow>
+
+                <StructuredListRow>
+                  <StructuredListCell>8:40 - 9:30</StructuredListCell>
+                  <StructuredListCell>
+                    <div className="bx--row">
+                      <div className="bx--col-lg-4">
+                        <Speaker props={InvitedList[0]} />
+                      </div>
+                      <div className="bx--col-lg-12">
+                        <br />
+                        <br />
+                        <strong>
+                          Invited Talk
+                        </strong>
+                        <br />
+                        <br />
+                        <Accordion align="start">
+                          <AccordionItem
+                            className="according-crush"
+                            title={<span>Abstract</span>}>
+                            Coming soon!
+                          </AccordionItem>
+                          {/* <AccordionItem
+                            className="according-crush"
+                            title={<span>Bio</span>}>
+                            Coming soon!
+                          </AccordionItem> */}
+                        </Accordion>
+                      </div>
+                    </div>
+                  </StructuredListCell>
+                </StructuredListRow>
+
+                <StructuredListRow className="no-border">
+                  <StructuredListCell>9:30 - 10:00</StructuredListCell>
+                  <StructuredListCell>
+                    Paper Session I
+                  </StructuredListCell>
+                  </StructuredListRow>
+                  <StructuredListRow>
+                    <StructuredListCell />
+                    <StructuredListCell style={{ padding: '0' }}>
+                      <Accordion align="start">
+                        {shuffledData.map((item, key) => (
+                          <React.Fragment key={key}>
+                            {item.session === 1 && (
+                              <Talk props={item} />
+                            )}
+                          </React.Fragment>
+                        ))}
+                      </Accordion>
+                  </StructuredListCell>
+                </StructuredListRow>
+
+                <StructuredListRow>
+                  <StructuredListCell>
+                    10:00 - 10:30
+                    <br />
+                  </StructuredListCell>
+                  <StructuredListCell>Break</StructuredListCell>
+                </StructuredListRow>
+
+                <StructuredListRow className="no-border">
+                  <StructuredListCell>10:30 - 12:00</StructuredListCell>
+                  <StructuredListCell>
+                    Session II
+                  </StructuredListCell>
+                </StructuredListRow>
+                <StructuredListRow>
+                  <StructuredListCell>10:30 - 11:20</StructuredListCell>
+                  <StructuredListCell>
+                    <div className="bx--row">
+                      <div className="bx--col-lg-4">
+                        <Speaker props={InvitedList[1]} />
+                      </div>
+                      <div className="bx--col-lg-12">
+                        <br />
+                        <br />
+                        <strong>
+                          Invited Talk
+                        </strong>
+                        <br />
+                        <br />
+                        <Accordion align="start">
+                          <AccordionItem
+                            className="according-crush"
+                            title={<span>Abstract</span>}>
+                            Coming soon!
+                          </AccordionItem>
+                          {/* <AccordionItem
+                            className="according-crush"
+                            title={<span>Bio</span>}>
+                            Coming soon!
+                          </AccordionItem> */}
+                        </Accordion>
+                      </div>
+                    </div>
+                  </StructuredListCell>
+                </StructuredListRow>
+
+                <StructuredListRow className="no-border">
+                  <StructuredListCell>11:20 - 12:00</StructuredListCell>
+                  <StructuredListCell>
+                    Paper Session II
+                  </StructuredListCell>
+                </StructuredListRow>
+                <StructuredListRow>
+                  <StructuredListCell />
+                  <StructuredListCell style={{ padding: '0' }}>
+                    <Accordion align="start">
+                      {shuffledData.map((item, key) => (
+                        <React.Fragment key={key}>
+                          {item.session === 2 && (
+                            <Talk props={item} />
+                          )}
+                        </React.Fragment>
+                      ))}
+                    </Accordion>
+                  </StructuredListCell>
+                </StructuredListRow>
+
+                <StructuredListRow>
+                  <StructuredListCell>
+                    12:00 - 13:30
+                    <br />
+                  </StructuredListCell>
+                  <StructuredListCell>Break</StructuredListCell>
+                </StructuredListRow>
+
+                <StructuredListRow className="no-border">
+                  <StructuredListCell>13:30 - 15:00</StructuredListCell>
+                  <StructuredListCell>
+                    Session III
+                  </StructuredListCell>
+                </StructuredListRow>
+                <StructuredListRow>
+                  <StructuredListCell />
+                  <StructuredListCell style={{ padding: '0' }}>
+                    <Accordion align="start">
+                      {shuffledData.map((item, key) => (
+                        <React.Fragment key={key}>
+                          {item.session === 3 && (
+                            <Talk props={item} />
+                          )}
+                        </React.Fragment>
+                      ))}
+                    </Accordion>
+                  </StructuredListCell>
+                </StructuredListRow>
+
+                <StructuredListRow>
+                  <StructuredListCell>
+                    15:00 - 15:30
+                    <br />
+                  </StructuredListCell>
+                  <StructuredListCell>Break</StructuredListCell>
+                </StructuredListRow>
+
+
+                <StructuredListRow className="no-border">
+                  <StructuredListCell>15:30 - 17:00</StructuredListCell>
+                  <StructuredListCell>
+                    Session IV
+                  </StructuredListCell>
+                </StructuredListRow>
+                <StructuredListRow>
+                  <StructuredListCell>15:30 - 16:30</StructuredListCell>
+                  <StructuredListCell>
+                    <div className="bx--row">
+                      <div className="bx--col-lg-16">
+                        <strong>
+                          Panel Discussion
+                        </strong>
+                        <br />
+                        <br />
+                        <Accordion align="start">
+                          <AccordionItem
+                            open
+                            className="according-crush"
+                            title={<span>Details</span>}>
+                            Coming soon!
+                          </AccordionItem>
+                        </Accordion>
+                      </div>
+                      <div className="bx--col-lg-16">
+                        <div className="bx--row">
+                          {PanelList.map((item, key) => (
+                            <React.Fragment key={key}>
+                              <Member props={item} />
+                            </React.Fragment>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  </StructuredListCell>
+                </StructuredListRow>
+                <StructuredListRow className="no-border">
+                  <StructuredListCell>16:30</StructuredListCell>
+                  <StructuredListCell>
+                    Closing Remarks
+                  </StructuredListCell>
+                </StructuredListRow>
+
+              </StructuredListBody>
+            </StructuredListWrapper>
           </div>
 
           <br />

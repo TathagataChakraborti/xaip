@@ -128,7 +128,7 @@ class LandingPage extends React.Component {
                       className="no-decoration-on-hover"
                       size="sm"
                       kind="primary">
-                      Accepted Papers
+                      Program
                     </Button>
                   </Tile>
                 </div>
@@ -205,7 +205,7 @@ class LandingPage extends React.Component {
 
           <div className="bx--col-lg-4 xaip-tags">
             <div className="some-container" style={{ marginTop: '70px' }}>
-              <ProgressIndicator vertical currentIndex={0}>
+              <ProgressIndicator vertical currentIndex={2}>
                 <ProgressStep
                   label={
                     <>
@@ -219,7 +219,7 @@ class LandingPage extends React.Component {
                 <ProgressStep
                   label={
                     <>
-                      <span>
+                      <span style={{ color: 'Blue' }}>
                       Author Notification{' '}
                       </span>
                     </>
@@ -227,8 +227,14 @@ class LandingPage extends React.Component {
                   secondaryLabel="August 29, 2025 UTC-12"
                 />
                 <ProgressStep
-                  label="HAXP 2024 Workshop"
-                  secondaryLabel="November 10 or 11, 2025"
+                  label={
+                    <>
+                      <span style={{ color: 'Blue' }}>
+                      HAXP 2025 Workshop
+                      </span>
+                    </>
+                  }
+                  secondaryLabel="November 10, 2025"
                 />
                 <ProgressStep
                   label="Camera Ready Deadline"
