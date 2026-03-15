@@ -122,7 +122,7 @@ class Page2025 extends React.Component {
                         <br />
                         <br />
                         <strong>
-                          Invited Talk
+                          Invited Talk: eXplainable AI ! … ?
                         </strong>
                         <br />
                         <br />
@@ -130,7 +130,7 @@ class Page2025 extends React.Component {
                           <AccordionItem
                             className="according-crush"
                             title={<span>Abstract</span>}>
-                            Coming soon!
+                            In this talk I’ll provide an overview of my work in eXplainable AI (XAI), examining its state-of-the-art techniques, current trends, and limitations. I'll begin by introducing key XAI methods and explore the growing demand for fairness, accountability, and human-in-the-loop systems, as well as the challenges of balancing model accuracy with explainability. Despite significant progress, XAI faces limitations, including the trade-off between model complexity and interpretability, and the subjective nature of explanations. I’ll also discuss the importance of Human-Centered AI, emphasizing that explanations must be understandable to people, and how insights from the social sciences can inform better explanation design. And finally, I will introduce Evaluative AI, a paradigm shift from the current model of XAI . This concept represents a step toward creating more accountable, robust, and transparent AI systems, ensuring that explanations not only make sense but also align with human values and decision-making needs.
                           </AccordionItem>
                           {/* <AccordionItem
                             className="according-crush"
@@ -189,7 +189,7 @@ class Page2025 extends React.Component {
                         <br />
                         <br />
                         <strong>
-                          Invited Talk
+                          Invited Talk: A Little of That Human Touch: Achieving Human-Centric Explainable AI via Argumentation
                         </strong>
                         <br />
                         <br />
@@ -197,7 +197,7 @@ class Page2025 extends React.Component {
                           <AccordionItem
                             className="according-crush"
                             title={<span>Abstract</span>}>
-                            Coming soon!
+                            As data-driven AI models achieve unprecedented feats across previously unthinkable tasks, the diminishing levels of interpretability of their increasingly complex architectures can often be sidelined in place of performance. If we are to comprehend and trust these AI models as they advance, it seems clear that symbolic methods, given their unparalleled strengths in knowledge representation and reasoning, can play an important role in explaining AI models. In this talk, I discuss some of the ways in which one branch of such methods, computational argumentation, given its human-like nature, can be used to tackle this problem. I first outline a general paradigm for this area of explainable AI, before detailing a prominent methodology therein which we have introduced. I then illustrate how this approach has been put into practice with diverse AI models and types of explanations, before looking ahead to challenges, future work and the outlook in this field.
                           </AccordionItem>
                           {/* <AccordionItem
                             className="according-crush"
